@@ -1,0 +1,19 @@
+{
+    "name": "themeatelier/idonate",
+    "description": "IDonate blood request and blood donor management system WordPress plugin. Easy to use, easy to customize.",
+    "type": "wordpress-plugins",
+    "license": "GPL-2.0+",
+    "autoload": {
+        "psr-4": {
+            "ThemeAtelier\\Idonate\\": "src/"
+        },
+        "files": [ "src/Helpers/helper-functions.php", "src/Admin/Views/Statistics.php", "src/Admin/Views/WidgetBloodRequiest.php" ]
+    },
+    "authors": [
+        {
+            "name": "ThemeAtelier",
+            "email": "themeatelierbd@gmail.com"
+        }
+    ],
+    "require": {}
+}
