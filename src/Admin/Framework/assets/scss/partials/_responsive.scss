@@ -1,0 +1,157 @@
+/**
+ * 12. Responsive
+ */
+@media only screen and (max-width:1200px){
+
+  .idonate-metabox{
+
+    .idonate-field{
+
+      .idonate-title{
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .idonate-fieldset{
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:782px){
+
+  .idonate-header-inner{
+    text-align: center;
+
+    h1{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .idonate-form-result{
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .idonate-search,
+  .idonate-header-right,
+  .idonate-header-left{
+    width: 100%;
+  }
+
+  .idonate-search{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .idonate-footer{
+    text-align: center;
+  }
+
+  .idonate-buttons{
+    float: none;
+  }
+
+  .idonate-copyright{
+    float: none;
+    margin-top: 10px;
+  }
+
+  .idonate-nav,
+  .idonate-expand-all,
+  .idonate-reset-section,
+  .idonate-nav-background{
+    display: none !important;
+  }
+
+  .idonate-nav-normal + .idonate-content{
+    margin-left: 0;
+  }
+
+  .idonate-section-title,
+  .idonate-section{
+    display: block !important;
+  }
+
+  .idonate-field{
+
+    .idonate-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .idonate-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .idonate-field-color{
+
+    .button.wp-picker-clear{
+      padding: 0 8px;
+      line-height: 2.14285714;
+      min-height: 32px;
+    }
+  }
+
+  .idonatefile-options,
+  .idonate-taxonomy-edit-fields{
+
+    > .idonate-field{
+
+      > .idonate-title{
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      > .idonate-fieldset{
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+
+  .idonate-nav-menu-options{
+
+    > .idonate-fields{
+      margin-left: -10px;
+      margin-right: -10px;
+
+      > .idonate-field{
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 782px) {
+
+  .idonate-modal{
+
+    .idonate-modal-inner{
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-height: 750px) {
+
+  .idonate-modal{
+
+    .idonate-modal-inner{
+      height: auto;
+    }
+
+    .idonate-modal-content{
+      height: calc(100vh - 200px);
+    }
+  }
+}
