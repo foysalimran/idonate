@@ -86,34 +86,30 @@ $generalOpt = get_option('idonate_settings');
 			<input id="city" name="city" value="{{data.city}}" placeholder="<?php esc_attr_e('City', 'idonate') ?>" type="text">
 		</div>
 	</div>
-	<?php
-	if (!empty($generalOpt['idonate_countryhide'])) :
-	?>
-		<div class="idonate_row idonate_col">
-			<div class="idonate_col_item" data-select="{{data.contycode}}">
-				<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
-				<select id="country" class="form-control country" name="country">
-					<?php
-					$allowed_html = array(
-						'option' => array(
-							'value' => array(),
-							'selected' => array(),  // Allow the selected attribute
-						),
-					);
-					echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
-					?>
-				</select>
-			</div>
-			<div class="idonate_col_item" data-select="{{data.statecode}}">
-				<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
-				<select class="form-control state" name="state">
-					<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
-				</select>
-			</div>
+
+	<div class="idonate_row idonate_col">
+		<div class="idonate_col_item" data-select="{{data.contycode}}">
+			<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
+			<select id="country" class="form-control country" name="country">
+				<?php
+				$allowed_html = array(
+					'option' => array(
+						'value' => array(),
+						'selected' => array(),  // Allow the selected attribute
+					),
+				);
+				echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
+				?>
+			</select>
 		</div>
-	<?php
-	endif;
-	?>
+		<div class="idonate_col_item" data-select="{{data.statecode}}">
+			<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
+			<select class="form-control state" name="state">
+				<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
+			</select>
+		</div>
+	</div>
+
 
 	<div class="idonate_row idonate_col">
 		<div class="idonate_col_item">

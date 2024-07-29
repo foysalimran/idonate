@@ -48,9 +48,7 @@ class Manager
     public static function views_html($users, $total_donor, $number, $paged, $pagenum_link)
     {
         $options = get_option('idonate_settings');
-        $hide_mobile_number = isset($options['hide_mobile_number']) ? $options['hide_mobile_number'] : '';
         $donor_view_button = isset($options['donor_view_button']) ? $options['donor_view_button'] : '';
-        $donors_number_of_columns = isset($options['donors_number_of_columns']) ? $options['donors_number_of_columns'] : '';
 
         if (is_array($users) && count($users) > 0) :
             echo '<div class="donors"><div class="ta-row">';
@@ -66,7 +64,7 @@ class Manager
                     $signal = '<i class="icofont-check-circled"></i>';
                 }
 ?>
-                <div class="<?php echo esc_attr(self::idonate_post_responsive_columns($donors_number_of_columns)); ?>">
+                <div class=" ta-col-sm-1 ta-col-md-2 ta-col-lg-3 ta-col-xl-3">
                     <div class="donor_info" data-id="<?php echo esc_attr($user->ID); ?>">
                         <div class="donor_image">
                             <?php if (idonatefile_img($user->ID)) : ?>
@@ -86,12 +84,8 @@ class Manager
                             <p><i class="icofont-blood-drop"></i><span class="<?php echo esc_attr($abclass); ?>"><?php echo esc_html($availability) . wp_kses_post($signal); ?></span></p>
 
                             <p><i class="icofont-location-pin"></i><?php echo esc_html(get_user_meta($user->ID, 'idonate_donor_city', true)); ?></p>
+                            <p><i class="icofont-smart-phone"></i><?php echo esc_html(get_user_meta($user->ID, 'idonate_donor_mobile', true)); ?></p>
                             <?php
-
-                            if (!$hide_mobile_number) { ?>
-                                <p><i class="icofont-smart-phone"></i><?php echo esc_html(get_user_meta($user->ID, 'idonate_donor_mobile', true)); ?></p>
-                            <?php
-                            }
                             $popup_link =  $donor_view_button === 'popup' ? 'idonate_popup_modal' : '';
                             ?>
                             <a href="<?php echo esc_url(site_url('donor-info?donor_id=' . $user->ID)); ?>" class='idonate_button <?php echo esc_attr($popup_link) ?>'><?php esc_html_e('View Details', 'idonate'); ?></a>
@@ -111,7 +105,6 @@ class Manager
     {
         $options = get_option('idonate_settings');
         $post_request_number_of_columns = $options['post_request_number_of_columns'] ? $options['post_request_number_of_columns'] : 0;
-        $request_view_button = $options['request_view_button'] ? $options['request_view_button'] : '';
 
         if ($loop->have_posts()) :
             echo '<div class="ta-row">';
@@ -131,23 +124,11 @@ class Manager
                     <div class="single-request" data-id="<?php echo esc_attr(get_the_ID()) ?>">
                         <div class="profile">
                             <div class="profile-img">
-                                <?php
-                                if (!empty($options['rf_form_img_upload'])) {
-                                    if (!is_wp_error($image) && !empty($image)) {
-                                        echo wp_kses_post($image);
-                                    } else {
-                                        echo '<img src="' . esc_url(IDONATE_DIR_URL) . 'src/assets/images/heart-01.png"  alt="' . esc_html__('request image', 'idonate') . '"/>';
-                                    }
-                                } else {
-                                ?>
-                                    <div class="image">
-                                        <div class="circle-1"></div>
-                                        <div class="circle-2"></div>
-                                        <i class="icofont-heart-beat"></i>
-                                    </div>
-                                <?php
-                                }
-                                ?>
+                                <div class="image">
+                                    <div class="circle-1"></div>
+                                    <div class="circle-2"></div>
+                                    <i class="icofont-heart-beat"></i>
+                                </div>
                             </div>
 
                             <div class="name"><?php esc_html(the_title()); ?></div>
@@ -172,7 +153,7 @@ class Manager
                                 echo '<div class="request-info"><i class="icofont-smart-phone"></i>' . esc_html($mobnumber) . '</div>';
                             }
 
-                            $popup_link =  $request_view_button === 'popup' ? 'idonate_request_popup_modal' : '';
+                            $popup_link = '';
                             ?>
                         </div>
                         <a href="<?php echo esc_url(get_the_permalink(get_the_ID())); ?>" class="btn-default btn <?php echo esc_attr($popup_link) ?>"><?php esc_html_e('Details', 'idonate'); ?></a>

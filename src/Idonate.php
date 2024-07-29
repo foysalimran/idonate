@@ -92,7 +92,7 @@ class Idonate
 	public function redirect_to($plugin)
 	{
 		if (IDONATE_BASENAME === $plugin) {
-			$redirect_url = esc_url(admin_url('?page=idonate-settings'));
+			$redirect_url = esc_url(admin_url('admin.php?page=idonate-settings'));
 			exit(wp_kses_post(wp_safe_redirect($redirect_url)));
 		}
 	}
@@ -101,7 +101,7 @@ class Idonate
 	{
 
 		$new_links = array(
-			sprintf('<a href="' . esc_url(admin_url('?page=idonate-settings')) . '">' . esc_html__('Settings', 'idonate') . '</a>'),
+			sprintf('<a href="' . esc_url(admin_url('admin.php?page=idonate-settings')) . '">' . esc_html__('Settings', 'idonate') . '</a>'),
 			sprintf('<a target="_blank" href="https://docs.themeatelier.net/docs/idonate/overview/">' . esc_html__('Docs', 'idonate') . '</a>'),
 			sprintf('<a target="_blank" href="https://themeatelier.net/contact">' . esc_html__('Support', 'idonate') . '</a>'),
 		);

@@ -19,8 +19,6 @@ class FilterBar
     public static function donors_filter($users, $total_donor, $number, $paged, $pagenum_link)
     {
         $options = get_option('idonate_settings');
-        $idonate_countryhide = isset($options['idonate_countryhide']) ? $options['idonate_countryhide'] : '';
-        $show_donor_search = isset($options['show_donor_search']) ? $options['show_donor_search'] : '';
         $bloodgroups = array();
         $availabilitys = array();
         $countries = array();
@@ -49,7 +47,7 @@ class FilterBar
                 $states[$stateCode] = $state;
             }
         }
-     
+
         $bloodgroups = array_unique($bloodgroups);
         sort($bloodgroups);
         $availabilitys = array_unique($availabilitys);
@@ -60,8 +58,6 @@ class FilterBar
         asort($states);
 
         $states = wp_json_encode($states);
-      
-     if($show_donor_search) {
 ?>
         <form id="idonate-filter-form">
             <div class="search_area">
@@ -82,27 +78,25 @@ class FilterBar
 
             <div class="search_area">
                 <?php
-                if ($idonate_countryhide) :
-                    if (!empty($country)) : ?>
-                        <select name="country" id="country" class="country">
-                            <option value=""><?php esc_html_e('Select Country', 'idonate'); ?></option>
-                            <?php foreach ($countries as $key => $country) : ?>
-                                <option value="<?php echo esc_attr($key); ?>"><?php echo esc_html($country); ?></option>
-                            <?php endforeach; ?>
-                        </select>
-                    <?php endif;
-                    if (!empty($state)) :
-                    ?>
-                        <select name="state" id="state" class="state" data-state="<?php echo esc_attr($states); ?>">
-                            <option value=""><?php esc_html_e('Select State', 'idonate'); ?></option>
-                        </select>
+                if (!empty($country)) : ?>
+                    <select name="country" id="country" class="country">
+                        <option value=""><?php esc_html_e('Select Country', 'idonate'); ?></option>
+                        <?php foreach ($countries as $key => $country) : ?>
+                            <option value="<?php echo esc_attr($key); ?>"><?php echo esc_html($country); ?></option>
+                        <?php endforeach; ?>
+                    </select>
                 <?php endif;
+                if (!empty($state)) :
+                ?>
+                    <select name="state" id="state" class="state" data-state="<?php echo esc_attr($states); ?>">
+                        <option value=""><?php esc_html_e('Select State', 'idonate'); ?></option>
+                    </select>
+                <?php
                 endif; ?>
                 <input type="text" name="city" id="city" placeholder="<?php esc_html_e('Enter City', 'idonate'); ?>" />
                 <button type="button" id="reset-button"><i class="icofont-undo"></i></button>
             </div>
         </form>
-        <?php  } ?>
         <div class="donors">
             <?php Manager::views_html($users, count($total_donor), $number, $paged, $pagenum_link); ?>
         </div>

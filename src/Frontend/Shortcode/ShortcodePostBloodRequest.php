@@ -30,38 +30,22 @@ class ShortcodePostBloodRequest
 		}
 		$options = get_option('idonate_settings');
 
-		// Title
-		$form_title =  isset($options['rf_form_title']) ? $options['rf_form_title'] : 'Submit Your Request';
-
-		// Sub title
-		$Formsubtitle =  isset($options['rf_sub_title']) ? $options['rf_sub_title'] : 'Please fill the following information to post your blood request.';
-
-		// Button Label
-		$Formbtnlabel =  isset($options['rf_btn_label']) ? $options['rf_btn_label'] : 'Blood Request';
-
-
-
 		ob_start();
 ?>
 		<section class="idonate request-form-page">
 
 			<div class="request-form">
 				<?php
-				if ($form_title || $Formsubtitle) {
 
-					$html = '<div class="submit-info">';
-					// Title
-					if ($form_title) {
-						$html .= '<h2>' . esc_html($form_title) . '</h2>';
-					}
-					// Sub title
-					if ($Formsubtitle) {
-						$html .= '<p>' . esc_html($Formsubtitle) . '</p>';
-					}
-					$html .= '<hr />';
-					$html .= '</div>';
-					echo wp_kses_post($html);
-				}
+				$html = '<div class="submit-info">';
+				// Title
+				$html .= '<h2>' . esc_html__('Submit Your Request', 'idonate') . '</h2>';
+				// Sub title
+				$html .= '<p>' . esc_html__('Please fill the following information to post your blood request.', 'idonate') . '</p>';
+				$html .= '<hr />';
+				$html .= '</div>';
+				echo wp_kses_post($html);
+
 				// Form Submit confirmation message
 				if ($message) {
 					echo '<div id="idonate-response-msg">';
@@ -151,37 +135,26 @@ class ShortcodePostBloodRequest
 						</div>
 					</div>
 					<div class="idonate_row idonate_col">
-						<?php
-						if ($options['idonate_bloodrequestcountryhide']) :
-						?>
-							<div class="idonate_col_item">
-								<label for="bloodgroup"><?php esc_html_e('Country', 'idonate'); ?></label>
-								<select class="form-control country" name="country">
-									<?php
-									$allowed_html = array(
-										'option' => array(
-											'value' => array(),
-											'selected' => array(),  // Allow the selected attribute
-										),
-									);
-									echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
-									?>
-								</select>
-							</div>
-						<?php
-						endif;
-
-						if ($options['idonate_bloodrequestcountryhide']) :
-						?>
-							<div class="idonate_col_item">
-								<label for="bloodgroup"><?php esc_html_e('State', 'idonate'); ?></label>
-								<select class="form-control state" name="state">
-									<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
-								</select>
-							</div>
-						<?php
-						endif;
-						?>
+						<div class="idonate_col_item">
+							<label for="bloodgroup"><?php esc_html_e('Country', 'idonate'); ?></label>
+							<select class="form-control country" name="country">
+								<?php
+								$allowed_html = array(
+									'option' => array(
+										'value' => array(),
+										'selected' => array(),  // Allow the selected attribute
+									),
+								);
+								echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
+								?>
+							</select>
+						</div>
+						<div class="idonate_col_item">
+							<label for="bloodgroup"><?php esc_html_e('State', 'idonate'); ?></label>
+							<select class="form-control state" name="state">
+								<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
+							</select>
+						</div>
 					</div>
 					<div class="idonate_row idonate_col">
 						<div class="idonate_col_item">
@@ -189,23 +162,6 @@ class ShortcodePostBloodRequest
 							<textarea class="form-control" name="details" rows="3" placeholder="<?php esc_html_e('Details', 'idonate'); ?>"></textarea>
 						</div>
 					</div>
-
-					<?php
-					// Image upload field
-					if ($options['rf_form_img_upload']) :
-					?>
-						<div class="idonate_row idonate_col">
-							<div class="idonate_col_item">
-								<label><?php esc_html_e('Upload Picture', 'idonate'); ?></label>
-								<input type='file' class="profilepic" name="requestpic" data-target=".upload-preview" />
-								<img class="upload-preview" src="<?php echo esc_html(IDONATE_DIR_URL) ?>src/assets/images/idonate-preview-image.jpg" alt="<?php esc_html_e('your image', 'idonate') ?>" />
-							</div>
-						</div>
-					<?php
-					endif;
-					?>
-
-
 					<?php
 					// recaptcha
 					if ($options['idonate_recaptcha_active']) {
@@ -225,7 +181,7 @@ class ShortcodePostBloodRequest
 						wp_nonce_field('request_nonce_action', 'request_submit_nonce_check');
 						?>
 						<div class="idonate_row idonate_col">
-							<button type="submit" name="request_submit" class="request_submit_button"><?php echo esc_html($Formbtnlabel); ?></button>
+							<button type="submit" name="request_submit" class="request_submit_button"><?php echo esc_html__('Blood Request', 'idonate'); ?></button>
 						</div>
 				</form>
 			</div>

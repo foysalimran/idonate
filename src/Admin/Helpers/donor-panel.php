@@ -33,7 +33,6 @@ $obj = new TaT_Donor();
 	}
 
 	$options = get_option('idonate_settings');
-	$idonate_countryhide = isset($options['idonate_countryhide']) ? $options['idonate_countryhide'] : true;
 	?>
 	<div class="admin-donor-add">
 		<div id="donor_form_popup">
@@ -116,34 +115,29 @@ $obj = new TaT_Donor();
 							<input id="city" title="<?php esc_html_e('City field can\'t be empty.', 'idonate') ?>" name="city" placeholder="<?php esc_attr_e('City', 'idonate'); ?>" type="text" required>
 						</div>
 					</div>
-					<?php
-					if ($idonate_countryhide) :
-					?>
-						<div class="idonate_row idonate_col">
-							<div class="idonate_col_item">
-								<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
-								<select id="country" class="form-control country" name="country">
-									<?php
-									$allowed_html = array(
-										'option' => array(
-											'value' => array(),
-											'selected' => array(),  // Allow the selected attribute
-										),
-									);
-									echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
-									?>
-								</select>
-							</div>
-							<div class="idonate_col_item">
-								<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
-								<select class="form-control state" name="state">
-									<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
-								</select>
-							</div>
+
+					<div class="idonate_row idonate_col">
+						<div class="idonate_col_item">
+							<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
+							<select id="country" class="form-control country" name="country">
+								<?php
+								$allowed_html = array(
+									'option' => array(
+										'value' => array(),
+										'selected' => array(),  // Allow the selected attribute
+									),
+								);
+								echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
+								?>
+							</select>
 						</div>
-					<?php
-					endif;
-					?>
+						<div class="idonate_col_item">
+							<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
+							<select class="form-control state" name="state">
+								<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
+							</select>
+						</div>
+					</div>
 
 					<div class="idonate_row idonate_col">
 						<div class="idonate_col_item">
@@ -200,7 +194,7 @@ $obj = new TaT_Donor();
 				'orderby' => 'registered',
 				'order'   => 'DESC' // Use 'ASC' for ascending order
 			);
-			$users = get_users($args);			
+			$users = get_users($args);
 
 			$i = 0;
 			foreach ($users as $user) :

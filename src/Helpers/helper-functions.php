@@ -432,27 +432,6 @@ function idonate_is_user_logged_in()
 }
 
 /**
- * Check user logged in to donor show
- **/
-function idonate_user_logged_in_donor_show()
-{
-	$general = get_option('idonate_settings');
-	$idonate_donorshowlogin = isset($general['idonate_donorshowlogin']) ? $general['idonate_donorshowlogin'] : '';
-
-	if ($idonate_donorshowlogin == '1') {
-
-		if (!is_user_logged_in()) {
-			return false;
-		}
-
-		return true;
-	} else {
-
-		return true;
-	}
-}
-
-/**
  * Auto request Delete after pass data
  *
  */
@@ -468,8 +447,6 @@ function idonate_auto_request_delete()
 		$requests = get_posts($args);
 		$currentDate =  strtotime(gmdate(get_option('date_format'), current_time('timestamp', 1)));
 		$oneWeekAgo = strtotime('-1 week', $currentDate);
-		$twoWeekAgo = strtotime('-2 week', $currentDate);
-		$oneMonth = strtotime('-1 month', $currentDate);
 
 
 		foreach ($requests as $request) {
@@ -481,14 +458,6 @@ function idonate_auto_request_delete()
 				}
 			} else if ($auto_delete_expired_requests == 'one_week') {
 				if ($oneWeekAgo > strtotime($neededdate)) {
-					wp_delete_post($request->ID);
-				}
-			} else if ($auto_delete_expired_requests == 'two_week') {
-				if ($twoWeekAgo > strtotime($neededdate)) {
-					wp_delete_post($request->ID);
-				}
-			} else if ($auto_delete_expired_requests == 'one_month') {
-				if ($oneMonth > strtotime($neededdate)) {
 					wp_delete_post($request->ID);
 				}
 			}

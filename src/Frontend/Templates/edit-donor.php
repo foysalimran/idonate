@@ -25,7 +25,6 @@ if (!is_user_logged_in() || current_user_can('donor') != 1) {
 $userID = get_current_user_id();
 $userData = get_userdata($userID);
 $options = get_option('idonate_settings');
-$donor_peft = isset($options['donor_peft']) ? $options['donor_peft'] : 'Edit Donors Information';
 
 $msg = '';
 if (isset($_POST['donor_submit'])) {
@@ -51,7 +50,7 @@ get_header();
 				<div class="request-form">
 					<div id="donorPanelForm">
 						<div class="donor-edit-form-heading">
-							<h3><?php echo esc_html($donor_peft); ?></h3>
+							<h3><?php echo esc_html__('Edit Donors Information', 'idonate'); ?></h3>
 						</div>
 						<!-- Contact Us Form -->
 						<hr>
@@ -88,7 +87,6 @@ get_header();
 											} else {
 												$selected = '';
 											}
-
 											$selectOptions .= '<option value="' . esc_attr($bloodgroup) . '" ' . esc_attr($selected) . '>' . esc_html($bloodgroup) . '</option>';
 										}
 										$allowed_html = array(
@@ -156,60 +154,51 @@ get_header();
 									<input type="date" class="form-control date-picker" id="lastdonate" value="<?php echo esc_attr(get_user_meta($userID, 'idonate_donor_lastdonate', true)); ?>" name="lastdonate" placeholder="<?php echo esc_attr('Last Donate Date', 'idonate'); ?>">
 								</div>
 							</div>
-							<?php $idonate_countryhide = isset($options['idonate_countryhide']) ? $options['idonate_countryhide'] : '';
-							if ($idonate_countryhide) :
-							?>
-								<div class="idonate_row idonate_col">
-									<div class="idonate_col_item">
-										<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
-										<select id="country" class="form-control country" name="country">
-											<?php
-											$allowed_html = array(
-												'option' => array(
-													'value' => array(),
-													'selected' => array(),  // Allow the selected attribute
-												),
-											);
-											$SelectedCounCode = get_user_meta($userID, 'idonate_donor_country', true);
-											echo wp_kses(Countries::IDONATE_COUNTRIES_options($SelectedCounCode), $allowed_html);
-											?>
-										</select>
-									</div>
-									<div class="idonate_col_item">
-										<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
-										<?php $stateCode = get_user_meta($userID, 'idonate_donor_state', true); ?>
-										
+
+							<div class="idonate_row idonate_col">
+								<div class="idonate_col_item">
+									<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
+									<select id="country" class="form-control country" name="country">
 										<?php
-										$selected_country = get_user_meta($userID, 'idonate_donor_country',  true);
-										$path = IDONATE_COUNTRIES . 'states/' . $selected_country . '.php';
-
-										if (file_exists($path)) {
-											include($path);
-										}
-
-										global $states;
-										
-										$states = !empty($states[$selected_country]) ? $states[$selected_country] : [];
-
+										$allowed_html = array(
+											'option' => array(
+												'value' => array(),
+												'selected' => array(),  // Allow the selected attribute
+											),
+										);
+										$SelectedCounCode = get_user_meta($userID, 'idonate_donor_country', true);
+										echo wp_kses(Countries::IDONATE_COUNTRIES_options($SelectedCounCode), $allowed_html);
 										?>
-										<select class="form-control state" name="state">
-											<?php
-											$selected_state = get_user_meta($userID, 'idonate_donor_state', true);
-											foreach ($states as $key => $option) {
-												if ($selected_state == $key) {
-													$selected = 'selected';
-												} else {
-													$selected = '';
-												}
-												echo '<option value="' . esc_attr($key) . '"' . esc_attr($selected) . '>' . esc_attr($option) . '</option>';
-											}
-											
-											?>
-
-										</select>
-									</div>
+									</select>
 								</div>
-							<?php endif; ?>
+								<div class="idonate_col_item">
+									<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
+									<?php $stateCode = get_user_meta($userID, 'idonate_donor_state', true); ?>
+									<?php
+									$selected_country = get_user_meta($userID, 'idonate_donor_country',  true);
+									$path = IDONATE_COUNTRIES . 'states/' . $selected_country . '.php';
+									if (file_exists($path)) {
+										include($path);
+									}
+
+									global $states;
+									$states = !empty($states[$selected_country]) ? $states[$selected_country] : [];
+									?>
+									<select class="form-control state" name="state">
+										<?php
+										$selected_state = get_user_meta($userID, 'idonate_donor_state', true);
+										foreach ($states as $key => $option) {
+											if ($selected_state == $key) {
+												$selected = 'selected';
+											} else {
+												$selected = '';
+											}
+											echo '<option value="' . esc_attr($key) . '"' . esc_attr($selected) . '>' . esc_attr($option) . '</option>';
+										}
+										?>
+									</select>
+								</div>
+							</div>
 							<div class="idonate_row idonate_col">
 								<div class="idonate_col_item">
 									<label><?php esc_html_e('City', 'idonate'); ?></label>

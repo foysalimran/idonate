@@ -137,7 +137,7 @@
       });
     });
   };
-  
+
   /******************** 04. COUNTRY SELECT BOX ********************/
   PATH.AdminCountrySelectBox = function () {
     $("body").on("change", ".br_country_meta  select", function () {
@@ -498,22 +498,35 @@
   });
 })(jQuery);
 
-  /******************** 06. FUNCTION TO DISPLAY POPUP ********************/
-  function div_show() {
-    document.getElementById("donor_form_popup").style.display = "block";
-  }
+/******************** 06. FUNCTION TO DISPLAY POPUP ********************/
+function div_show() {
+  document.getElementById("donor_form_popup").style.display = "block";
+}
 
-  /******************** 07. FUNCTION TO HIDE POPUP ********************/
-  function div_hide() {
-    document.getElementById("donor_form_popup").style.display = "none";
-  }
+/******************** 07. FUNCTION TO HIDE POPUP ********************/
+function div_hide() {
+  document.getElementById("donor_form_popup").style.display = "none";
+}
 
-  /******************** 08. VIEW DONOR DISPLAY POPUP ********************/
-  function div_donor_show() {
-    document.getElementById("donorProfile").style.display = "block";
-  }
+/******************** 08. VIEW DONOR DISPLAY POPUP ********************/
+function div_donor_show() {
+  document.getElementById("donorProfile").style.display = "block";
+}
 
-  /******************** 09. VIEW DONOR HIDE POPUP ********************/
-  function div_donor_hide() {
-    document.getElementById("donorProfile").style.display = "none";
-  }
+/******************** 09. VIEW DONOR HIDE POPUP ********************/
+function div_donor_hide() {
+  document.getElementById("donorProfile").style.display = "none";
+}
+
+/**
+ * Set get pro link
+ * @since 2.2.5
+ */
+const getProMenu = document.querySelector("span.idonate-get-pro-text");
+if (getProMenu) {
+  const el = getProMenu.parentElement;
+  const link = "https://1.envato.market/idonate";
+
+  el.setAttribute("href", link);
+  el.setAttribute("target", "_blank");
+}

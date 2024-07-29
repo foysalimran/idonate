@@ -704,3 +704,9 @@ span.show-shortcode {
     grid-template-columns: inherit;
   }
 }
+
+.idonate-get-pro-text {
+  background-color: #ff0000;
+  padding: 5px;
+  color: #fff;
+}

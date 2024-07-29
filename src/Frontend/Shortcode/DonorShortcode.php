@@ -24,11 +24,6 @@ class DonorShortcode
 	public function idonate_donor_table($atts)
 	{
 
-		if (!idonate_user_logged_in_donor_show()) {
-			echo '<span class="text-center idonate-alert idonate-alert-danger">' . esc_html__('You have to logged in to see donors', 'idonate') . '</span>';
-			return;
-		}
-
 		$attr = shortcode_atts(array(
 			'container' => false,
 		), $atts);

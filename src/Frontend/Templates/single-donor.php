@@ -91,12 +91,10 @@ get_header();
 					echo '<p><b>' . esc_html('Blood Group:', 'idonate') . ' </b>' . esc_html(get_user_meta($user_id, 'idonate_donor_bloodgroup', true)) . '</p>';
 					echo '<p class="blood-group"><i class="icofont-unity-hand"></i><span class="' . esc_attr($abclass) . '"><b>' . esc_html('Availablity: ', 'idonate') . '</b>' . esc_html(ucfirst($av)) . wp_kses_post($signal) . '</span></p>';
 
-					$hide_email = isset($option['hide_email']) ? $option['hide_email'] : '';
-					$hide_mobile_number = isset($option['hide_mobile_number']) ? $option['hide_mobile_number'] : '';
-					if ($hide_email && !empty($user->user_email)) {
+					if (!empty($user->user_email)) {
 						echo '<p><b>' . esc_html('Email:', 'idonate') . ' </b>' . esc_html($user->user_email) . '</p>';
 					}
-					if ($hide_mobile_number && $user_id) {
+					if ($user_id) {
 						echo '<p><b>' . esc_html('Mobile:', 'idonate') . ' </b>' . esc_html(get_user_meta($user_id, 'idonate_donor_mobile', true)) . '</p>';
 					}
 

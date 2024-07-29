@@ -28,11 +28,6 @@ class IdonateLoopHtml
     {
         $pagenum_link = user_trailingslashit(trailingslashit(get_pagenum_link(1)) . 'page/%#%/', 'paged');
 
-        if (!idonate_user_logged_in_donor_show()) {
-            echo '<span class="text-center idonate-alert idonate-alert-danger">' . esc_html__('You have to logged in to see donors', 'idonate') . '</span>';
-            return;
-        }
-
         $number = isset($options['donor_per_page']) ? $options['donor_per_page'] : 10;
 
 

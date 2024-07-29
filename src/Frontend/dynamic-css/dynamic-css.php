@@ -13,12 +13,6 @@ if (!defined('ABSPATH')) {
 
 $options = get_option('idonate_settings');
 
-$donor_maincolor = isset($options['idonate_color_settings']['donor_maincolor']) ? $options['idonate_color_settings']['donor_maincolor'] : '';
-$donor_bordercolor = isset($options['idonate_color_settings']['donor_bordercolor']) ? $options['idonate_color_settings']['donor_bordercolor'] : '';
-$donor_form_color_bg = isset($options['donor_form_color']['background']) ? $options['donor_form_color']['background'] : '';
-$donor_form_color_color = isset($options['donor_form_color']['color']) ? $options['donor_form_color']['color'] : '';
-$request_form_color_color = isset($options['request_form_color']['color']) ? $options['request_form_color']['color'] : '';
-$request_form_color_bg = isset($options['request_form_color']['background']) ? $options['request_form_color']['background'] : '';
 $donor_social_share = isset($options['donor_social_share']) ? $options['donor_social_share'] : '';
 $social_icon_custom_color = isset($donor_social_share['social_icon_custom_color']) ? $donor_social_share['social_icon_custom_color'] : '';
 $idonate_container = isset($options['idonate_container']) ? $options['idonate_container'] : [];
@@ -27,40 +21,6 @@ $idonate_container_tablet = isset($options['idonate_container']['tablet']) ? $op
 $idonate_container_laptop = isset($options['idonate_container']['laptop']) ? $options['idonate_container']['laptop'] : '952';
 $idonate_container_desktop = isset($options['idonate_container']['desktop']) ? $options['idonate_container']['desktop'] : '1200';
 $idonate_container_large_desktop = isset($options['idonate_container']['large_desktop']) ? $options['idonate_container']['large_desktop'] : '1400';
-$section_padding_mobile = isset($options['idonate_section_padding']['mobile']) ? $options['idonate_section_padding']['mobile'] : '40';
-$section_padding_tablet = isset($options['idonate_section_padding']['tablet']) ? $options['idonate_section_padding']['tablet'] : '50';
-$section_padding_laptop = isset($options['idonate_section_padding']['laptop']) ? $options['idonate_section_padding']['laptop'] : '60';
-$section_padding_desktop = isset($options['idonate_section_padding']['desktop']) ? $options['idonate_section_padding']['desktop'] : '80';
-$section_padding_large_desktop = isset($options['idonate_section_padding']['large_desktop']) ? $options['idonate_section_padding']['large_desktop'] : '80';
-
-
-if ($donor_maincolor) {
-	$custom_css .= ":root {--idonate-primary: $donor_maincolor;}";
-}
-
-// Border
-if ($donor_bordercolor) {
-	$custom_css .= ":root {--idonate-border: $donor_bordercolor;}";
-}
-
-// Form Color
-if ($donor_form_color_color) {
-	$custom_css .= ".donor_register .request-form #donorPanelForm label, .idonate-login label, .donor_register .submit-info h2, .submit-info p {color: $donor_form_color_color}";
-}
-
-// Form Background
-if ($donor_form_color_bg) {
-	$custom_css .= ".donor_register .request-form {background-color: $donor_form_color_bg}";
-}
-// request Form Color
-if ($request_form_color_color) {
-	$custom_css .= ".request-form-page .request-form form label, .request-form-page .submit-info h2, .request-form-page .submit-info p {color: $request_form_color_color}";
-}
-
-// Form Background
-if ($request_form_color_bg) {
-	$custom_css .= ".request-form-page .request-form {background-color: $request_form_color_bg}";
-}
 
 // Social Share.
 $social_margin        = isset($donor_social_share['social_margin']) ? $donor_social_share['social_margin'] : array(
@@ -87,4 +47,3 @@ $custom_css .= ".request_info_wrapper .donor_social_share{margin: {$social_margi
 
 // Media Queries
 $custom_css .= "@media (min-width: 576px) {.ta-container-sm, .ta-container {max-width: {$idonate_container_mobile}px;}}@media (min-width: 768px) {.ta-container-md, .ta-container-sm, .ta-container {max-width: {$idonate_container_tablet}px;}}@media (min-width: 992px) {.ta-container-lg, .ta-container-md, .ta-container-sm, .ta-container {max-width: {$idonate_container_laptop}px;}}@media (min-width: 1200px) {.ta-container-xl, .ta-container-lg, .ta-container-md, .ta-container-sm, .ta-container {max-width: {$idonate_container_desktop}px;}}@media (min-width: 1400px) {.ta-container-xxl, .ta-container-xl, .ta-container-lg, .ta-container-md, .ta-container-sm, .ta-container {max-width: {$idonate_container_large_desktop}px;}}";
-$custom_css .= "@media (min-width: 576px) {.section-padding {padding-top: {$section_padding_mobile}px;padding-bottom: {$section_padding_mobile}px;}}@media (min-width: 768px) {.section-padding {padding-top: {$section_padding_tablet}px;padding-bottom: {$section_padding_tablet}px;}}@media (min-width: 992px) {.section-padding {padding-top: {$section_padding_laptop}px;padding-bottom: {$section_padding_laptop}px;}}@media (min-width: 1200px) {.section-padding {padding-top: {$section_padding_desktop}px;padding-bottom: {$section_padding_desktop}px;}}@media (min-width: 1400px) {.ta-container-xxl, .section-padding {padding-top: {$section_padding_large_desktop}px;padding-bottom: {$section_padding_large_desktop}px;}}";

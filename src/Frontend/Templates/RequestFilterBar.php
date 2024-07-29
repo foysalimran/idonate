@@ -19,7 +19,6 @@ class RequestFilterBar
     public static function request_filter($loop)
     {
         $option = get_option('idonate_settings');
-        $idonate_bloodrequestcountryhide = isset($option['idonate_bloodrequestcountryhide']) ? $option['idonate_bloodrequestcountryhide'] : '';
 
         $bgroups = array();
         $countries = array();
@@ -87,21 +86,20 @@ class RequestFilterBar
             </div>
             <div class="search_area">
                 <?php
-                if ($idonate_bloodrequestcountryhide) :
-                    if (!empty($country)) : ?>
-                        <select name="country" id="country" class="country">
-                            <option value=""><?php esc_html_e('Select Country', 'idonate'); ?></option>
-                            <?php foreach ($countries as $key => $country) : ?>
-                                <option value="<?php echo esc_attr($key); ?>"><?php echo esc_html($country); ?></option>
-                            <?php endforeach; ?>
-                        </select>
-                    <?php endif;
-                    if (!empty($state)) :
-                    ?>
-                        <select name="state" id="state" class="state" data-state="<?php echo esc_attr($states); ?>">
-                            <option value=""><?php esc_html_e('Select State', 'idonate'); ?></option>
-                        </select>
+                if (!empty($country)) : ?>
+                    <select name="country" id="country" class="country">
+                        <option value=""><?php esc_html_e('Select Country', 'idonate'); ?></option>
+                        <?php foreach ($countries as $key => $country) : ?>
+                            <option value="<?php echo esc_attr($key); ?>"><?php echo esc_html($country); ?></option>
+                        <?php endforeach; ?>
+                    </select>
                 <?php endif;
+                if (!empty($state)) :
+                ?>
+                    <select name="state" id="state" class="state" data-state="<?php echo esc_attr($states); ?>">
+                        <option value=""><?php esc_html_e('Select State', 'idonate'); ?></option>
+                    </select>
+                <?php
                 endif; ?>
 
                 <input type="text" name="city" id="city" placeholder="<?php esc_html_e('Enter City', 'idonate'); ?>" />

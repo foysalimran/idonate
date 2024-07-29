@@ -59,19 +59,6 @@ class DonorFunctions
 				$donarData['landline'] = '';
 			}
 
-			// Check is allow country and state
-
-			if (!empty($options['idonate_countryhide'])) {
-				// Check Country
-				if (!empty($_POST['country'])) {
-					$donarData['country'] = $_POST['country'];
-				}
-				// Check State
-				if (!empty($_POST['state'])) {
-					$donarData['state'] = $_POST['state'];
-				}
-			}
-
 			// Check City
 			if (!empty($_POST['city'])) {
 				$donarData['city'] = $_POST['city'];
@@ -217,21 +204,6 @@ class DonorFunctions
 				$donarData['landline'] = $_POST['landline'];
 			} else {
 				$donarData['landline'] = '';
-			}
-			$idonate_countryhide = isset($option['idonate_countryhide']) ? $option['idonate_countryhide'] : '';
-
-			// Hide country and state
-			if ($idonate_countryhide) {
-				// Check Country
-				if (!empty($_POST['country'])) {
-					$donarData['country'] = $_POST['country'];
-				} else {
-					$validation_error->add('field', esc_html__('Please select your country.', 'idonate'));
-				}
-				// Check State
-				if (!empty($_POST['state'])) {
-					$donarData['state'] = $_POST['state'];
-				}
 			}
 
 			// Check City

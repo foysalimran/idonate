@@ -15,10 +15,7 @@ if (!defined('ABSPATH')) {
 }
 
 idonate_is_user_logged_in();
-
 $options = get_option('idonate_settings');
-$donor_lft = isset($options['donor_lft']) ? $options['donor_lft'] : 'Donor Login';
-
 
 get_header();
 
@@ -29,7 +26,7 @@ get_header();
 			<div class="ta-col-xl-3 mx-auto">
 				<div class="request-form">
 					<div id="donorPanelForm" class="idonate-login">
-						<h3><?php echo esc_html($donor_lft); ?></h3>
+						<h3><?php echo esc_html__('Donor Login', 'idonate'); ?></h3>
 						<hr>
 						<?php
 						$args = array(
