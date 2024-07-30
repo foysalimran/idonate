@@ -169,6 +169,7 @@ class ShortcodePostBloodRequest
 
 					?>
 						<div class="idonate_row idonate_col">
+							<div class="idonate_col_item">
 							<?php
 							$recaptchaLabel = $options['idonate_recapthca_label'] ? $options['idonate_recapthca_label'] : '';
 							if ($recaptchaLabel) {
@@ -176,7 +177,7 @@ class ShortcodePostBloodRequest
 								<label for="recaptcha"><?php echo esc_html($recaptchaLabel); ?></label>
 						<?php
 							}
-							echo '<div class="g-recaptcha" data-sitekey="' . esc_attr($sitekey) . '"></div></div>';
+							echo '<div class="g-recaptcha" data-sitekey="' . esc_attr($sitekey) . '"></div></div></div>';
 						}
 						wp_nonce_field('request_nonce_action', 'request_submit_nonce_check');
 						?>

@@ -175,7 +175,7 @@ class ShortcodeRegisterDonor
 						</div>
 						<div class="idonate_row idonate_col">
 
-
+<div class="idonate_col_item">
 							<?php
 							if ($idonate_recaptcha_active) {
 								$recaptchaLabel = $options['idonate_recapthca_label'] ? $options['idonate_recapthca_label'] : '';
@@ -184,7 +184,7 @@ class ShortcodeRegisterDonor
 									<label for="recaptcha"><?php echo esc_html($recaptchaLabel); ?></label>
 							<?php
 								}
-								echo '<div class="g-recaptcha" data-sitekey="' . esc_attr($sitekey) . '"></div>';
+								echo '<div class="g-recaptcha" data-sitekey="' . esc_attr($sitekey) . '"></div></div>';
 							}
 							?>
 						</div>

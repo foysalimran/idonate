@@ -111,9 +111,9 @@ class Admin
         echo '<p>Thank you for using IDonatePro - Blood Donation, Request And Donor Management System.</p>';
         echo ' </div>';
         echo '<div class="idoante-user-heading-bar-right">';
-        echo '<a target="_blank" class="idonate-btn-secondary" href="https://docs.themeatelier.net/docs/idonate/overview/">' . esc_html('Documentation', 'idonat-pro') . '</a>';
         echo '<a target="_blank" class="idonate-btn-primary" href="https://themeatelier.net/contact">' . esc_html('Support', 'idonat-pro') . '</a>';
-        echo '<a target="_blank" class="idonate-btn-primary" href="https://1.envato.market/idonate">' . esc_html('Get Pro', 'idonat-pro') . '</a>';
+        echo '<a target="_blank" class="idonate-btn-secondary" href="https://docs.themeatelier.net/docs/idonate/overview/">' . esc_html('Docs', 'idonat-pro') . '</a>';
+        echo '<a target="_blank" class="idonate-btn-primary idonate-btn-pro" href="https://1.envato.market/idonate">' . esc_html('Get Pro', 'idonat-pro') . '</a>';
         echo ' </div>';
         echo '</div>';
         IdonateDashboardwidgets::dashboard_widget_function();
@@ -402,6 +402,6 @@ class Admin
             'idonate-settings',
             array($this, 'idonate_settings')
         );
-        add_submenu_page('dashboard', __('Upgrade to Pro', 'idonate'), sprintf('<span class="idonate-get-pro-text">%s</span>', __('Upgrade to Pro', 'idonate')), 'manage_options', 'https://1.envato.market/idonate');
+        add_submenu_page('dashboard', __('👑 Upgrade to Pro!', 'idonate'), sprintf('<span class="idonate-get-pro-text">%s</span>', __('👑 Upgrade to Pro!', 'idonate')), 'manage_options', 'https://1.envato.market/idonate');
     }
 }

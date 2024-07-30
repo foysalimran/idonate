@@ -1,0 +1,38 @@
+<?php
+
+global $states;
+
+$states['DO'] = [
+    'AZUA'                 => __( 'Azua', 'idonate' ),
+    'BAORUCO'              => __( 'Baoruco', 'idonate' ),
+    'BARAHONA'             => __( 'Barahona', 'idonate' ),
+    'DAJABON'              => __( 'Dajabon', 'idonate' ),
+    'DISTRITONACIONAL'     => __( 'Distrito Nacional', 'idonate' ),
+    'DUARTE'               => __( 'Duarte', 'idonate' ),
+    'ELIASPINA'            => __( 'Elias Pina', 'idonate' ),
+    'ELSEIBO'              => __( 'El Seibo', 'idonate' ),
+    'ESPAILLAT'            => __( 'Espaillat', 'idonate' ),
+    'HATOMAYOR'            => __( 'Hato Mayor', 'idonate' ),
+    'INDEPENDENCIA'        => __( 'Independencia', 'idonate' ),
+    'LAALTAGRACIA'         => __( 'La Altagracia', 'idonate' ),
+    'LAROMANA'             => __( 'La Romana', 'idonate' ),
+    'LAVEGA'               => __( 'La Vega', 'idonate' ),
+    'MARIATRINIDADSANCHEZ' => __( 'Maria Trinidad Sanchez', 'idonate' ),
+    'MONSENORNOUEL'        => __( 'Monsenor Nouel', 'idonate' ),
+    'MONTECRISTI'          => __( 'Monte Cristi', 'idonate' ),
+    'MONTEPLATA'           => __( 'Monte Plata', 'idonate' ),
+    'PEDERNALES'           => __( 'Pedernales', 'idonate' ),
+    'PERAVIA'              => __( 'Peravia', 'idonate' ),
+    'PUERTOPLATA'          => __( 'Puerto Plata', 'idonate' ),
+    'SALCEDO'              => __( 'Salcedo', 'idonate' ),
+    'SAMANA'               => __( 'Samana', 'idonate' ),
+    'SANCHEZRAMIREZ'       => __( 'Sanchez Ramirez', 'idonate' ),
+    'SANCRISTOBAL'         => __( 'San Cristobal', 'idonate' ),
+    'SANJOSEDEOCOA'        => __( 'San Jose de Ocoa', 'idonate' ),
+    'SANJUAN'              => __( 'San Juan', 'idonate' ),
+    'SANPEDRODEMACORIS'    => __( 'San Pedro de Macoris', 'idonate' ),
+    'SANTIAGO'             => __( 'Santiago', 'idonate' ),
+    'SANTIAGORODRIGUEZ'    => __( 'Santiago Rodriguez', 'idonate' ),
+    'SANTODOMINGO'         => __( 'Santo Domingo', 'idonate' ),
+    'VALVERDE'             => __( 'Valverde', 'idonate' ),
+];

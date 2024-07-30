@@ -75,6 +75,7 @@ class IDonateSettings
 						'id'        => 'idonate_color_settings',
 						'type'      => 'color_group',
 						'title'     => esc_html__('Color Settings', 'idonat-pro'),
+						'class'		=> 'pro_only_field',
 						'desc'		=> esc_html__('Basic color palette for elements', 'idoante-pro'),
 						'options'   => array(
 							'donor_maincolor' => esc_html__('Main Color', 'idonate'),

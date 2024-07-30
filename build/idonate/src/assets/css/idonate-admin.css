@@ -445,10 +445,16 @@ span.show-shortcode {
   color: #fff;
 }
 .idonate-btn-primary:hover,
-.idonate-btn-secondary {
+.idonate-btn-secondary, .idonate-btn-pro:hover {
   background: #111;
   color: #fff;
 }
+
+.idonate-btn-pro {
+  background: #35b747;
+  color: #fff;
+}
+
 
 .idonate_page_content {
   box-sizing: border-box;
@@ -706,7 +712,6 @@ span.show-shortcode {
 }
 
 .idonate-get-pro-text {
-  background-color: #ff0000;
-  padding: 5px;
-  color: #fff;
+  color: #35b747;
+  font-weight: bold;
 }

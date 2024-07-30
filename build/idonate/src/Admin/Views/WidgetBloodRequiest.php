@@ -152,4 +152,3 @@ function idonate_blood_requestload_widget()
 	register_widget('idonate_blood_request_widget');
 }
 add_action('widgets_init', 'idonate_blood_requestload_widget');
-

@@ -13,17 +13,14 @@
 if (!defined('ABSPATH')) {
 	die(esc_html(IDONATE_ALERT_MSG));
 }
-
 idonate_is_user_logged_in();
 $options = get_option('idonate_settings');
-
 get_header();
-
 ?>
 <div class="idonate login section-padding">
 	<div class="ta-container">
 		<div class="ta-row">
-			<div class="ta-col-xl-3 mx-auto">
+			<div class="ta-col-xl-2 mx-auto">
 				<div class="request-form">
 					<div id="donorPanelForm" class="idonate-login">
 						<h3><?php echo esc_html__('Donor Login', 'idonate'); ?></h3>
