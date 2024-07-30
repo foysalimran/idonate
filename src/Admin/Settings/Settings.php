@@ -27,7 +27,7 @@ class Settings
 				'menu_type'               => 'submenu',
 				'show_bar_menu'           => false,
 				'show_sub_menu'           => false,
-				'framework_title'         => esc_html__('Idonate Settings', 'idonate'),
+				'framework_title'         => esc_html__('IDonate Settings', 'idonate'),
 				'admin_bar_menu_priority' => 5,
 				'show_search'             => false,
 				'show_all_options'        => false,
