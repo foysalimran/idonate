@@ -13,12 +13,9 @@
 if (!defined('ABSPATH')) {
 	die(esc_html(IDONATE_ALERT_MSG));
 }
-
 idonate_is_user_logged_in();
 $options = get_option('idonate_settings');
-
 get_header();
-
 ?>
 <div class="idonate login section-padding">
 	<div class="ta-container">

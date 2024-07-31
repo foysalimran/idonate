@@ -130,12 +130,13 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 6. Frontend Donor Login
 7. Dashboard Welcome Page
 8. Dashboard Blood Requests List
-9. Dashboard Donors List
-10. Dashboard Settings General
-11. Dashboard Settings Donors Settings
-12. Dashboard Settings Request Settings
-13. Dashboard Settings Page Settings
-14. Dashboard Settings Advance Settings
+9. Dashboard Add Blood Requests
+10. Dashboard Donors List
+11. Dashboard Settings General
+12. Dashboard Settings Donors Settings
+13. Dashboard Settings Request Settings
+14. Dashboard Settings Page Settings
+15. Dashboard Settings Advance Settings
 
 == Changelog ==
 

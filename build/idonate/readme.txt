@@ -1,4 +1,4 @@
-=== IDonate - Blood Donation, Request And Donor Management Solution ===
+=== IDonate - Blood Donation, Request And Donor Management System ===
 Contributors: ThemeAtelier, faysal61
 Donate link: https://bloodwp.com
 Tags: blood donation, blood request, donate blood, online blood donation, Blood management system
@@ -122,23 +122,37 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 3. Access IDonate menu in left panel of dashboard.
 
 == Screenshots ==
-1. General settings
-2. Blood request form settings
-3. Bood request approval popup
-4. All blood requests on admin
-5. Blood requests listing
-6. Blood request submit form
-7. Blood requests sidebar
-8. Blood requests detail page
+1. Fronend Requests Listing
+2. Frontend Submit Blood Request
+3. Frontend Donors Listing
+4. Frontend Donors Listing Table
+5. Frontend Donor Registration
+6. Frontend Donor Login
+7. Dashboard Welcome Page
+8. Dashboard Blood Requests List
+9. Dashboard Donors List
+10. Dashboard Settings General
+11. Dashboard Settings Donors Settings
+12. Dashboard Settings Request Settings
+13. Dashboard Settings Page Settings
+14. Dashboard Settings Advance Settings
 
 == Changelog ==
 
 = 2.0.0 - July 30, 2024
 
-New: 
-Update: 
-Update: 
-Fix: 
+- New: Frontend form for donor registration
+- New: Backend form for adding donors by site admin
+- New: Advanced backend form for adding donors by site admin.  
+- New: Donors View, Edit, Delete options from backend by site admin.
+- New: Donors review and approval option by site admin.  
+- New: Donors listing with advanced search feature.  
+- New: Donors single page. 
+- Update: Frontend blood request submission form.
+- New: Request listing with advanced search feature.
+- Update: Auto-Delete Expired Blood Requests - Never delete, delete on the date when blood is needed, and delete 1 week after the blood is needed.  
+- New:  Options to add your own container width for pages for different devices
+- Update: Advanced social sharing option for blood requests and donors.
 
 1.9.1
 - Compitibility with WordPress 6.5.5

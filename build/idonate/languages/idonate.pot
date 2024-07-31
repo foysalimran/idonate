@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-30 07:48+0000\n"
+"POT-Creation-Date: 2024-07-30 11:55+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -1246,12 +1246,8 @@ msgstr ""
 msgid "CUSTOM JS"
 msgstr ""
 
-#: src/Admin/Settings/Settings.php:25
+#: src/Admin/Settings/Settings.php:25, src/Admin/Settings/Settings.php:30
 msgid "IDonate Settings"
-msgstr ""
-
-#: src/Admin/Settings/Settings.php:30
-msgid "Idonate Settings"
 msgstr ""
 
 #: src/Admin/Views/General.php:45
@@ -1430,11 +1426,11 @@ msgstr ""
 msgid "Blood Request Page"
 msgstr ""
 
-#: src/Frontend/Templates/donor-login.php:29
+#: src/Frontend/Templates/donor-login.php:26
 msgid "Donor Login"
 msgstr ""
 
-#: src/Frontend/Templates/donor-login.php:39
+#: src/Frontend/Templates/donor-login.php:36
 msgid "Don't have an account?"
 msgstr ""
 
