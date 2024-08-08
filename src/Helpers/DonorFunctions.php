@@ -118,8 +118,9 @@ class DonorFunctions
 								update_user_meta($user_id, 'idonate_donor_profilepic', $attachment_id);
 								// Donor approval check
 								$option = get_option('idonate_settings');
+								$donor_register_status = isset($option['donor_register_status']) ? $option['donor_register_status'] : '';
 								$status = '1';
-								if ($option['donor_register_status']) {
+								if ($donor_register_status) {
 									$status = '0';
 								}
 								update_user_meta($user_id, 'idonate_donor_status', esc_html($status));

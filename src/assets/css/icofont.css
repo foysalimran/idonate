@@ -783,12 +783,12 @@ url("./fonts/icofont.woff") format("woff");
   content: "\f012";
 }
 
-.icofont-duotone.icofont-drag:before
+.icofont-duotone.icofont-contract-alt:before
 {
   content: "\13af9";
 }
 
-.icofont-duotone.icofont-drag:after
+.icofont-duotone.icofont-contract-alt:after
 {
   content: "\13af8";
 }
@@ -918,12 +918,12 @@ url("./fonts/icofont.woff") format("woff");
   content: "\efc2";
 }
 
-.icofont-duotone.icofont-copy-invert:before
+.icofont-duotone.icofont-duplicate-alt:before
 {
   content: "\13d0e";
 }
 
-.icofont-duotone.icofont-copy-invert:after
+.icofont-duotone.icofont-duplicate-alt:after
 {
   content: "\13d0d";
 }
@@ -991,6 +991,26 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-hand-drag:before
 {
   content: "\ea7f";
+}
+
+.icofont-computer:before
+{
+  content: "\eeee";
+}
+
+.icofont-stock-mobile:before
+{
+  content: "\e977";
+}
+
+.icofont-gears:before
+{
+  content: "\ef3b";
+}
+
+.icofont-gear:before
+{
+  content: "\ef3a";
 }
 
 [class^="icofont-"].icofont-duotone,

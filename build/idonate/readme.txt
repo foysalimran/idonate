@@ -5,7 +5,7 @@ Tags: blood donation, blood request, donate blood, online blood donation, Blood 
 Requires at least: 5.3
 Tested up to: 6.6.1
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -130,15 +130,18 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 6. Frontend Donor Login
 7. Dashboard Welcome Page
 8. Dashboard Blood Requests List
-9. Dashboard Donors List
-10. Dashboard Settings General
-11. Dashboard Settings Donors Settings
-12. Dashboard Settings Request Settings
-13. Dashboard Settings Page Settings
-14. Dashboard Settings Advance Settings
+9. Dashboard Add Blood Requests
+10. Dashboard Donors List
+11. Dashboard Settings General
+12. Dashboard Settings Donors Settings
+13. Dashboard Settings Request Settings
+14. Dashboard Settings Page Settings
+15. Dashboard Settings Advance Settings
 
 == Changelog ==
-
+= 2.0.1 - August 08, 2024
+- Fixed: Warnings after the first installation of plugin.
+- Fixed: Other css issue.
 = 2.0.0 - July 30, 2024
 
 - New: Frontend form for donor registration

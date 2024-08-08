@@ -1,3 +1,6 @@
+[class*=" icofont-"], [class^=icofont-] {
+  font-weight: 700;
+}
 .mb-20 {
   margin-bottom: 20px;
 }

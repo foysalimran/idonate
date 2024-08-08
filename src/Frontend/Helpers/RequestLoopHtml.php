@@ -28,10 +28,11 @@ class RequestLoopHtml
     {
         $big = 999999999;
         $pagenum_link = str_replace($big, '%#%', esc_url(get_pagenum_link($big)));
-
+        $rp_request_per_page = isset($options['rp_request_per_page']) ? $options['rp_request_per_page'] : '';
+        
         // request per page
-        if ($options['rp_request_per_page']) {
-            $rperpage =  $options['rp_request_per_page'];
+        if ($rp_request_per_page) {
+            $rperpage =  $rp_request_per_page;
         } else {
             $rperpage = 10;
         }

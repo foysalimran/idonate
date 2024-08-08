@@ -603,10 +603,11 @@ if (!class_exists('IDonateAjaxHandler')) {
 			}
 			
 			$option = get_option('idonate_settings');
+			$rp_request_per_page = isset($option['rp_request_per_page']) ? $option['rp_request_per_page'] : '';
 
 			// request per page
-			if ($option['rp_request_per_page']) {
-				$rperpage =  $option['rp_request_per_page'];
+			if ($rp_request_per_page) {
+				$rperpage =  $rp_request_per_page;
 			} else {
 				$rperpage = 10;
 			}
