@@ -20,7 +20,6 @@ if (!defined('ABSPATH')) {
 }
 class ShortcodeRegisterDonor
 {
-
 	public function shortcode_register_donor()
 	{
 		$options = get_option('idonate_settings');
