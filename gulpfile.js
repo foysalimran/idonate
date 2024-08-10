@@ -121,6 +121,9 @@ gulp.task("copy", function () {
       "!phpunit.xml",
       "!phpcs.xml",
       "!phpcs.xml.dist",
+      "!src/assets/css/fonts/icofont.eot",
+      "!src/assets/css/fonts/icofont.svg",
+      "!src/assets/css/fonts/icofont.ttf",
     ])
     .pipe(gulp.dest("build/idonate/"));
 });
