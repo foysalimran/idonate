@@ -2906,7 +2906,7 @@
                                 '<div class="idonate--transparent-slider"></div>' +
                                 '<div class="idonate--transparent-offset"></div>' +
                                 '<div class="idonate--transparent-text"></div>' +
-                                '<div class="idonate--transparent-button">transparent <i class="icofont-duotone icofont-toggle-off"></i></div>' +
+                                '<div class="idonate--transparent-button">transparent <i class="icofont-toggle-off"></i></div>' +
                                 '</div>').appendTo( $container.find('.wp-picker-holder') ),
               $transparent_slider = $transparent_wrap.find('.idonate--transparent-slider'),
               $transparent_text   = $transparent_wrap.find('.idonate--transparent-text'),

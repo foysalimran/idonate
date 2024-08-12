@@ -18,7 +18,6 @@ $option = get_option('idonate_settings');
 $donor_social_share = isset($option['donor_social_share']) ? $option['donor_social_share'] : '';
 $social_sharing_media = isset($donor_social_share['social_sharing_media']) ? $donor_social_share['social_sharing_media'] : '';
 
-
 // Blocking direct access
 if (!defined('ABSPATH')) {
 	die(esc_html(IDONATE_ALERT_MSG));

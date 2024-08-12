@@ -331,7 +331,7 @@ if ( ! class_exists( 'IDONATE_Field_typography' ) ) {
 
 			if ( ! empty( $args['preview'] ) ) {
 				echo '<div class="idonate--block idonate--block-preview' . esc_attr( $always_preview ) . '">';
-				echo '<div class="idonate--toggle icofont-duotone icofont-toggle-off"></div>';
+				echo '<div class="idonate--toggle icofont-toggle-off"></div>';
 				echo '<div class="idonate--preview">' . esc_attr( $args['preview_text'] ) . '</div>';
 				echo '</div>';
 			}

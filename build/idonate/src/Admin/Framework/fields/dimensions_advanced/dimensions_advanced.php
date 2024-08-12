@@ -47,7 +47,7 @@ if ( ! class_exists( 'IDONATE_Field_dimensions_advanced' ) ) {
 					'right_icon'         => '<i class="icofont-long-arrow-right"></i>',
 					'left_icon'          => '<i class="icofont-long-arrow-left"></i>',
 					'bottom_icon'        => '<i class="icofont-long-arrow-down"></i>',
-					'all_icon'           => '<i class="icofont-duotone icofont-drag-h"></i>',
+					'all_icon'           => '<i class="icofont-drag-h"></i>',
 					'top_placeholder'    => esc_html__( 'top', 'idonate' ),
 					'right_placeholder'  => esc_html__( 'right', 'idonate' ),
 					'bottom_placeholder' => esc_html__( 'bottom', 'idonate' ),

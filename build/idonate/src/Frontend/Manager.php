@@ -24,19 +24,6 @@ use ThemeAtelier\Idonate\Frontend\Helpers\SocialShare;
  */
 class Manager
 {
-    /**
-     * Post responsive columns class.
-     *
-     * @param string $layout Layout preset.
-     * @param string $columns Columns number.
-     * @return string
-     */
-    public static function idonate_post_responsive_columns($columns)
-    {
-        $idonate_post_columns = '';
-        $idonate_post_columns .= " ta-col-sm-$columns[mobile] ta-col-md-$columns[tablet] ta-col-lg-$columns[desktop] ta-col-xl-$columns[large_desktop]";
-        return $idonate_post_columns;
-    }
 
     /**
      * The function to process views HTML.
@@ -120,7 +107,7 @@ class Manager
                 $image = get_the_post_thumbnail(get_the_ID());
             ?>
 
-                <div class="<?php echo esc_attr(self::idonate_post_responsive_columns($post_request_number_of_columns)); ?>">
+                <div class="ta-col-xs-1 ta-col-sm-1 ta-col-md-1 ta-col-lg-3 ta-col-xl-3">
                     <div class="single-request" data-id="<?php echo esc_attr(get_the_ID()) ?>">
                         <div class="profile">
                             <div class="profile-img">
@@ -146,7 +133,7 @@ class Manager
                             }
                             // When Need
                             if ($need) {
-                                echo '<div class="request-info"><i class="icofont-duotone icofont-calendar"></i>' . esc_html($need) . '</div>';
+                                echo '<div class="request-info"><i class="icofont-ui-calendar"></i>' . esc_html($need) . '</div>';
                             }
                             // Mobile Number
                             if ($mobnumber) {

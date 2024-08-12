@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-08-08 04:42+0000\n"
+"POT-Creation-Date: 2024-08-12 10:07+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -90,7 +90,7 @@ msgstr ""
 msgid "No Blood Request Found in Trash"
 msgstr ""
 
-#: src/Admin/Admin.php:218, src/Admin/Helpers/donor-panel.php:60, src/Admin/Helpers/donor-panel.php:183, src/Frontend/Shortcode/DonorShortcode.php:54, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:76, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:69, src/Frontend/Templates/edit-donor.php:77, src/Frontend/Templates/single-blood_request.php:93, src/js-templates/donor-profile-edit.php:29
+#: src/Admin/Admin.php:218, src/Admin/Helpers/donor-panel.php:60, src/Admin/Helpers/donor-panel.php:183, src/Frontend/Shortcode/DonorShortcode.php:54, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:76, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:68, src/Frontend/Templates/edit-donor.php:77, src/Frontend/Templates/single-blood_request.php:93, src/js-templates/donor-profile-edit.php:29
 msgid "Blood Group"
 msgstr ""
 
@@ -658,7 +658,7 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: src/Admin/Framework/fields/select/select.php:56, src/Admin/Helpers/donor-panel.php:135, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:145, src/Frontend/Templates/edit-donor.php:175, src/Frontend/Templates/FilterBar.php:92, src/Frontend/Templates/RequestFilterBar.php:100, src/js-templates/donor-profile-edit.php:106
+#: src/Admin/Framework/fields/select/select.php:56, src/Admin/Helpers/donor-panel.php:135, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:144, src/Frontend/Templates/edit-donor.php:175, src/Frontend/Templates/FilterBar.php:92, src/Frontend/Templates/RequestFilterBar.php:100, src/js-templates/donor-profile-edit.php:106
 msgid "Select State"
 msgstr ""
 
@@ -926,135 +926,135 @@ msgstr ""
 msgid "Blood Donors Register "
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:46, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:55, src/Frontend/Templates/edit-donor.php:63, src/js-templates/donor-profile-edit.php:14
+#: src/Admin/Helpers/donor-panel.php:46, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:54, src/Frontend/Templates/edit-donor.php:63, src/js-templates/donor-profile-edit.php:14
 msgid "Full Name"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:47, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:56, src/Helpers/DonorFunctions.php:176
+#: src/Admin/Helpers/donor-panel.php:47, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:55, src/Helpers/DonorFunctions.php:176
 msgid "Full Name field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:47, src/Admin/Helpers/donor-panel.php:182, src/Frontend/Shortcode/DonorShortcode.php:53, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:56, src/js-templates/donor-profile-edit.php:15
+#: src/Admin/Helpers/donor-panel.php:47, src/Admin/Helpers/donor-panel.php:182, src/Frontend/Shortcode/DonorShortcode.php:53, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:55, src/js-templates/donor-profile-edit.php:15
 msgid "Name"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:50, src/Admin/Helpers/donor-panel.php:51, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:59, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:60, src/Frontend/Templates/edit-donor.php:67, src/js-templates/donor-profile-edit.php:18, src/js-templates/donor-profile-edit.php:19
+#: src/Admin/Helpers/donor-panel.php:50, src/Admin/Helpers/donor-panel.php:51, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:58, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:59, src/Frontend/Templates/edit-donor.php:67, src/js-templates/donor-profile-edit.php:18, src/js-templates/donor-profile-edit.php:19
 msgid "User Name"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:51, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:60
+#: src/Admin/Helpers/donor-panel.php:51, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:59
 msgid "User Name field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:56, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:65, src/Frontend/Templates/edit-donor.php:73, src/js-templates/donor-profile-edit.php:25
+#: src/Admin/Helpers/donor-panel.php:56, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:64, src/Frontend/Templates/edit-donor.php:73, src/js-templates/donor-profile-edit.php:25
 msgid "E-Mail ID"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:57, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:66
+#: src/Admin/Helpers/donor-panel.php:57, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:65
 msgid "Enter a valid email address."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:57, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:66, src/js-templates/donor-profile-edit.php:26
+#: src/Admin/Helpers/donor-panel.php:57, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:65, src/js-templates/donor-profile-edit.php:26
 msgid "E-Mail"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:62, src/Admin/Helpers/donor-panel.php:84, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:78, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:71, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:93, src/Frontend/Templates/edit-donor.php:79, src/Frontend/Templates/edit-donor.php:114, src/js-templates/donor-profile-edit.php:31, src/js-templates/donor-profile-edit.php:54
+#: src/Admin/Helpers/donor-panel.php:62, src/Admin/Helpers/donor-panel.php:84, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:78, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:70, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:92, src/Frontend/Templates/edit-donor.php:79, src/Frontend/Templates/edit-donor.php:114, src/js-templates/donor-profile-edit.php:31, src/js-templates/donor-profile-edit.php:54
 msgid "-----Select-----"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:82, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:91, src/Frontend/Templates/edit-donor.php:105, src/js-templates/donor-profile-edit.php:52
+#: src/Admin/Helpers/donor-panel.php:82, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:90, src/Frontend/Templates/edit-donor.php:105, src/js-templates/donor-profile-edit.php:52
 msgid "Availability to donate blood"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:85, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:94, src/Frontend/Templates/edit-donor.php:108, src/js-templates/donor-profile-edit.php:55
+#: src/Admin/Helpers/donor-panel.php:85, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:93, src/Frontend/Templates/edit-donor.php:108, src/js-templates/donor-profile-edit.php:55
 msgid "Available"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:86, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:95, src/Frontend/Templates/edit-donor.php:109, src/js-templates/donor-profile-edit.php:56
+#: src/Admin/Helpers/donor-panel.php:86, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:94, src/Frontend/Templates/edit-donor.php:109, src/js-templates/donor-profile-edit.php:56
 msgid "Unavailable"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:90, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:99, src/Frontend/Templates/edit-donor.php:128, src/Frontend/Templates/single-donor.php:140, src/js-templates/donor-profile-edit.php:60
+#: src/Admin/Helpers/donor-panel.php:90, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:98, src/Frontend/Templates/edit-donor.php:128, src/Frontend/Templates/single-donor.php:139, src/js-templates/donor-profile-edit.php:60
 msgid "Gender"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:92, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:101, src/Frontend/Templates/edit-donor.php:131, src/js-templates/donor-profile-edit.php:62
+#: src/Admin/Helpers/donor-panel.php:92, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:100, src/Frontend/Templates/edit-donor.php:131, src/js-templates/donor-profile-edit.php:62
 msgid "Male"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:93, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:102, src/Frontend/Templates/edit-donor.php:132, src/js-templates/donor-profile-edit.php:63
+#: src/Admin/Helpers/donor-panel.php:93, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:101, src/Frontend/Templates/edit-donor.php:132, src/js-templates/donor-profile-edit.php:63
 msgid "Female"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:94, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:103, src/Frontend/Templates/edit-donor.php:133, src/js-templates/donor-profile-edit.php:64
+#: src/Admin/Helpers/donor-panel.php:94, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:102, src/Frontend/Templates/edit-donor.php:133, src/js-templates/donor-profile-edit.php:64
 msgid "Other"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:100, src/Admin/Helpers/donor-panel.php:101, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:109, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:110, src/Frontend/Templates/edit-donor.php:139, src/js-templates/donor-profile-edit.php:70, src/js-templates/donor-profile-edit.php:72
+#: src/Admin/Helpers/donor-panel.php:100, src/Admin/Helpers/donor-panel.php:101, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:108, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:109, src/Frontend/Templates/edit-donor.php:139, src/js-templates/donor-profile-edit.php:70, src/js-templates/donor-profile-edit.php:72
 msgid "Date Of Birth"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:101, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:110, src/Helpers/DonorFunctions.php:188
+#: src/Admin/Helpers/donor-panel.php:101, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:109, src/Helpers/DonorFunctions.php:188
 msgid "Date of birth field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:104, src/Admin/Helpers/donor-panel.php:105, src/Admin/Views/General.php:92, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:119, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:120, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:113, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:114, src/Frontend/Templates/edit-donor.php:143, src/Frontend/Templates/single-blood_request.php:109, src/js-templates/donor-profile-edit.php:75, src/js-templates/donor-profile-edit.php:76
+#: src/Admin/Helpers/donor-panel.php:104, src/Admin/Helpers/donor-panel.php:105, src/Admin/Views/General.php:92, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:119, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:120, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:112, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:113, src/Frontend/Templates/edit-donor.php:143, src/Frontend/Templates/single-blood_request.php:109, src/js-templates/donor-profile-edit.php:75, src/js-templates/donor-profile-edit.php:76
 msgid "Mobile Number"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:105, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:114, src/Helpers/DonorFunctions.php:201
+#: src/Admin/Helpers/donor-panel.php:105, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:113, src/Helpers/DonorFunctions.php:201
 msgid "Mobile Number field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:110, src/Admin/Helpers/donor-panel.php:111, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:119, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:120, src/Frontend/Templates/edit-donor.php:149, src/Frontend/Templates/single-donor.php:150, src/js-templates/donor-profile-edit.php:81, src/js-templates/donor-profile-edit.php:82
+#: src/Admin/Helpers/donor-panel.php:110, src/Admin/Helpers/donor-panel.php:111, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:118, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:119, src/Frontend/Templates/edit-donor.php:149, src/Frontend/Templates/single-donor.php:149, src/js-templates/donor-profile-edit.php:81, src/js-templates/donor-profile-edit.php:82
 msgid "Land Line Number"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:114, src/Admin/Helpers/donor-panel.php:115, src/Admin/Views/General.php:102, src/Frontend/Shortcode/DonorShortcode.php:58, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:129, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:130, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:124, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:125, src/Frontend/Templates/edit-donor.php:204, src/Frontend/Templates/single-blood_request.php:132, src/Frontend/Templates/single-donor.php:163, src/js-templates/donor-profile-edit.php:85, src/js-templates/donor-profile-edit.php:86
+#: src/Admin/Helpers/donor-panel.php:114, src/Admin/Helpers/donor-panel.php:115, src/Admin/Views/General.php:102, src/Frontend/Shortcode/DonorShortcode.php:58, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:129, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:130, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:123, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:124, src/Frontend/Templates/edit-donor.php:204, src/Frontend/Templates/single-blood_request.php:132, src/Frontend/Templates/single-donor.php:162, src/js-templates/donor-profile-edit.php:85, src/js-templates/donor-profile-edit.php:86
 msgid "City"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:115, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:130, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:125, src/Helpers/DonorFunctions.php:214
+#: src/Admin/Helpers/donor-panel.php:115, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:130, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:124, src/Helpers/DonorFunctions.php:214
 msgid "City field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:121, src/Admin/Settings/IDonateSettings.php:135, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:131, src/Frontend/Templates/edit-donor.php:160, src/Frontend/Templates/FilterBar.php:83, src/Frontend/Templates/RequestFilterBar.php:91, src/js-templates/donor-profile-edit.php:92
+#: src/Admin/Helpers/donor-panel.php:121, src/Admin/Settings/IDonateSettings.php:135, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:130, src/Frontend/Templates/edit-donor.php:160, src/Frontend/Templates/FilterBar.php:83, src/Frontend/Templates/RequestFilterBar.php:91, src/js-templates/donor-profile-edit.php:92
 msgid "Select Country"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:137, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:155, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:147, src/js-templates/donor-profile-edit.php:108
+#: src/Admin/Helpers/donor-panel.php:137, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:155, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:146, src/js-templates/donor-profile-edit.php:108
 msgid "Select Country First"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:144, src/Admin/Views/General.php:107, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:133, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:154, src/Frontend/Templates/edit-donor.php:210, src/Frontend/Templates/single-blood_request.php:136, src/Frontend/Templates/single-donor.php:169, src/js-templates/donor-profile-edit.php:116
+#: src/Admin/Helpers/donor-panel.php:144, src/Admin/Views/General.php:107, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:133, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:153, src/Frontend/Templates/edit-donor.php:210, src/Frontend/Templates/single-blood_request.php:136, src/Frontend/Templates/single-donor.php:168, src/js-templates/donor-profile-edit.php:116
 msgid "Address"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:145, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:155
+#: src/Admin/Helpers/donor-panel.php:145, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:154
 msgid "Please select your address."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:151, src/Admin/Helpers/donor-panel.php:152, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:161, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:162
+#: src/Admin/Helpers/donor-panel.php:151, src/Admin/Helpers/donor-panel.php:152, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:160, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:161
 msgid "Password"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:152, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:162
+#: src/Admin/Helpers/donor-panel.php:152, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:161
 msgid "Password field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:155, src/Admin/Helpers/donor-panel.php:156, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:165, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:166
+#: src/Admin/Helpers/donor-panel.php:155, src/Admin/Helpers/donor-panel.php:156, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:164, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:165
 msgid "Re-type Password"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:156, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:166
+#: src/Admin/Helpers/donor-panel.php:156, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:165
 msgid "Retype password field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:162, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:171, src/Frontend/Templates/edit-donor.php:237, src/js-templates/donor-profile-edit.php:145
+#: src/Admin/Helpers/donor-panel.php:162, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:170, src/Frontend/Templates/edit-donor.php:237, src/js-templates/donor-profile-edit.php:145
 msgid "Upload Profile Picture"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:164, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:173
+#: src/Admin/Helpers/donor-panel.php:164, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:172
 msgid "your image"
 msgstr ""
 
@@ -1070,7 +1070,7 @@ msgstr ""
 msgid "Mobile No"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:186, src/Admin/Views/General.php:125, src/Frontend/Shortcode/DonorShortcode.php:57, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:153, src/Frontend/Templates/single-blood_request.php:128, src/Frontend/Templates/single-donor.php:158
+#: src/Admin/Helpers/donor-panel.php:186, src/Admin/Views/General.php:125, src/Frontend/Shortcode/DonorShortcode.php:57, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:153, src/Frontend/Templates/single-blood_request.php:128, src/Frontend/Templates/single-donor.php:157
 msgid "State"
 msgstr ""
 
@@ -1374,7 +1374,7 @@ msgstr ""
 msgid "The title displayed on the donor registration form."
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:383, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:38
+#: src/Admin/Settings/IDonateSettings.php:383, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:37
 msgid "Blood Donors Register"
 msgstr ""
 
@@ -1386,7 +1386,7 @@ msgstr ""
 msgid "The subtitle displayed on the donor registration form"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:391, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:39
+#: src/Admin/Settings/IDonateSettings.php:391, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:38
 msgid "Please fill the following information to register donor."
 msgstr ""
 
@@ -1698,11 +1698,11 @@ msgstr ""
 msgid "Patient Age"
 msgstr ""
 
-#: src/Admin/Views/General.php:117, src/Frontend/Shortcode/DonorShortcode.php:56, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:139, src/Frontend/Templates/single-blood_request.php:123, src/Frontend/Templates/single-donor.php:154
+#: src/Admin/Views/General.php:117, src/Frontend/Shortcode/DonorShortcode.php:56, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:139, src/Frontend/Templates/single-blood_request.php:123, src/Frontend/Templates/single-donor.php:153
 msgid "Country"
 msgstr ""
 
-#: src/Admin/Views/General.php:136, src/Frontend/Manager.php:159, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:161, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:162
+#: src/Admin/Views/General.php:136, src/Frontend/Manager.php:146, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:161, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:162
 msgid "Details"
 msgstr ""
 
@@ -1770,7 +1770,7 @@ msgstr ""
 msgid "Add blood request widget."
 msgstr ""
 
-#: src/Admin/Views/WidgetBloodRequiest.php:76, src/Frontend/Manager.php:361, src/Frontend/Manager.php:378, src/js-templates/donor-profile-view.php:64
+#: src/Admin/Views/WidgetBloodRequiest.php:76, src/Frontend/Manager.php:348, src/Frontend/Manager.php:365, src/js-templates/donor-profile-view.php:64
 msgid "Blood Group: "
 msgstr ""
 
@@ -1790,91 +1790,91 @@ msgstr ""
 msgid "Thank you! Your request has been submitted."
 msgstr ""
 
-#: src/Frontend/Manager.php:101
+#: src/Frontend/Manager.php:88
 msgid "Sorry. Not match anyone !!!."
 msgstr ""
 
-#: src/Frontend/Manager.php:75, src/Frontend/Manager.php:339, src/Frontend/Templates/single-blood_request.php:57
+#: src/Frontend/Manager.php:62, src/Frontend/Manager.php:326, src/Frontend/Templates/single-blood_request.php:57
 msgid "request image"
 msgstr ""
 
-#: src/Frontend/Manager.php:91
+#: src/Frontend/Manager.php:78
 msgid "View Details"
 msgstr ""
 
-#: src/Frontend/Manager.php:135
+#: src/Frontend/Manager.php:122
 msgid "Post Date: "
 msgstr ""
 
-#: src/Frontend/Manager.php:145
+#: src/Frontend/Manager.php:132
 msgid "Unit/Bag (S): "
 msgstr ""
 
-#: src/Frontend/Manager.php:247
+#: src/Frontend/Manager.php:234
 msgid "Last Donate: "
 msgstr ""
 
-#: src/Frontend/Manager.php:254, src/js-templates/donor-profile-view.php:21
+#: src/Frontend/Manager.php:241, src/js-templates/donor-profile-view.php:21
 msgid "Gender: "
 msgstr ""
 
-#: src/Frontend/Manager.php:260, src/js-templates/donor-profile-view.php:28
+#: src/Frontend/Manager.php:247, src/js-templates/donor-profile-view.php:28
 msgid "Date Of Birth: "
 msgstr ""
 
-#: src/Frontend/Manager.php:266, src/js-templates/donor-profile-view.php:86
+#: src/Frontend/Manager.php:253, src/js-templates/donor-profile-view.php:86
 msgid "Land Line Number: "
 msgstr ""
 
-#: src/Frontend/Manager.php:272, src/Frontend/Manager.php:420, src/Helpers/IDonateAjaxHandler.php:293, src/js-templates/donor-profile-view.php:35
+#: src/Frontend/Manager.php:259, src/Frontend/Manager.php:407, src/Helpers/IDonateAjaxHandler.php:293, src/js-templates/donor-profile-view.php:35
 msgid "Country: "
 msgstr ""
 
-#: src/Frontend/Manager.php:277, src/Frontend/Manager.php:427, src/Helpers/IDonateAjaxHandler.php:297, src/js-templates/donor-profile-view.php:42
+#: src/Frontend/Manager.php:264, src/Frontend/Manager.php:414, src/Helpers/IDonateAjaxHandler.php:297, src/js-templates/donor-profile-view.php:42
 msgid "State: "
 msgstr ""
 
-#: src/Frontend/Manager.php:281, src/Frontend/Manager.php:433, src/Helpers/IDonateAjaxHandler.php:301, src/js-templates/donor-profile-view.php:49
+#: src/Frontend/Manager.php:268, src/Frontend/Manager.php:420, src/Helpers/IDonateAjaxHandler.php:301, src/js-templates/donor-profile-view.php:49
 msgid "City: "
 msgstr ""
 
-#: src/Frontend/Manager.php:282, src/Frontend/Manager.php:439, src/js-templates/donor-profile-view.php:56
+#: src/Frontend/Manager.php:269, src/Frontend/Manager.php:426, src/js-templates/donor-profile-view.php:56
 msgid "Address: "
 msgstr ""
 
-#: src/Frontend/Manager.php:295, src/Helpers/IDonateAjaxHandler.php:203, src/Helpers/IDonateAjaxHandler.php:314
+#: src/Frontend/Manager.php:282, src/Helpers/IDonateAjaxHandler.php:203, src/Helpers/IDonateAjaxHandler.php:314
 msgid "Close (Esc)"
 msgstr ""
 
-#: src/Frontend/Manager.php:351, src/Frontend/Manager.php:407, src/Helpers/IDonateAjaxHandler.php:281
+#: src/Frontend/Manager.php:338, src/Frontend/Manager.php:394, src/Helpers/IDonateAjaxHandler.php:281
 msgid "Email: "
 msgstr ""
 
-#: src/Frontend/Manager.php:356, src/Frontend/Manager.php:402, src/Helpers/IDonateAjaxHandler.php:285, src/js-templates/donor-profile-view.php:79
+#: src/Frontend/Manager.php:343, src/Frontend/Manager.php:389, src/Helpers/IDonateAjaxHandler.php:285, src/js-templates/donor-profile-view.php:79
 msgid "Mobile Number: "
 msgstr ""
 
-#: src/Frontend/Manager.php:366, src/Helpers/IDonateAjaxHandler.php:257
+#: src/Frontend/Manager.php:353, src/Helpers/IDonateAjaxHandler.php:257
 msgid "Patient Name: "
 msgstr ""
 
-#: src/Frontend/Manager.php:372
+#: src/Frontend/Manager.php:359
 msgid "Patient Age: "
 msgstr ""
 
-#: src/Frontend/Manager.php:384
+#: src/Frontend/Manager.php:371
 msgid "When Need Blood?: "
 msgstr ""
 
-#: src/Frontend/Manager.php:390
+#: src/Frontend/Manager.php:377
 msgid "Blood Unit / Bag (S): "
 msgstr ""
 
-#: src/Frontend/Manager.php:396, src/Helpers/IDonateAjaxHandler.php:277
+#: src/Frontend/Manager.php:383, src/Helpers/IDonateAjaxHandler.php:277
 msgid "Purpose: "
 msgstr ""
 
-#: src/Frontend/Manager.php:412, src/Helpers/IDonateAjaxHandler.php:289
+#: src/Frontend/Manager.php:399, src/Helpers/IDonateAjaxHandler.php:289
 msgid "Hospital Name: "
 msgstr ""
 
@@ -1918,7 +1918,7 @@ msgstr ""
 msgid "Email :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:163, src/Frontend/Templates/donor-profile.php:70, src/Frontend/Templates/single-donor.php:103
+#: src/Frontend/Shortcode/DonorShortcode.php:163, src/Frontend/Templates/donor-profile.php:70, src/Frontend/Templates/single-donor.php:102
 msgid "Social Media :"
 msgstr ""
 
@@ -1994,7 +1994,7 @@ msgstr ""
 msgid "Edit Donors Information"
 msgstr ""
 
-#: src/Frontend/Templates/edit-donor.php:153, src/Frontend/Templates/single-donor.php:134
+#: src/Frontend/Templates/edit-donor.php:153, src/Frontend/Templates/single-donor.php:133
 msgid "Last Donate"
 msgstr ""
 
@@ -2046,11 +2046,11 @@ msgstr ""
 msgid "User Details"
 msgstr ""
 
-#: src/Frontend/Templates/single-donor.php:129
+#: src/Frontend/Templates/single-donor.php:128
 msgid "Donor Name"
 msgstr ""
 
-#: src/Frontend/Templates/single-donor.php:145
+#: src/Frontend/Templates/single-donor.php:144
 msgid "Date of Birth"
 msgstr ""
 

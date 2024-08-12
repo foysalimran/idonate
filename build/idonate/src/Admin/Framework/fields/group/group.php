@@ -52,8 +52,8 @@ if ( ! class_exists( 'IDONATE_Field_group' ) ) {
 				echo '<div class="idonate-cloneable-item idonate-cloneable-hidden" data-depend-id="' . esc_attr( $this->field['id'] ) . '">';
 				
 				echo '<div class="idonate-cloneable-helper">';
-				echo '<i class="idonate-cloneable-sort icofont-duotone icofont-drag"></i>';
-				echo '<i class="idonate-cloneable-clone icofont-duotone icofont-copy-invert"></i>';
+				echo '<i class="idonate-cloneable-sort icofont-drag"></i>';
+				echo '<i class="idonate-cloneable-clone icofont-copy-invert"></i>';
 				echo '<i class="idonate-cloneable-remove idonate-confirm icofont-close" data-confirm="' . esc_html__( 'Are you sure to delete this item?', 'idonate' ) . '"></i>';
 				echo '</div>';
 
@@ -107,8 +107,8 @@ if ( ! class_exists( 'IDONATE_Field_group' ) ) {
 						echo '<div class="idonate-cloneable-item">';
 
 						echo '<div class="idonate-cloneable-helper">';
-						echo '<i class="idonate-cloneable-sort icofont-duotone icofont-drag"></i>';
-						echo '<i class="idonate-cloneable-clone icofont-duotone icofont-copy-invert"></i>';
+						echo '<i class="idonate-cloneable-sort icofont-drag"></i>';
+						echo '<i class="idonate-cloneable-clone icofont-copy-invert"></i>';
 						echo '<i class="idonate-cloneable-remove idonate-confirm icofont-close" data-confirm="' . esc_html__( 'Are you sure to delete this item?', 'idonate' ) . '"></i>';
 						echo '</div>';
 

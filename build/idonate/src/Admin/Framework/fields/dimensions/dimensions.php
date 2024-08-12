@@ -19,8 +19,8 @@ if ( ! class_exists( 'IDONATE_Field_dimensions' ) ) {
 			$args = wp_parse_args(
 				$this->field,
 				array(
-					'width_icon'         => '<i class="icofont-duotone icofont-drag-h"></i>',
-					'height_icon'        => '<i class="icofont-duotone icofont-drag-v"></i>',
+					'width_icon'         => '<i class="icofont-drag-h"></i>',
+					'height_icon'        => '<i class="icofont-drag-v"></i>',
 					'width_placeholder'  => esc_html__( 'width', 'idonate' ),
 					'height_placeholder' => esc_html__( 'height', 'idonate' ),
 					'width'              => true,
