@@ -76,11 +76,9 @@ register_deactivation_hook(__FILE__, 'idonate_deactivation_activate');
  */
 function idonate_appsero_init()
 {
-
 	if (!class_exists('IdonateAppSero\Insights')) {
 		require_once IDONATE_DIR_PATH . 'src/Admin/appsero/Client.php';
 	}
-
 	$client = new IdonateAppSero\Client('23ff0b7b-9dde-4bcd-91c7-ab398aaa6ed6', 'iDonate', __FILE__);
 	// Active insights
 	$client->insights()->init();

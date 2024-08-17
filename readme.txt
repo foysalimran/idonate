@@ -144,6 +144,8 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 
 = 2.0.2 - August 08, 2024
 - Fixed: Other css issue.
+- Update: Icons for admin dashboard.
+- Added: Sherpur district for Bangladesh
 
 = 2.0.1 - August 08, 2024
 - Fixed: Warnings after the first installation of plugin.
