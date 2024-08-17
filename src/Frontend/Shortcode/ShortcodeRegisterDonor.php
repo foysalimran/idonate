@@ -126,24 +126,41 @@ class ShortcodeRegisterDonor
 							</div>
 						</div>
 						<div class="idonate_row idonate_col">
-							<div class="idonate_col_item">
-								<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
-								<select id="country" class="form-control country" name="country">
-									<?php
-									$allowed_html = array(
-										'option' => array(
-											'value' => array(),
-											'selected' => array(),  // Allow the selected attribute
-										),
-									);
-									echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
-									?>
-								</select>
-							</div>
+							<?php if (!$options['enable_single_country'] || empty($options['idonate_country'])) : ?>
+								<div class="idonate_col_item">
+									<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
+									<select id="country" class="form-control country" name="country">
+										<?php
+										$allowed_html = array(
+											'option' => array(
+												'value' => array(),
+												'selected' => array(),  // Allow the selected attribute
+											),
+										);
+										echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
+										?>
+									</select>
+								</div>
+							<?php endif; ?>
 							<div class="idonate_col_item">
 								<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
 								<select class="form-control state" name="state">
-									<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
+									<?php if (!$options['enable_single_country'] || empty($options['idonate_country'])) : ?>
+										<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
+									<?php else : ?>
+										<option><?php esc_html_e('Select State', 'idonate'); ?></option>
+									<?php
+										$path = IDONATE_COUNTRIES . 'states/' . $options['idonate_country'] . '.php';
+										include($path);
+										global $states;
+										foreach ($states as $key => $state) {
+											foreach ($state as $key => $value) {
+												echo '<option value="' . $key . '">' . $value . '</option>';
+											}
+										}
+									endif;
+									?>
+
 								</select>
 							</div>
 						</div>
@@ -174,28 +191,28 @@ class ShortcodeRegisterDonor
 						</div>
 						<div class="idonate_row idonate_col">
 
-<div class="idonate_col_item">
-							<?php
-							if ($idonate_recaptcha_active) {
-								$recaptchaLabel = $options['idonate_recapthca_label'] ? $options['idonate_recapthca_label'] : '';
-								if ($recaptchaLabel) {
-							?>
-									<label for="recaptcha"><?php echo esc_html($recaptchaLabel); ?></label>
-							<?php
+							<div class="idonate_col_item">
+								<?php
+								if ($idonate_recaptcha_active) {
+									$recaptchaLabel = $options['idonate_recapthca_label'] ? $options['idonate_recapthca_label'] : '';
+									if ($recaptchaLabel) {
+								?>
+										<label for="recaptcha"><?php echo esc_html($recaptchaLabel); ?></label>
+								<?php
+									}
+									echo '<div class="g-recaptcha" data-sitekey="' . esc_attr($sitekey) . '"></div></div>';
 								}
-								echo '<div class="g-recaptcha" data-sitekey="' . esc_attr($sitekey) . '"></div></div>';
-							}
-							?>
-						</div>
-						<?php
-						// WP Nonce
-						wp_nonce_field('request_nonce_action', 'request_submit_nonce_check');
-						?>
-						<div class="idonate_row idonate_col justify-end">
-							<div class="submit_button">
-								<input class="submit register_donor" type="submit" name="donor_submit" value="<?php echo esc_attr('Submit', 'idonate'); ?>" />
+								?>
 							</div>
-						</div>
+							<?php
+							// WP Nonce
+							wp_nonce_field('request_nonce_action', 'request_submit_nonce_check');
+							?>
+							<div class="idonate_row idonate_col justify-end">
+								<div class="submit_button">
+									<input class="submit register_donor" type="submit" name="donor_submit" value="<?php echo esc_attr('Submit', 'idonate'); ?>" />
+								</div>
+							</div>
 					</form>
 				</div>
 			</div>
