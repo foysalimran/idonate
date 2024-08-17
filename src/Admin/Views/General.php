@@ -43,7 +43,7 @@ class General
 			$prefix,
 			array(
 				'title'  => esc_html__('Request Info', 'idonate'),
-				'icon'   => 'icofont-duotone icofont-cogs',
+				'icon'   => 'icofont-cogs',
 				'fields' => array(
 					array(
 						'id'         => 'idonatepurpose',
