@@ -212,7 +212,7 @@
           background-color: var(--idonate-primary);
           position: absolute;
           top: 12px;
-          left: 26%;
+          left: 22%;
           border-right: 30px solid #303030;
         }
         &:after {
@@ -222,7 +222,7 @@
           background-color: var(--idonate-primary);
           position: absolute;
           top: 12px;
-          right: 26%;
+          right: 22%;
           border-left: 30px solid var(--idonate-border);
         }
       }
@@ -660,7 +660,10 @@ button.mfp-arrow {
   justify-content: center;
   gap: 10px;
   a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     text-align: center;
     margin-right: 1px;
     color: var(--idonate-white);

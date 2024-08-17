@@ -63,7 +63,7 @@ if ( ! class_exists( 'IDONATE_Field_sortable' ) ) {
 
 				echo '</div>';
 
-				echo '<div class="idonate-sortable-helper"><i class="icofont-duotone icofont-drag"></i></div>';
+				echo '<div class="idonate-sortable-helper"><i class="icofont-drag"></i></div>';
 
 				echo '</div>';
 

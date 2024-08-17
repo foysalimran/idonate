@@ -33,16 +33,6 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
-.icofont-duotone.icofont-cogs:before
-{
-  content: "\13ae9";
-}
-
-.icofont-duotone.icofont-cogs:after
-{
-  content: "\13ae8";
-}
-
 .icofont-blood-test:before
 {
   content: "\ec0e";
@@ -203,16 +193,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\f021";
 }
 
-.icofont-duotone.icofont-file-check:before
-{
-  content: "\13b25";
-}
-
-.icofont-duotone.icofont-file-check:after
-{
-  content: "\13b24";
-}
-
 .icofont-facebook-messenger:before
 {
   content: "\ed36";
@@ -273,46 +253,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ef12";
 }
 
-.icofont-duotone.icofont-envelope-badge:before
-{
-  content: "\13b0b";
-}
-
-.icofont-duotone.icofont-envelope-badge:after
-{
-  content: "\13b0a";
-}
-
-.icofont-duotone.icofont-envelope-open:before
-{
-  content: "\13b0d";
-}
-
-.icofont-duotone.icofont-envelope-open:after
-{
-  content: "\13b0c";
-}
-
-.icofont-duotone.icofont-envelope:before
-{
-  content: "\13b0f";
-}
-
-.icofont-duotone.icofont-envelope:after
-{
-  content: "\13b0e";
-}
-
-.icofont-envelope-open:before
-{
-  content: "\ef13";
-}
-
-.icofont-envelope:before
-{
-  content: "\ef14";
-}
-
 .icofont-pinterest:before
 {
   content: "\ed5d";
@@ -321,26 +261,6 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-linkedin:before
 {
   content: "\ed4d";
-}
-
-.icofont-duotone.icofont-groups:before
-{
-  content: "\13b3f";
-}
-
-.icofont-duotone.icofont-groups:after
-{
-  content: "\13b3e";
-}
-
-.icofont-duotone.icofont-field-group:before
-{
-  content: "\13b1f";
-}
-
-.icofont-duotone.icofont-field-group:after
-{
-  content: "\13b1e";
 }
 
 .icofont-ui-user-group:before
@@ -358,24 +278,9 @@ url("./fonts/icofont.woff") format("woff");
   content: "\eadd";
 }
 
-.icofont-duotone.icofont-calendar:before
-{
-  content: "\13adb";
-}
-
-.icofont-duotone.icofont-calendar:after
-{
-  content: "\13ada";
-}
-
 .icofont-ui-calendar:before
 {
   content: "\ec45";
-}
-
-.icofont-calendar:before
-{
-  content: "\eecd";
 }
 
 .icofont-ui-cell-phone:before
@@ -398,11 +303,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\efec";
 }
 
-.icofont-phone:before
-{
-  content: "\efbb";
-}
-
 .icofont-phone-circle:before
 {
   content: "\efba";
@@ -418,34 +318,9 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ea3b";
 }
 
-.icofont-duotone.icofont-phone:before
-{
-  content: "\13b7f";
-}
-
-.icofont-duotone.icofont-phone:after
-{
-  content: "\13b7e";
-}
-
-.icofont-duotone.icofont-user:before
-{
-  content: "\13d06";
-}
-
-.icofont-duotone.icofont-user:after
-{
-  content: "\13d13";
-}
-
 .icofont-ui-user:before
 {
   content: "\ec8e";
-}
-
-.icofont-user:before
-{
-  content: "\ed05";
 }
 
 .icofont-user-suited:before
@@ -523,54 +398,9 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ed0c";
 }
 
-.icofont-users:before
-{
-  content: "\ed0d";
-}
-
 .icofont-search-user:before
 {
   content: "\ed1a";
-}
-
-.icofont-duotone.icofont-add-users:before
-{
-  content: "\13ab7";
-}
-
-.icofont-duotone.icofont-add-users:after
-{
-  content: "\13ab6";
-}
-
-.icofont-duotone.icofont-manage-user:before
-{
-  content: "\13b5e";
-}
-
-.icofont-duotone.icofont-manage-user:after
-{
-  content: "\13b5d";
-}
-
-.icofont-duotone.icofont-user-notes:before
-{
-  content: "\13bd8";
-}
-
-.icofont-duotone.icofont-user-notes:after
-{
-  content: "\13bd7";
-}
-
-.icofont-duotone.icofont-users:before
-{
-  content: "\13bda";
-}
-
-.icofont-duotone.icofont-users:after
-{
-  content: "\13bd9";
 }
 
 .icofont-user-alt-1:before
@@ -628,26 +458,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\eee3";
 }
 
-.icofont-duotone.icofont-location-alt:before
-{
-  content: "\13b55";
-}
-
-.icofont-duotone.icofont-location-alt:after
-{
-  content: "\13b54";
-}
-
-.icofont-duotone.icofont-location:before
-{
-  content: "\13b57";
-}
-
-.icofont-duotone.icofont-location:after
-{
-  content: "\13b56";
-}
-
 .icofont-location-arrow:before
 {
   content: "\ef78";
@@ -703,94 +513,9 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ef36";
 }
 
-.icofont-folder-open:before
-{
-  content: "\ef35";
-}
-
 .icofont-ui-folder:before
 {
   content: "\ec5b";
-}
-
-.icofont-duotone.icofont-folder-remove:before
-{
-  content: "\13b37";
-}
-
-.icofont-duotone.icofont-folder-remove:after
-{
-  content: "\13b36";
-}
-
-.icofont-duotone.icofont-folder-plus:before
-{
-  content: "\13b35";
-}
-
-.icofont-duotone.icofont-folder-plus:after
-{
-  content: "\13b34";
-}
-
-.icofont-duotone.icofont-folder-open:before
-{
-  content: "\13b33";
-}
-
-.icofont-duotone.icofont-folder-open:after
-{
-  content: "\13b32";
-}
-
-.icofont-duotone.icofont-folder-close:before
-{
-  content: "\13b31";
-}
-
-.icofont-duotone.icofont-folder-close:after
-{
-  content: "\13b30";
-}
-
-.icofont-duotone.icofont-toggle-off:before
-{
-  content: "\13cf8";
-}
-
-.icofont-duotone.icofont-toggle-off:after
-{
-  content: "\13cf9";
-}
-
-.icofont-duotone.icofont-toggle-on:before
-{
-  content: "\13cfb";
-}
-
-.icofont-duotone.icofont-toggle-on:after
-{
-  content: "\13cfa";
-}
-
-.icofont-toggle-off:before
-{
-  content: "\f011";
-}
-
-.icofont-toggle-on:before
-{
-  content: "\f012";
-}
-
-.icofont-duotone.icofont-contract-alt:before
-{
-  content: "\13af9";
-}
-
-.icofont-duotone.icofont-contract-alt:after
-{
-  content: "\13af8";
 }
 
 .icofont-rounded-right:before
@@ -811,16 +536,6 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-simple-left:before
 {
   content: "\eab5";
-}
-
-.icofont-duotone.icofont-share-alt:before
-{
-  content: "\13bad";
-}
-
-.icofont-duotone.icofont-share-alt:after
-{
-  content: "\13bac";
 }
 
 .icofont-share:before
@@ -868,16 +583,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\efcb";
 }
 
-.icofont-duotone.icofont-question-sign-circle:before
-{
-  content: "\13b97";
-}
-
-.icofont-duotone.icofont-question-sign-circle:after
-{
-  content: "\13b96";
-}
-
 .icofont-rounded-down:before
 {
   content: "\ea99";
@@ -893,49 +598,14 @@ url("./fonts/icofont.woff") format("woff");
   content: "\edf9";
 }
 
-.icofont-duotone.icofont-plus-circle:before
-{
-  content: "\13b8b";
-}
-
-.icofont-duotone.icofont-plus-circle:after
-{
-  content: "\13b8a";
-}
-
 .icofont-plus-square:before
 {
   content: "\efc1";
 }
 
-.icofont-plus-circle:before
-{
-  content: "\efc0";
-}
-
 .icofont-plus:before
 {
   content: "\efc2";
-}
-
-.icofont-duotone.icofont-duplicate-alt:before
-{
-  content: "\13d0e";
-}
-
-.icofont-duotone.icofont-duplicate-alt:after
-{
-  content: "\13d0d";
-}
-
-.icofont-duotone.icofont-duplicate:before
-{
-  content: "\13d10";
-}
-
-.icofont-duotone.icofont-duplicate:after
-{
-  content: "\13d0f";
 }
 
 .icofont-brand-adobe:before
@@ -993,14 +663,9 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ea7f";
 }
 
-.icofont-computer:before
+.icofont-gear-alt:before
 {
-  content: "\eeee";
-}
-
-.icofont-stock-mobile:before
-{
-  content: "\e977";
+  content: "\ef39";
 }
 
 .icofont-gears:before
@@ -1011,6 +676,21 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-gear:before
 {
   content: "\ef3a";
+}
+
+.icofont-ui-settings:before
+{
+  content: "\ec83";
+}
+
+.icofont-settings:before
+{
+  content: "\efe2";
+}
+
+.icofont-settings-alt:before
+{
+  content: "\efe1";
 }
 
 [class^="icofont-"].icofont-duotone,

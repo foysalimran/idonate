@@ -42,7 +42,7 @@ class IDonateSettings
 			$prefix,
 			array(
 				'title'  => esc_html__('GENERAL', 'idonate'),
-				'icon'	=> 'icofont-gears',
+				'icon'	=> 'icofont-gear',
 				'fields' => array(
 					array(
 						'id'       => 'idonate_container',
