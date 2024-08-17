@@ -66,7 +66,7 @@ class RequestLoopHtml
             echo '</div>';
         } else {
 ?>
-            <div class="error_message"><?php echo esc_html('No request available.', 'idonate') ?></div>
+            <div class="idonate-alert idonate-alert-error"><?php echo esc_html('No request available.', 'idonate') ?></div>
 <?php
         }
     }

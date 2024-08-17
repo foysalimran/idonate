@@ -72,7 +72,7 @@ class IdonateLoopHtml
             echo '</div>';
         } else {
 ?>
-            <div class="error_message"><?php echo esc_html('No donors available.', 'idonate') ?></div>
+            <div class="idonate-alert idonate-alert-error"><?php echo esc_html('No donors available.', 'idonate') ?></div>
 <?php
         }
     }

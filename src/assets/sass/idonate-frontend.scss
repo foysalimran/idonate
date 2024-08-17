@@ -345,6 +345,7 @@ Idonate alerts
   max-width: 500px;
   margin: 0 auto;
   display: block;
+  text-align: center;
 }
 .idonate-alert-danger {
   color: var(--idonate-error);
@@ -674,6 +675,9 @@ button.mfp-arrow {
     line-height: 30px;
     background-color: #55acee;
     border-radius: 50%;
+    &:hover {
+      color: var(--idonate-white);
+    }
     &.idonate-twitter {
       background-color: #55acee;
     }

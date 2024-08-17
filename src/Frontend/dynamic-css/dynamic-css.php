@@ -41,7 +41,7 @@ if ($social_icon_custom_color) {
 	$social_icon_border       = $donor_social_share['social_icon_border'];
 	$social_icon_border_width = (int) $social_icon_border['all'];
 	$social_line_height       = 30 - ($social_icon_border_width * 2);
-	$custom_css              .= ".request_info_wrapper .donor_social_share a i{ color: {$social_icon_color['icon_color']}; line-height: {$social_line_height}px; background: {$social_icon_color['icon_bg']}; border: {$social_icon_border_width}px {$social_icon_border['style']} {$social_icon_border['color']}; } .request_info_wrapper .donor_social_share a:hover i{ color: {$social_icon_color['icon_hover_color']}; background: {$social_icon_color['icon_bg_hover']}; border-color: {$social_icon_color['icon_border_hover']}; }";
+	$custom_css              .= ".single-page-donor .donor_social_share a, .request_info_wrapper .donor_social_share a { color: {$social_icon_color['icon_color']}; line-height: {$social_line_height}px; background: {$social_icon_color['icon_bg']}; border: {$social_icon_border_width}px {$social_icon_border['style']} {$social_icon_border['color']}; } .single-page-donor .donor_social_share a:hover, .request_info_wrapper .donor_social_share a:hover { color: {$social_icon_color['icon_hover_color']}; background: {$social_icon_color['icon_bg_hover']}; border-color: {$social_icon_color['icon_border_hover']}; }";
 }
 $custom_css .= ".request_info_wrapper .donor_social_share{margin: {$social_margin['top']}px {$social_margin['right']}px {$social_margin['bottom']}px {$social_margin['left']}px;}";
 

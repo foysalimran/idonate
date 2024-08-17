@@ -277,7 +277,9 @@ class Countries
 
 		$countries = self::idonate_all_countries();
 		$idonate_country = isset($options['idonate_country']) ? $options['idonate_country'] : '';
-		if (!empty($idonate_country) && $idonate_country != 'all') {
+		$enable_single_country = isset($options['enable_single_country']) ? $options['enable_single_country'] : '';
+
+		if (!empty($idonate_country) && $idonate_country != 'all' && $enable_single_country) {
 			$coubntrycode = $idonate_country;
 			$countries = array($coubntrycode => $countries[$coubntrycode]);
 		}

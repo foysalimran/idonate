@@ -313,6 +313,7 @@ Idonate alerts
   max-width: 500px;
   margin: 0 auto;
   display: block;
+  text-align: center;
 }
 
 .idonate-alert-danger {
@@ -652,6 +653,9 @@ button.mfp-arrow {
   line-height: 30px;
   background-color: #55acee;
   border-radius: 50%;
+}
+.donor_social_share a:hover {
+  color: var(--idonate-white);
 }
 .donor_social_share a.idonate-twitter {
   background-color: #55acee;
