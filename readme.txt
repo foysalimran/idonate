@@ -5,7 +5,7 @@ Tags: blood donation, blood request, donate blood, online blood donation, Blood 
 Requires at least: 5.3
 Tested up to: 6.6.1
 Requires PHP: 7.4
-Stable tag: 2.0.3
+Stable tag: 2.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -139,11 +139,10 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 15. Dashboard Settings Advance Settings
 
 == Changelog ==
-= 2.0.3 - August 12, 2024
+= 2.0.2 - August 17, 2024
 - Fixed: Icon hover issue.
-
-= 2.0.2 - August 08, 2024
 - Fixed: Other css issue.
+- Fixed: State select option.
 - Update: Icons for admin dashboard.
 - Added: Sherpur district for Bangladesh
 
