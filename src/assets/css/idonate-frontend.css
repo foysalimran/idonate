@@ -653,6 +653,9 @@ button.mfp-arrow {
   background-color: #55acee;
   border-radius: 50%;
 }
+.donor_social_share a :hover {
+  color: var(--idonate-white);
+}
 .donor_social_share a.idonate-twitter {
   background-color: #55acee;
 }

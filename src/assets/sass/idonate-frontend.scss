@@ -674,6 +674,9 @@ button.mfp-arrow {
     line-height: 30px;
     background-color: #55acee;
     border-radius: 50%;
+    :hover{
+      color: var(--idonate-white);
+    }
     &.idonate-twitter {
       background-color: #55acee;
     }
