@@ -653,6 +653,7 @@ button.mfp-arrow {
   line-height: 30px;
   background-color: #55acee;
   border-radius: 50%;
+  transition: all 0.3s;
 }
 .donor_social_share a:hover {
   color: var(--idonate-white);

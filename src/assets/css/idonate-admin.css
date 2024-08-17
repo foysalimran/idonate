@@ -37,6 +37,7 @@ form {
 .idonate_row select,
 .idonate_row textarea {
   width: 100%;
+  max-width: 100%;
   padding: 6px;
   border: 1px solid #ccc;
 }
