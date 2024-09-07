@@ -139,6 +139,9 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 15. Dashboard Settings Advance Settings
 
 == Changelog ==
+= 2.0.3 - Sep 07, 2024
+- Fixed: Admin pro settings CSS not loading issue
+
 = 2.0.2 - August 17, 2024
 - Fixed: Icon hover issue.
 - Fixed: Other css issue.
