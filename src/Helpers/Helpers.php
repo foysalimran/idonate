@@ -55,6 +55,7 @@ class Helpers
 
 
 		wp_register_style('idonate-admin', IDONATE_ASSETS . 'css/idonate-admin' . $this->min . '.css', array(), IDONATE_VERSION, 'all');
+		wp_register_style('idonate-settings-admin', IDONATE_ASSETS . 'css/idonate-settings-admin' . $this->min . '.css', array(), IDONATE_VERSION, 'all');
 
 		wp_register_style('icofont', IDONATE_ASSETS . 'css/icofont' . $this->min . '.css', array(), IDONATE_VERSION, 'all');
 

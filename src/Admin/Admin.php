@@ -309,6 +309,12 @@ class Admin
         if ($hook === 'idonate_page_idonate-donor') {
             wp_enqueue_style('datatables');
         }
+
+
+        if ('idonate_page_idonate-settings' == $hook) {
+            wp_enqueue_style('idonate-settings-admin');
+        }
+
         wp_enqueue_style('idonate-admin');
     }
     /**
