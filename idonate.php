@@ -56,8 +56,8 @@ register_activation_hook(__FILE__, 'idonate_plugin_activate');
 function idonate_deactivation_activate()
 {
     $options = get_option('idonate_settings');
-    $idoante_pro_delte_page = isset($options['idonate_data_remove']) ? $options['idonate_data_remove'] : false;
-    if ($idoante_pro_delte_page) {
+    $idonate_data_remove = isset($options['idonate_data_remove']) ? $options['idonate_data_remove'] : false;
+    if ($idonate_data_remove) {
         // Delete page when plugin deactivated
         idonate_delete_page_plugin_deactivated();
     }

@@ -52,9 +52,9 @@ function idonate_custom_post_type_template($template)
 	global $post;
 	$option = get_option('idonate_settings');
 	$donor_register_page = isset($option['donor_register_page']) ? $option['donor_register_page'] : '';
-	$donor_page = $option['donor_page'] ? $option['donor_page'] : 'donors';
-	$donor_table_page = $option['donor_table_page'] ? $option['donor_table_page'] : 'donor-table';
-	$dashboard_page = $option['dashboard_page'] ? $option['dashboard_page'] : '';
+	$donor_page = isset($option['donor_page']) ? $option['donor_page'] : 'donors';
+	$donor_table_page = isset($option['donor_table_page']) ? $option['donor_table_page'] : 'donor-table';
+	$dashboard_page = isset($option['dashboard_page']) ? $option['dashboard_page'] : '';
 
 	// Request page
 	if ($option['rp_request_page']) {

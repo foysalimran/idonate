@@ -9,6 +9,7 @@
  *
  */
 
+use ThemeAtelier\Idonate\Helpers\Helpers;
 use ThemeAtelier\Idonate\Helpers\Countries\Countries;
 use ThemeAtelier\Idonate\Frontend\Helpers\SocialShare;
 
@@ -21,7 +22,8 @@ $option = get_option('idonate_settings');
 $donor_social_share = isset($option['donor_social_share']) ? $option['donor_social_share'] : '';
 $social_sharing_media = isset($donor_social_share['social_sharing_media']) ? $donor_social_share['social_sharing_media'] : '';
 
-get_header();
+
+Helpers::idonate_custom_header();
 ?>
 
 <div class="request_single_page section-padding">
@@ -155,5 +157,4 @@ get_header();
 </div>
 
 <?php
-get_footer();
-?>
+Helpers::idonate_custom_footer();

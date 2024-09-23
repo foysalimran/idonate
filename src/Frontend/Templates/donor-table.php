@@ -1,4 +1,5 @@
 <?php
+
 /**
  * 
  * @package    iDonate - blood donor management system WordPress Plugin
@@ -12,11 +13,15 @@ if (!defined('ABSPATH')) {
 	die(esc_html(IDONATE_ALERT_MSG));
 }
 
-get_header();
+use ThemeAtelier\Idonate\Helpers\Helpers;
+
+Helpers::idonate_custom_header();
 ?>
 <div class="section-padding">
 	<div class="ta-container">
 		<?php echo do_shortcode('[donortable]'); ?>
 	</div>
 </div>
-<?php get_footer(); ?>
+<?php
+
+Helpers::idonate_custom_footer();
