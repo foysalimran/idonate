@@ -318,6 +318,13 @@ class IDonateSettings
 										'default'	=> 'single_page_link',
 									),
 									array(
+										'id'       	=> 'donor_view_slug',
+										'type'     	=> 'text',
+										'title'    	=> esc_html__('Donor Single Page Slug', 'idonate'),
+										'default'	=> 'donor',
+										'dependency' => array('donor_view_button', '==', 'single_page_link'),
+									),
+									array(
 										'id'       => 'next_prev',
 										'type'     => 'checkbox',
 										'title'    => esc_html__('Enable Next/Prev', 'idonate'),
@@ -601,6 +608,18 @@ class IDonateSettings
 				'title'  => esc_html__('PAGE SETTINGS', 'idonate'),
 				'icon' => 'icofont-file-alt',
 				'fields' => array(
+					array(
+						'id'       	=> 'dashboard_page',
+						'type'     	=> 'select',
+						'chosen'      => true,
+						'settings'	=> array(
+							'width'		=> '227px',
+						),
+						'title'    	=> esc_html__('Dashboard Page', 'idonate'),
+						'options' 	=> 'pages',
+						'desc'    	=> esc_html__('Select your dashboard page', 'idonate'),
+						'placeholder' => esc_html__('Select a page', 'idonate'),
+					),
 					array(
 						'id'       	=> 'rp_request_page',
 						'type'     	=> 'select',
