@@ -281,6 +281,7 @@ function idonate_profile_img($id = '')
 	$img = '';
 	if (!is_wp_error($attachmentID)) {
 		$img = wp_get_attachment_image_url($attachmentID, 'donor-img');
+		$img = !empty($img) ? $img : IDONATE_DIR_URL . 'src/assets/images/idonate-preview-image.jpg';
 		$img = '<img class="upload-preview" src="' . esc_url($img) . '" />';
 	}
 	return $img;
