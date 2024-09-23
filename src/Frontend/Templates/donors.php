@@ -15,7 +15,9 @@ if (!defined('ABSPATH')) {
 	die(esc_html(IDONATE_ALERT_MSG));
 }
 
-get_header();
+use ThemeAtelier\Idonate\Helpers\Helpers;
+
+Helpers::idonate_custom_header();
 ?>
 <div class="section-padding">
 	<div class="ta-container">
@@ -25,4 +27,4 @@ get_header();
 	</div>
 </div>
 <?php
-get_footer();
+Helpers::idonate_custom_footer();
