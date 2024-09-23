@@ -48,6 +48,7 @@ function idonate_plugin_activate()
     idonate_create_page_plugin_activated();
     // User Role
     add_role('donor', 'Donor', array('read' => true, 'level_0' => true));
+    flush_rewrite_rules();
 }
 register_activation_hook(__FILE__, 'idonate_plugin_activate');
 
