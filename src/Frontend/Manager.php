@@ -14,6 +14,7 @@
 
 namespace ThemeAtelier\Idonate\Frontend;
 
+use ThemeAtelier\Idonate\Helpers\Helpers;
 use ThemeAtelier\Idonate\Helpers\Countries\Countries;
 use ThemeAtelier\Idonate\Frontend\Helpers\SocialShare;
 
@@ -36,6 +37,7 @@ class Manager
     {
         $options = get_option('idonate_settings');
         $donor_view_button = isset($options['donor_view_button']) ? $options['donor_view_button'] : '';
+        $hide_mobile_number = isset($options['hide_mobile_number']) ? $options['hide_mobile_number'] : '';
 
         if (is_array($users) && count($users) > 0) :
             echo '<div class="donors"><div class="ta-row">';
@@ -54,9 +56,9 @@ class Manager
                 <div class=" ta-col-sm-1 ta-col-md-2 ta-col-lg-3 ta-col-xl-3">
                     <div class="donor_info" data-id="<?php echo esc_attr($user->ID); ?>">
                         <div class="donor_image">
-                            <?php if (idonatefile_img($user->ID)) : ?>
+                            <?php if (idonate_profile_img($user->ID)) : ?>
                                 <?php
-                                echo wp_kses_post(idonatefile_img($user->ID));
+                                echo wp_kses_post(idonate_profile_img($user->ID));
                                 ?>
                             <?php else :
                                 echo '<img src="' . esc_url(IDONATE_DIR_URL) . 'src/assets/images/donorplaceholder.jpeg"  alt="' . esc_html__('request image', 'idonate') . '"/>';
@@ -71,11 +73,14 @@ class Manager
                             <p><i class="icofont-blood-drop"></i><span class="<?php echo esc_attr($abclass); ?>"><?php echo esc_html($availability) . wp_kses_post($signal); ?></span></p>
 
                             <p><i class="icofont-location-pin"></i><?php echo esc_html(get_user_meta($user->ID, 'idonate_donor_city', true)); ?></p>
-                            <p><i class="icofont-smart-phone"></i><?php echo esc_html(get_user_meta($user->ID, 'idonate_donor_mobile', true)); ?></p>
                             <?php
+                            if (!$hide_mobile_number) { ?>
+                                <p><i class="icofont-smart-phone"></i><?php echo esc_html(get_user_meta($user->ID, 'idonate_donor_mobile', true)); ?></p>
+                            <?php
+                            }
                             $popup_link =  $donor_view_button === 'popup' ? 'idonate_popup_modal' : '';
                             ?>
-                            <a href="<?php echo esc_url(site_url('donor-info?donor_id=' . $user->ID)); ?>" class='idonate_button <?php echo esc_attr($popup_link) ?>'><?php esc_html_e('View Details', 'idonate'); ?></a>
+                            <a href="<?php echo esc_url(Helpers::profile_url($user->ID, true)); ?>" class='idonate_button <?php echo esc_attr($popup_link) ?>'><?php esc_html_e('View Details', 'idonate'); ?></a>
                         </div>
                     </div>
                 </div>
@@ -189,9 +194,9 @@ class Manager
         <div class="idonate-donor-modal_wrapper" id="idonate_popup_ajax_content">
             <div class="donor_info">
                 <div class="donor_info_image">
-                    <?php if (idonatefile_img($user_id)) : ?>
+                    <?php if (idonate_profile_img($user_id)) : ?>
                         <?php
-                        echo wp_kses_post(idonatefile_img($user_id));
+                        echo wp_kses_post(idonate_profile_img($user_id));
                         ?>
                     <?php else :
                         echo '<img src="' . esc_html(IDONATE_DIR_URL) . 'src/assets/images/donorplaceholder.jpeg"  alt="' . esc_html(get_user_meta($user_id, 'idonate_donor_full_name', true)) . '"/>';

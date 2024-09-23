@@ -101,9 +101,9 @@ class DonorShortcode
 												<div class="modal-body">
 													<div class="donor-profile">
 														<div class="donor-img">
-															<?php if (idonatefile_img($user->ID)) : ?>
+															<?php if (idonate_profile_img($user->ID)) : ?>
 																<?php
-																echo wp_kses_post(idonatefile_img($user->ID));
+																echo wp_kses_post(idonate_profile_img($user->ID));
 																?>
 															<?php else :
 																echo '<img src="' . esc_url(IDONATE_DIR_URL) . 'src/assets/images/donorplaceholder.jpeg"  alt="' . esc_attr(get_user_meta($user->ID, 'idonate_donor_full_name', true)) . '"/>';

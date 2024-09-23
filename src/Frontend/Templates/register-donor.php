@@ -15,16 +15,28 @@ if (!defined('ABSPATH')) {
   die(esc_html(IDONATE_ALERT_MSG));
 }
 
+use ThemeAtelier\Idonate\Helpers\Helpers;
 
-get_header();
+Helpers::idonate_custom_header();
 ?>
 <div class="section-padding">
   <div class="ta-container">
     <?php
-    echo do_shortcode('[register-donor]');
+    if (!is_user_logged_in()) {
+      echo do_shortcode('[register-donor]');
+    } else {
+      echo '
+      <div class="register_success_donor">
+        <h3>' . esc_html('Thank you for registering as an donor!', 'idonate') . '</h3>
+        
+        <a href="' . esc_url(home_url() . '/dashboard') . '">' . esc_html('Go to Dashboard', 'idonate') . '</a>
+      </div>
+      ';
+    }
+
     ?>
   </div>
 </div>
 <?php
 
-get_footer();
+Helpers::idonate_custom_footer();

@@ -693,6 +693,21 @@ url("./fonts/icofont.woff") format("woff");
   content: "\efe1";
 }
 
+.icofont-earth:before
+{
+  content: "\ef0e";
+}
+
+.icofont-search-1:before
+{
+  content: "\ed11";
+}
+
+.icofont-cloud-refresh:before
+{
+  content: "\eee6";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {

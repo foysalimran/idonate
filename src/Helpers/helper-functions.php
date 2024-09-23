@@ -14,6 +14,7 @@ if (!defined('ABSPATH')) {
 	die(esc_html(IDONATE_ALERT_MSG));
 }
 
+use ThemeAtelier\Idonate\Helpers\Helpers;
 
 // Idonate blood request single page table helper
 function idonate_blood_request_table($class, $label, $val, $html = '')
@@ -51,11 +52,9 @@ function idonate_custom_post_type_template($template)
 	global $post;
 	$option = get_option('idonate_settings');
 	$donor_register_page = isset($option['donor_register_page']) ? $option['donor_register_page'] : '';
-	$donor_profile_page = isset($option['donor_profile_page']) ? $option['donor_profile_page'] : '';
-	$donor_edit_page = isset($option['donor_edit_page']) ? $option['donor_edit_page'] : '';
-	$donor_page = $option['donor_page'] ? $option['donor_page'] : 'donors';
-	$donor_table_page = $option['donor_table_page'] ? $option['donor_table_page'] : 'donor-table';
-	$login_page = isset($option['login_page']) ? $option['login_page'] : '';
+	$donor_page = isset($option['donor_page']) ? $option['donor_page'] : 'donors';
+	$donor_table_page = isset($option['donor_table_page']) ? $option['donor_table_page'] : 'donor-table';
+	$dashboard_page = isset($option['dashboard_page']) ? $option['dashboard_page'] : '';
 
 	// Request page
 	if ($option['rp_request_page']) {
@@ -96,16 +95,6 @@ function idonate_custom_post_type_template($template)
 	if (is_page($registerDonor)) {
 		$template = IDONATE_DIR_NAME . '/src/Frontend/Templates/register-donor.php';
 	}
-	// Donor Profile
-	$donorProfile = 'donor-profile';
-	if (!empty($donor_profile_page)) {
-		$page = $donor_profile_page;
-		$donorProfile = $page;
-	}
-
-	if (is_page($donorProfile)) {
-		$template = IDONATE_DIR_NAME . '/src/Frontend/Templates/donor-profile.php';
-	}
 
 	// Donor Table Page
 	$donorTable = 'donor-table';
@@ -116,17 +105,6 @@ function idonate_custom_post_type_template($template)
 
 	if (is_page($donorTable)) {
 		$template = IDONATE_DIR_NAME . '/src/Frontend/Templates/donor-table.php';
-	}
-
-	// Donor Profile Edit
-	$donorEdit = 'donor-edit';
-	if (!empty($donor_edit_page)) {
-		$page = $donor_edit_page;
-		$donorEdit = $page;
-	}
-
-	if (is_page($donorEdit)) {
-		$template = IDONATE_DIR_NAME . '/src/Frontend/Templates/edit-donor.php';
 	}
 
 	// Show Donor
@@ -141,20 +119,21 @@ function idonate_custom_post_type_template($template)
 		$template = IDONATE_DIR_NAME . '/src/Frontend/Templates/donors.php';
 	}
 
-	// Show Login
-	$donor = 'donor-login';
-	if (!empty($login_page)) {
-		$page = $login_page;
-		$donor = $page;
+	// Dashboard
+	$dashboard = 'dashboard';
+	if (!empty($dashboard_page)) {
+		$page = $dashboard_page;
+		$dashboard = $page;
 	}
-	if (is_page($donor)) {
-		$template = IDONATE_DIR_NAME . '/src/Frontend/Templates/donor-login.php';
+
+	if (is_page($dashboard)) {
+		if (is_user_logged_in()) {
+			$template = IDONATE_DIR_NAME . '/src/Frontend/Templates/dashboard.php';
+		} else {
+			$template = IDONATE_DIR_NAME . '/src/Frontend/Templates/donor-login.php';
+		}
 	}
-	// Single Donor Template
-	$donor = 'donor-info';
-	if (is_page($donor)) {
-		$template = IDONATE_DIR_NAME . '/src/Frontend/Templates/single-donor.php';
-	}
+
 	return $template;
 }
 
@@ -162,76 +141,68 @@ function idonate_custom_post_type_template($template)
 // Create page when plugin activated
 function idonate_create_page_plugin_activated()
 {
-   // Default Pages to Create
-   $pages = array(
-	'Post Request',
-	'Donor Table',
-	'Request',
-	'Donors',
-	'Donor Register',
-	'Donor Edit',
-	'Donor Login',
-	'Donor Profile',
-	'Donor Info',
-);
-
-foreach ($pages as $page) {
-	// Check if the page already exists by title using WP_Query
-	$args = array(
-		'post_type'   => 'page',
-		'title'       => $page,
-		'post_status' => 'any',
-		'numberposts' => 1,
+	// Default Pages to Create
+	$pages = array(
+		'Post Request',
+		'Donor Table',
+		'Request',
+		'Donors',
+		'Donor Register',
+		'Dashboard',
 	);
 
-	$existing_page = get_posts($args);
-
-	// If the page doesn't exist, create it
-	if (empty($existing_page)) {
-		$Requestargs = array(
+	foreach ($pages as $page) {
+		// Check if the page already exists by title using WP_Query
+		$args = array(
 			'post_type'   => 'page',
-			'post_title'  => wp_strip_all_tags($page),
-			'post_status' => 'publish',
+			'title'       => $page,
+			'post_status' => 'any',
+			'numberposts' => 1,
 		);
-		wp_insert_post($Requestargs);
+
+		$existing_page = get_posts($args);
+
+		// If the page doesn't exist, create it
+		if (empty($existing_page)) {
+			$Requestargs = array(
+				'post_type'   => 'page',
+				'post_title'  => wp_strip_all_tags($page),
+				'post_status' => 'publish',
+			);
+			wp_insert_post($Requestargs);
+		}
 	}
-}
 }
 // Delete page when plugin deactivated
 function idonate_delete_page_plugin_deactivated()
 {
 
 	// Pages to Delete
-    $pages = array(
-        'Post Request',
+	$pages = array(
+		'Post Request',
 		'Donor Table',
-        'Request',
-        'Donors',
-        'Donor Register',
-        'Donor Edit',
-        'Donor Login',
-        'Donor Profile',
-        'Donor Info',
-    );
+		'Request',
+		'Donors',
+		'Donor Register',
+		'Dashboard',
+	);
 
-    foreach ($pages as $page) {
-        // Check if the page exists by title using WP_Query
-        $args = array(
-            'post_type'   => 'page',
-            'title'       => $page,
-            'post_status' => 'any',
-            'numberposts' => 1,
-        );
+	foreach ($pages as $page) {
+		// Check if the page exists by title using WP_Query
+		$args = array(
+			'post_type'   => 'page',
+			'title'       => $page,
+			'post_status' => 'any',
+			'numberposts' => 1,
+		);
 
-        $existing_page = get_posts($args);
+		$existing_page = get_posts($args);
 
-        // If the page exists, delete it permanently
-        if (!empty($existing_page)) {
-            wp_delete_post($existing_page[0]->ID, true);
-        }
-    }
-
-
+		// If the page exists, delete it permanently
+		if (!empty($existing_page)) {
+			wp_delete_post($existing_page[0]->ID, true);
+		}
+	}
 }
 
 /**
@@ -277,15 +248,16 @@ function idonate_blood_group()
 }
 
 // blood group as assosiative
-function idonate_blood_group_assosiative() {
+function idonate_blood_group_assosiative()
+{
 
 	$blood_group = idonate_blood_group();
 	$assoc_blood_group = array();
-    foreach ($blood_group as $group) {
-        $assoc_blood_group[$group] = $group;
-    }
+	foreach ($blood_group as $group) {
+		$assoc_blood_group[$group] = $group;
+	}
 
-    return $assoc_blood_group;
+	return $assoc_blood_group;
 }
 
 /**
@@ -303,7 +275,7 @@ function idonate_media_upload($user_id)
  * Donor Profile Image
  *
  */
-function idonatefile_img($id = '')
+function idonate_profile_img($id = '')
 {
 	$attachmentID =  get_user_meta($id, 'idonate_donor_profilepic', true);
 	$img = '';
@@ -387,7 +359,7 @@ add_action('wp_logout', 'idonate_logout_page');
 /**
  * Profile edit permalink
  **/
-function idonatefile_edit_permalink()
+function idonate_profile_edit_permalink()
 {
 	$options = get_option('idonate_settings');
 	$donor_edit_page = $options['donor_edit_page'];
@@ -401,7 +373,7 @@ function idonatefile_edit_permalink()
 /**
  * profile permalink
  **/
-function idonatefile_permalink()
+function idonate_profile_permalink()
 {
 	$options = get_option('idonate_settings');
 	$donor_profile_page = $options['donor_profile_page'];
@@ -599,4 +571,138 @@ function idonate_get_current_request()
 	$current_request = $query->found_posts;
 
 	return $current_request;
+}
+
+/**
+ * @param null $key
+ * @param bool $default
+ *
+ * @return array|bool|mixed
+ *
+ * Get idonate pro option by this helper function
+ *
+ * @since v.1.3.6
+ */
+if (! function_exists('get_idonate_option')) {
+	function get_idonate_option($key = null, $default = false)
+	{
+		return Helpers::get_option($key, $default);
+	}
+}
+
+if (! function_exists('idonate_get_template')) {
+	/**
+	 * Load template with override file system
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param null $template template.
+	 *
+	 * @return bool|string
+	 */
+	function idonate_get_template($template = null)
+	{
+		if (! $template) {
+			return false;
+		}
+		$template = str_replace('.', DIRECTORY_SEPARATOR, $template);
+
+		/**
+		 * Get template first from child-theme if exists
+		 * If child theme not exists, then get template from parent theme
+		 */
+		$template_location = trailingslashit(idonate_function()->path) . "src/Frontend/Templates/{$template}.php";
+
+		return apply_filters('idonate_get_template_path', $template_location, $template);
+	}
+}
+
+if (! function_exists('idonate_load_template')) {
+	/**
+	 * Load template for TUTOR
+	 *
+	 * @since 1.0.0
+	 * @since 1.1.2 updated
+	 *
+	 * @param null  $template template.
+	 * @param array $variables variables.
+	 *
+	 * @return void
+	 */
+	function idonate_load_template($template = null, $variables = array())
+	{
+		$variables = (array) $variables;
+		$variables = apply_filters('get_idonate_load_template_variables', $variables);
+		extract($variables);
+		$isLoad = apply_filters('should_idonate_load_template', true, $template, $variables);
+		if (! $isLoad) {
+			return;
+		}
+
+		do_action('idonate_load_template_before', $template, $variables);
+		$template_file = idonate_get_template($template);
+
+		if (file_exists($template_file)) {
+			include idonate_get_template($template);
+		} else {
+			do_action('idonate_after_template_not_found', $template);
+		}
+		do_action('idonate_load_template_after', $template, $variables);
+	}
+}
+
+if (! function_exists('idonate_function')) {
+	/**
+	 * Idonate helper function.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return object
+	 */
+	function idonate_function()
+
+	{
+		if (isset($GLOBALS['idonate_plugin_info'])) {
+			return $GLOBALS['idonate_plugin_info'];
+		}
+		$path    = plugin_dir_path(IDONATE_FILE);
+
+		// Prepare the basepath.
+		$home_url  = get_home_url();
+		$parsed    = parse_url($home_url);
+		$base_path = (is_array($parsed) && isset($parsed['path'])) ? $parsed['path'] : '/';
+		$base_path = rtrim($base_path, '/') . '/';
+		// Get current URL.
+		$current_url = trailingslashit($home_url) . substr($_SERVER['REQUEST_URI'], strlen($base_path)); //phpcs:ignore
+
+		$info = array(
+			'path'                   => $path,
+			'url'                    => plugin_dir_url(IDONATE_FILE),
+			'icon_dir'               => plugin_dir_url(IDONATE_FILE) . 'assets/images/images-v2/icons/',
+			'v2_img_dir'             => plugin_dir_url(IDONATE_FILE) . 'assets/images/images-v2/',
+			'current_url'            => $current_url,
+			'basename'               => plugin_basename(IDONATE_FILE),
+			'basepath'               => $base_path,
+			'version'                => IDONATE_VERSION,
+			'nonce_action'           => 'idonate_nonce_action',
+			'nonce'                  => '_idonate_nonce',
+		);
+
+		$GLOBALS['idonate_plugin_info'] = (object) $info;
+		return $GLOBALS['idonate_plugin_info'];
+	}
+}
+
+if (! function_exists('idonate_time')) {
+	/**
+	 * Return current Time from WordPress time
+	 *
+	 * @return int|string
+	 * @since v.1.4.3
+	 */
+	function idonate_time()
+	{
+		$gmt_offset = get_option('gmt_offset');
+		return time() + ($gmt_offset * HOUR_IN_SECONDS);
+	}
 }

@@ -13,6 +13,8 @@ namespace ThemeAtelier\Idonate;
 
 use ThemeAtelier\Idonate\Loader;
 use ThemeAtelier\Idonate\Helpers\Helpers;
+use ThemeAtelier\Idonate\Frontend\Helpers\RewriteRules;
+use ThemeAtelier\Idonate\Frontend\Helpers\Template;
 use ThemeAtelier\Idonate\Admin\Admin;
 use ThemeAtelier\Idonate\Frontend\Frontend;
 use ThemeAtelier\Idonate\Frontend\Shortcode\ShortcodeDonors;
@@ -78,6 +80,8 @@ class Idonate
 		$this->define_constants();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
+		$this->rewrite_rules         = new RewriteRules();
+		 new Template();
 		add_action('plugin_loaded', array($this, 'init_plugin'));
 		add_action('activated_plugin', array($this, 'redirect_to'));
 		$active_plugins = get_option('active_plugins');

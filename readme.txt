@@ -139,6 +139,19 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 15. Dashboard Settings Advance Settings
 
 == Changelog ==
+= 2.1.0 - September 23, 2024 =
+- New: Added Dashboard page.
+- New: Moved the Login page under the Dashboard.
+- New: Introduced Dashboard Statistics page.
+- New: Relocated the My Profile page to the Dashboard.
+- New: Created a Settings page, which now includes sub-pages for Profile, Password, Address, and Social Profile to manage donor information.
+- New: Added a Logout option as a sub-menu under the Dashboard.
+- Removed: Eliminated unused donor profile pages, now accessible under the Dashboard sub-pages.
+- Removed: Deleted the donor info page; the donor profile detail page now serves as the single page for donor information.
+- New: Option to change the donor profile single page slug.
+- New: Added LinkedIn and website fields for donors in the Social Profile section.
+- Update: Refreshed the Dashboard page UI for donors.
+
 = 2.0.3 - Sep 07, 2024
 - Fixed: Admin pro settings CSS not loading issue
 

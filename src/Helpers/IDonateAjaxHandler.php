@@ -153,9 +153,9 @@ if (!class_exists('IDonateAjaxHandler')) {
 					<div class="idonate-donor-modal_wrapper" id="idonate_popup_ajax_content">
 						<div class="donor_info">
 							<div class="donor_info_image">
-								<?php if (idonatefile_img($user_id)) : ?>
+								<?php if (idonate_profile_img($user_id)) : ?>
 									<?php
-									echo wp_kses_post(idonatefile_img($user_id));
+									echo wp_kses_post(idonate_profile_img($user_id));
 									?>
 								<?php else :
 									echo '<img src="' . esc_url(IDONATE_DIR_URL) . 'src/assets/images/donorplaceholder.jpeg"  alt="' . esc_attr(get_user_meta($user_id, 'idonate_donor_full_name', true)) . '"/>';

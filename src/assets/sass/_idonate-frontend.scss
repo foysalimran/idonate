@@ -1,12 +1,3 @@
-:root {
-  --idonate-primary: #ef1414;
-  --idonate-border: #d1d5db;
-  --idonate-white: #ffffff;
-  --idonate-black: #1f2937;
-  --idonate-success: #18692b;
-  --idonate-error: #ce0a1d;
-  --idonate-shadow: #0000001a;
-}
 /*
 * GLOBAL CSS
 */
@@ -91,9 +82,6 @@
 
   // FORM STYLE
   .request-form {
-    box-shadow: 0 1px 20px var(--idonate-shadow);
-    padding: 40px 30px;
-    background-color: var(--idonate-white);
     .submit-info {
       h2 {
         font-size: 24px;
@@ -106,7 +94,7 @@
     form {
       label {
         margin-bottom: 6px;
-        font-weight: 600;
+        font-weight: 500;
         display: block;
         &.error {
           color: var(--idonate-error);
@@ -119,6 +107,9 @@
       .idonate_col_item {
         width: 100%;
         margin-bottom: 15px;
+        label {
+          margin-bottom: 7px;
+        }
       }
       .donor_register,
       .request-form-page {
@@ -271,33 +262,7 @@
       }
     }
   }
-  .donor-profile {
-    background-color: var(--idonate-white);
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 1px 20px var(--idonate-shadow);
-    .personal-info {
-      h3 {
-        padding-bottom: 10px;
-        margin-bottom: 0;
-        margin-top: 15px;
-      }
-      p {
-        padding-bottom: 10px;
-        margin-bottom: 0;
-        margin-top: 0;
-      }
-    }
-    .address {
-      p {
-        border-bottom: 1px solid var(--idonate-border);
-        padding: 12px 10px;
-        margin: 0;
-        margin-bottom: 0;
-      }
-    }
-  }
+
   // WIDGET CSS
   ul {
     li:not(:last-child) {
@@ -331,6 +296,20 @@
     color: var(--idonate-error);
     text-align: center;
   }
+  .dashboard_content_title {
+    font-size: 28px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .idonate_submit_btn {
+    padding: 8px 15px !important;
+    background-color: var(--idonate-primary) !important;
+    color: var(--idonate-white) !important;
+    &:hover {
+      background-color: var(--idonate-primary) !important;
+      color: var(--idonate-white) !important;
+    }
+  }
 }
 
 /*
@@ -345,7 +324,6 @@ Idonate alerts
   max-width: 500px;
   margin: 0 auto;
   display: block;
-  text-align: center;
 }
 .idonate-alert-danger {
   color: var(--idonate-error);
@@ -675,7 +653,6 @@ button.mfp-arrow {
     line-height: 30px;
     background-color: #55acee;
     border-radius: 50%;
-    transition: all 0.3s;
     &:hover {
       color: var(--idonate-white);
     }
@@ -760,7 +737,10 @@ button.mfp-arrow {
 }
 #blood-request,
 #form {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+#idonate-response-msg {
+  margin-top: 20px;
 }
 
 /* BLOOD REQUEST */
@@ -799,7 +779,7 @@ button.mfp-arrow {
     }
   }
   .single-request {
-    padding: 20px 25px;
+    padding-bottom: 25px;
     padding-top: 2px;
     box-shadow: 0 1px 20px var(--idonate-shadow);
     background-color: var(--idonate-white);
@@ -858,6 +838,7 @@ button.mfp-arrow {
     }
   }
   .request-info-area {
+    padding: 0px 41px;
     margin-top: 12px;
   }
   .request-info {
@@ -908,20 +889,35 @@ input[type="radio"] {
   align-items: center;
   gap: 3px;
 }
-.idonate-login .button {
-  color: var(--idonate-black);
-  background: transparent;
-  border: 2px solid var(--idonate-primary);
-  padding: 8px 18px;
-  transition: 0.5s;
-  line-height: 1;
-  cursor: pointer;
-  border-radius: 3px;
+.idonate-login {
+  padding: 20px;
+  box-shadow: 0 1px 20px var(--idonate-shadow);
+  border-radius: 5px;
+  .button {
+    color: var(--idonate-black);
+    background: transparent;
+    border: 2px solid var(--idonate-primary);
+    padding: 8px 18px;
+    transition: 0.5s;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 3px;
+    &:hover {
+      background-color: var(--idonate-primary);
+      border: 2px solid var(--idonate-primary);
+    }
+  }
+  .login-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    input {
+      width: auto;
+    }
+  }
 }
-.idonate-login .button:hover {
-  background-color: var(--idonate-primary);
-  border: 2px solid var(--idonate-primary);
-}
+
 button.request_submit_button,
 input.register_donor {
   color: var(--idonate-black) !important;
@@ -941,36 +937,12 @@ input.register_donor:hover {
   border: 2px solid var(--idonate-primary) !important;
   color: var(--idonate-white) !important;
 }
-.idonate-login .login-submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0;
-}
-.idonate-login .login-submit input {
-  width: auto;
-}
+
 .login {
   margin: 0 auto;
 }
 
-.donor_edit {
-  width: 100%;
-  padding: 30px 0;
-}
-
-.donor_edit .submit {
-  background-color: var(--idonate-primary);
-  color: var(--idonate-white) !important;
-  border: 1px solid var(--idonate-primary);
-}
-.donor_edit .submit:hover {
-  background-color: var(--idonate-primary);
-  border: 1px solid var(--idonate-primary);
-}
-
 /* PAGINATION */
-
 .idonate-pagination {
   text-align: center;
   display: flex;
@@ -1031,4 +1003,18 @@ input.register_donor:hover {
 .social-icon a:hover {
   color: var(--idonate-white);
   background: var(--idonate-primary);
+}
+
+.register_success_donor {
+  text-align: center;
+  a {
+    padding: 8px 15px;
+    background-color: var(--idonate-primary);
+    color: var(--idonate-white);
+    border-radius: 5px;
+    display: inline-block;
+    &:hover {
+      color: var(--idonate-white);
+    }
+  }
 }
