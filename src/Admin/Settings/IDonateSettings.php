@@ -318,6 +318,13 @@ class IDonateSettings
 										'default'	=> 'single_page_link',
 									),
 									array(
+										'id'       	=> 'donor_view_slug',
+										'type'     	=> 'text',
+										'title'    	=> esc_html__('Donor Single Page Slug', 'idonate'),
+										'default'	=> 'donor',
+										'dependency' => array('donor_view_button', '==', 'single_page_link'),
+									),
+									array(
 										'id'       => 'next_prev',
 										'type'     => 'checkbox',
 										'title'    => esc_html__('Enable Next/Prev', 'idonate'),
