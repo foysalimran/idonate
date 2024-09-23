@@ -3,9 +3,9 @@ Contributors: ThemeAtelier, faysal61
 Donate link: https://bloodwp.com
 Tags: blood donation, blood request, donate blood, online blood donation, Blood management system
 Requires at least: 5.3
-Tested up to: 6.6.1
+Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 2.0.2
+Stable tag: 2.1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -140,92 +140,84 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 
 == Changelog ==
 = 2.1.0 - September 23, 2024 =
-- New: Added Dashboard page.
-- New: Moved the Login page under the Dashboard.
-- New: Introduced Dashboard Statistics page.
-- New: Relocated the My Profile page to the Dashboard.
-- New: Created a Settings page, which now includes sub-pages for Profile, Password, Address, and Social Profile to manage donor information.
-- New: Added a Logout option as a sub-menu under the Dashboard.
-- Removed: Eliminated unused donor profile pages, now accessible under the Dashboard sub-pages.
-- Removed: Deleted the donor info page; the donor profile detail page now serves as the single page for donor information.
-- New: Option to change the donor profile single page slug.
-- New: Added LinkedIn and website fields for donors in the Social Profile section.
-- Update: Refreshed the Dashboard page UI for donors.
+* New: Added Dashboard page.
+* New: Moved the Login page under the Dashboard.
+* New: Introduced Dashboard Statistics page.
+* New: Relocated the My Profile page to the Dashboard.
+* New: Created a Settings page, which now includes sub-pages for Profile, Password, Address, and Social Profile to manage donor information.
+* New: Added a Logout option as a sub-menu under the Dashboard.
+* Removed: Eliminated unused donor profile pages, now accessible under the Dashboard sub-pages.
+* Removed: Deleted the donor info page; the donor profile detail page now serves as the single page for donor information.
+* New: Option to change the donor profile single page slug.
+* New: Added LinkedIn and website fields for donors in the Social Profile section.
+* Update: Refreshed the Dashboard page UI for donors.
+* TESTED: WordPress 6.6.2 compatibility.
 
-= 2.0.3 - Sep 07, 2024
-- Fixed: Admin pro settings CSS not loading issue
+= 2.0.3 - Sep 07, 2024 =
+* Fixed: Admin pro settings CSS not loading issue
 
-= 2.0.2 - August 17, 2024
-- Fixed: Icon hover issue.
-- Fixed: Other css issue.
-- Fixed: State select option for single country.
-- Update: Icons for admin dashboard.
-- Added: Sherpur district for Bangladesh
+= 2.0.2 - August 17, 2024 =
+* Fixed: Icon hover issue.
+* Fixed: Other css issue.
+* Fixed: State select option for single country.
+* Update: Icons for admin dashboard.
+* Added: Sherpur district for Bangladesh
 
-= 2.0.1 - August 08, 2024
+= 2.0.1 - August 08, 2024 =
+* Fixed: Warnings after the first installation of plugin.
+* Fixed: Other css issue.
 
-- Fixed: Warnings after the first installation of plugin.
-- Fixed: Other css issue.
+= 2.0.0 - July 30, 2024 =
+* New: Frontend form for donor registration
+* New: Backend form for adding donors by site admin
+* New: Advanced backend form for adding donors by site admin.  
+* New: Donors View, Edit, Delete options from backend by site admin.
+* New: Donors review and approval option by site admin.  
+* New: Donors listing with advanced search feature.  
+* New: Donors single page. 
+* Update: Frontend blood request submission form.
+* New: Request listing with advanced search feature.
+* Update: Auto-Delete Expired Blood Requests - Never delete, delete on the date when blood is needed, and delete 1 week after the blood is needed.  
+* New:  Options to add your own container width for pages for different devices
+* Update: Advanced social sharing option for blood requests and donors.
 
-= 2.0.0 - July 30, 2024
+= 1.9.1 =
+* Compitibility with WordPress 6.5.5
 
-- New: Frontend form for donor registration
-- New: Backend form for adding donors by site admin
-- New: Advanced backend form for adding donors by site admin.  
-- New: Donors View, Edit, Delete options from backend by site admin.
-- New: Donors review and approval option by site admin.  
-- New: Donors listing with advanced search feature.  
-- New: Donors single page. 
-- Update: Frontend blood request submission form.
-- New: Request listing with advanced search feature.
-- Update: Auto-Delete Expired Blood Requests - Never delete, delete on the date when blood is needed, and delete 1 week after the blood is needed.  
-- New:  Options to add your own container width for pages for different devices
-- Update: Advanced social sharing option for blood requests and donors.
+= 1.8.1 =
+* Compitiblity with wordpress 6.4.1
 
-1.9.1
+= 1.7.0 =
+* Compitiblity with wordpress 6.3
 
-- Compitibility with WordPress 6.5.5
+= Idonate 1.6 =
+* Support bootstrap 4.0.0
+* Change design in blood request page.
+* Add social share option in request single page.
+* Fixed other css issue.
+* More update coming soon.
 
-1.8.1
+= Idonate 1.5 =
+* Fixed plugin active error.
 
-- Compitiblity with wordpress 6.4.1
+= Idonate 1.4 =
+* Add pagination in request page.
+* Add country and state field.
+* Add recaptcha.
+* Add single country use option.
+* Add request approval option.
 
-1.7.0
-- Compitiblity with wordpress 6.3
+= Idonate 1.3 =
+* Add Auto blood request delete option after past blood needed date
+* Fixed other some issue
 
-Idonate 1.6
+= Idonate 1.2 =
+* Fontawesome Icon Load option
+* Change request design
+* Fixed some other issue
 
-- Support bootstrap 4.0.0
-- Change design in blood request page.
-- Add social share option in request single page.
-- Fixed other css issue.
-- More update coming soon.
-
-Idonate 1.5
-
-- Fixed plugin active error.
-
-Idonate 1.4
-
-- Add pagination in request page.
-- Add country and state field.
-- Add recaptcha.
-- Add single country use option.
-- Add request approval option.
-
-Idonate 1.3
-
-- Add Auto blood request delete option after past blood needed date
-- Fixed other some issue
-
-Idonate 1.2
-
-- Fontawesome Icon Load option
-- Change request design
-- Fixed some other issue
-
-Idonate 1.1
-- Fixed settings option select box issue
+= Idonate 1.1 =
+* Fixed settings option select box issue
 
 == Upgrade Notice ==
 
