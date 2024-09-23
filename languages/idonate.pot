@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-23 09:21+0000\n"
+"POT-Creation-Date: 2024-09-23 09:27+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -1539,110 +1539,118 @@ msgid "PAGE SETTINGS"
 msgstr ""
 
 #: src/Admin/Settings/IDonateSettings.php:618
-msgid "Blood Request Listing Page"
+msgid "Dashboard Page"
 msgstr ""
 
 #: src/Admin/Settings/IDonateSettings.php:620
-msgid "Select your page to display blood requests. Default page name: Request"
+msgid "Select your dashboard page"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:621, src/Admin/Settings/IDonateSettings.php:633, src/Admin/Settings/IDonateSettings.php:645, src/Admin/Settings/IDonateSettings.php:669, src/Admin/Settings/IDonateSettings.php:681, src/Admin/Settings/IDonateSettings.php:696
+#: src/Admin/Settings/IDonateSettings.php:621, src/Admin/Settings/IDonateSettings.php:633, src/Admin/Settings/IDonateSettings.php:645, src/Admin/Settings/IDonateSettings.php:657, src/Admin/Settings/IDonateSettings.php:681, src/Admin/Settings/IDonateSettings.php:693, src/Admin/Settings/IDonateSettings.php:708
 msgid "Select a page"
 msgstr ""
 
 #: src/Admin/Settings/IDonateSettings.php:630
-msgid "Blood Request Form Page"
+msgid "Blood Request Listing Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateSettings.php:632
+msgid "Select your page to display blood requests. Default page name: Request"
 msgstr ""
 
 #: src/Admin/Settings/IDonateSettings.php:642
-msgid "Donor Listing Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:644
-msgid "Select your page to display donors. Default page name: Donors"
+msgid "Blood Request Form Page"
 msgstr ""
 
 #: src/Admin/Settings/IDonateSettings.php:654
-msgid "Donor Table Page"
+msgid "Donor Listing Page"
 msgstr ""
 
 #: src/Admin/Settings/IDonateSettings.php:656
-msgid "Select your page to display donor table. Default page name: Donor Table"
+msgid "Select your page to display donors. Default page name: Donors"
 msgstr ""
 
 #: src/Admin/Settings/IDonateSettings.php:666
-msgid "Donor Register Page"
+msgid "Donor Table Page"
 msgstr ""
 
 #: src/Admin/Settings/IDonateSettings.php:668
-msgid "Select your page to display donor registraion form. Default page name: Donor Register"
+msgid "Select your page to display donor table. Default page name: Donor Table"
 msgstr ""
 
 #: src/Admin/Settings/IDonateSettings.php:678
+msgid "Donor Register Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateSettings.php:680
+msgid "Select your page to display donor registraion form. Default page name: Donor Register"
+msgstr ""
+
+#: src/Admin/Settings/IDonateSettings.php:690
 msgid "After Login Redirect Page"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:679
+#: src/Admin/Settings/IDonateSettings.php:691
 msgid "Select your page to redirect after successful login. Default page name: Home page"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:693
+#: src/Admin/Settings/IDonateSettings.php:705
 msgid "After Logout Redirect Page"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:694
+#: src/Admin/Settings/IDonateSettings.php:706
 msgid "Select your page to redirect after successful logout. Default page name: Login page"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:704
+#: src/Admin/Settings/IDonateSettings.php:716
 msgid "ADVANCE SETTINGS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:716
+#: src/Admin/Settings/IDonateSettings.php:728
 msgid "Delete Default Pages On Plugin Deactivation"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:717
+#: src/Admin/Settings/IDonateSettings.php:729
 msgid "Check this box if you would like Idonate plugin to completely remove all pages created by default."
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:721
+#: src/Admin/Settings/IDonateSettings.php:733
 msgid "Enqueue or Dequeue CSS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:726
+#: src/Admin/Settings/IDonateSettings.php:738
 msgid "IcoFont"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:727, src/Admin/Settings/IDonateSettings.php:736, src/Admin/Settings/IDonateSettings.php:745, src/Admin/Settings/IDonateSettings.php:758, src/Admin/Settings/IDonateSettings.php:767, src/Admin/Settings/IDonateSettings.php:776
+#: src/Admin/Settings/IDonateSettings.php:739, src/Admin/Settings/IDonateSettings.php:748, src/Admin/Settings/IDonateSettings.php:757, src/Admin/Settings/IDonateSettings.php:770, src/Admin/Settings/IDonateSettings.php:779, src/Admin/Settings/IDonateSettings.php:788
 msgid "Enqueued"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:728, src/Admin/Settings/IDonateSettings.php:737, src/Admin/Settings/IDonateSettings.php:746, src/Admin/Settings/IDonateSettings.php:759, src/Admin/Settings/IDonateSettings.php:768, src/Admin/Settings/IDonateSettings.php:777
+#: src/Admin/Settings/IDonateSettings.php:740, src/Admin/Settings/IDonateSettings.php:749, src/Admin/Settings/IDonateSettings.php:758, src/Admin/Settings/IDonateSettings.php:771, src/Admin/Settings/IDonateSettings.php:780, src/Admin/Settings/IDonateSettings.php:789
 msgid "Dequeued"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:735, src/Admin/Settings/IDonateSettings.php:757
+#: src/Admin/Settings/IDonateSettings.php:747, src/Admin/Settings/IDonateSettings.php:769
 msgid "Magnific Popup"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:744, src/Admin/Settings/IDonateSettings.php:766
+#: src/Admin/Settings/IDonateSettings.php:756, src/Admin/Settings/IDonateSettings.php:778
 msgid "Data Tables"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:752
+#: src/Admin/Settings/IDonateSettings.php:764
 msgid "Enqueue or Dequeue JS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:775
+#: src/Admin/Settings/IDonateSettings.php:787
 msgid "Form Validate"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:789
+#: src/Admin/Settings/IDonateSettings.php:801
 msgid "CUSTOM CSS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:799
+#: src/Admin/Settings/IDonateSettings.php:811
 msgid "CUSTOM JS"
 msgstr ""
 

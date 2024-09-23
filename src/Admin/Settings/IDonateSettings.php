@@ -609,6 +609,18 @@ class IDonateSettings
 				'icon' => 'icofont-file-alt',
 				'fields' => array(
 					array(
+						'id'       	=> 'dashboard_page',
+						'type'     	=> 'select',
+						'chosen'      => true,
+						'settings'	=> array(
+							'width'		=> '227px',
+						),
+						'title'    	=> esc_html__('Dashboard Page', 'idonate'),
+						'options' 	=> 'pages',
+						'desc'    	=> esc_html__('Select your dashboard page', 'idonate'),
+						'placeholder' => esc_html__('Select a page', 'idonate'),
+					),
+					array(
 						'id'       	=> 'rp_request_page',
 						'type'     	=> 'select',
 						'chosen'      => true,
