@@ -36,7 +36,7 @@ class Manager
     public static function views_html($users, $total_donor, $number, $paged, $pagenum_link)
     {
         $options = get_option('idonate_settings');
-        $donor_view_button = isset($options['donor_view_button']) ? $options['donor_view_button'] : '';
+        $donor_view_button = isset($options['donor_view_button']) ? $options['donor_view_button'] : 'donor';
         $hide_mobile_number = isset($options['hide_mobile_number']) ? $options['hide_mobile_number'] : '';
 
         if (is_array($users) && count($users) > 0) :
