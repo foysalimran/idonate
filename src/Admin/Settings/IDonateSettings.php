@@ -662,42 +662,6 @@ class IDonateSettings
 						'placeholder' => esc_html__('Select a page', 'idonate'),
 					),
 					array(
-						'id'       => 'donor_edit_page',
-						'type'     => 'select',
-						'chosen'      => true,
-						'settings'	=> array(
-							'width'		=> '227px',
-						),
-						'title'    => esc_html__('Donor Profile Edit Page', 'idonate'),
-						'options'    => 'pages',
-						'desc'    => esc_html__('Select your page to display donor edit form.  Default page name: Donor Edit', 'idonate'),
-						'placeholder' => esc_html__('Select a page', 'idonate'),
-					),
-					array(
-						'id'       => 'donor_profile_page',
-						'type'     => 'select',
-						'chosen'      => true,
-						'settings'	=> array(
-							'width'		=> '227px',
-						),
-						'title'    => esc_html__('Donor Profile Page', 'idonate'),
-						'options'    => 'pages',
-						'desc'    => esc_html__('Select your page to display donor profile. Default page name: Donor Profile', 'idonate'),
-						'placeholder' => esc_html__('Select a page', 'idonate'),
-					),
-					array(
-						'id'       => 'login_page',
-						'type'     => 'select',
-						'chosen'      => true,
-						'settings'	=> array(
-							'width'		=> '227px',
-						),
-						'title'    => esc_html__('Login Page', 'idonate'),
-						'options'    => 'pages',
-						'desc'    => esc_html__('Select your page to display donor login form. Default page name: Donor Login', 'idonate'),
-						'placeholder' => esc_html__('Select a page', 'idonate'),
-					),
-					array(
 						'id'       => 'login_redirect',
 						'type'     => 'select',
 						'chosen'      => true,
