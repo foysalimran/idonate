@@ -50,7 +50,7 @@ if ( ! class_exists( 'IDONATE_Field_column' ) ) {
 					'laptop_icon'               => '<i class="icofont-laptop"></i>',
 					'tablet_icon'               => '<i class="icofont-surface-tablet"></i>',
 					'mobile_icon'               => '<i class="icofont-android-tablet"></i>',
-					'all_text'                  => '<i class="icofont-duotone icofont-drag"></i>',
+					'all_text'                  => '<i class="icofont-drag"></i>',
 					'large_desktop_placeholder' => esc_html__( 'Large Desktop', 'idonate' ),
 					'desktop_placeholder'       => esc_html__( 'Desktop', 'idonate' ),
 					'laptop_placeholder'        => esc_html__( 'Small Desktop', 'idonate' ),

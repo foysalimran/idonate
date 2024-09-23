@@ -310,7 +310,7 @@
 
           if (isEmpty(matchedItems)) {
             $(".state").empty();
-            var $opt = ''; // Default option
+            var $opt = ""; // Default option
             $.each(matchedItems, function (key, value) {
               $opt += '<option value="' + key + '">' + value + "</option>";
             });
@@ -318,7 +318,7 @@
           }
         } else {
           $(".state").empty();
-          var $opt = ''; // Default option
+          var $opt = ""; // Default option
           $.each(all_state, function (key, value) {
             $opt += '<option value="' + key + '">' + value + "</option>";
           });

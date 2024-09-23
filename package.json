@@ -1,10 +1,10 @@
 {
   "name": "idonate",
-  "version": "2.0.0",
+  "version": "2.0.3",
   "description": "WordPress Blood Donation Plugin",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass src/assets/sass/idonate-frontend.scss src/assets/css/idonate-frontend.css -w",
+    "watch:sass": "sass src/assets/sass/main.scss src/assets/css/idonate-frontend.css -w",
     "start": "npm-run-all watch:sass",
     "build": "gulp",
     "rm-lang": "rm ./languages/idonate.pot || echo \"No idonate pot yet\""

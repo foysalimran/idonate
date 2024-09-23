@@ -11,6 +11,7 @@
  *
  */
 
+use ThemeAtelier\Idonate\Helpers\Helpers;
 use ThemeAtelier\Idonate\Helpers\Countries\Countries;
 use ThemeAtelier\Idonate\Frontend\Helpers\SocialShare;
 
@@ -24,24 +25,23 @@ if (!defined('ABSPATH')) {
 	die(esc_html(IDONATE_ALERT_MSG));
 }
 
+$user_name = sanitize_text_field(get_query_var('idonate_profile_username'));
+$get_user = Helpers::get_user_by_login($user_name);
 
-if ((!is_user_logged_in() || current_user_can('donor') != 1) && !$_GET['donor_id']) {
-	wp_safe_redirect(site_url());
+if (! is_object($get_user) || ! property_exists($get_user, 'ID')) {
+	wp_safe_redirect(get_home_url());
+	exit;
 }
 
-get_header();
+Helpers::idonate_custom_header();
 ?>
 
 <section class="idonate donor-single-page section-padding">
 	<div class="ta-container">
 		<div class="ta-row">
-
 			<?php
-			if (isset($_GET['donor_id'])) {
-				$user_id = $_GET['donor_id'];
-			} else if (current_user_can('donor')) {
-				$user_id = get_current_user_id();
-			}
+			$user_id = $get_user->ID;
+
 
 			$permalink = add_query_arg(
 				array(
@@ -70,14 +70,16 @@ get_header();
 			// Social Link
 			$fb = get_user_meta($user_id, 'idonate_donor_fburl', true);
 			$twitter = get_user_meta($user_id, 'idonate_donor_twitterurl', true);
+			$linkedin = get_user_meta($user_id, 'idonate_donor_linkedin', true);
+			$website = get_user_meta($user_id, 'idonate_donor_website', true);
 			?>
 
 			<div class="ta-col-sm-1 ta-col-md-2 ta-col-lg-3 ta-col-xl-3 text-center">
 				<div class="left__user">
 					<div class="left__user__img">
-						<?php if (idonatefile_img($user_id)) : ?>
+						<?php if (idonate_profile_img($user_id)) : ?>
 							<?php
-							echo wp_kses_post(idonatefile_img($user_id));
+							echo wp_kses_post(idonate_profile_img($user_id));
 							?>
 						<?php else : ?>
 							<img src="<?php
@@ -91,10 +93,12 @@ get_header();
 					echo '<p><b>' . esc_html('Blood Group:', 'idonate') . ' </b>' . esc_html(get_user_meta($user_id, 'idonate_donor_bloodgroup', true)) . '</p>';
 					echo '<p class="blood-group"><i class="icofont-unity-hand"></i><span class="' . esc_attr($abclass) . '"><b>' . esc_html('Availablity: ', 'idonate') . '</b>' . esc_html(ucfirst($av)) . wp_kses_post($signal) . '</span></p>';
 
-					if (!empty($user->user_email)) {
+					$hide_email = isset($option['hide_email']) ? $option['hide_email'] : '';
+					$hide_mobile_number = isset($option['hide_mobile_number']) ? $option['hide_mobile_number'] : '';
+					if ($hide_email && !empty($user->user_email)) {
 						echo '<p><b>' . esc_html('Email:', 'idonate') . ' </b>' . esc_html($user->user_email) . '</p>';
 					}
-					if ($user_id) {
+					if ($hide_mobile_number && $user_id) {
 						echo '<p><b>' . esc_html('Mobile:', 'idonate') . ' </b>' . esc_html(get_user_meta($user_id, 'idonate_donor_mobile', true)) . '</p>';
 					}
 
@@ -113,6 +117,14 @@ get_header();
 						// Twitter
 						if ($twitter) {
 							echo '<a target="_blank" href="' . esc_url($twitter) . '"><i class="icofont-twitter"></i></a>';
+						}
+						// Linkedin Url 
+						if ($linkedin) {
+							echo '<a target="_blank" href="' . esc_url($linkedin) . '"><i class="icofont-linkedin"></i></a>';
+						}
+						// Website
+						if ($website) {
+							echo '<a target="_blank" href="' . esc_url($website) . '"><i class="icofont-earth"></i></a>';
 						}
 						?>
 				</div>
@@ -185,6 +197,6 @@ get_header();
 		</div>
 	</div>
 </section>
+
 <?php
-get_footer();
-?>
+Helpers::idonate_custom_footer();

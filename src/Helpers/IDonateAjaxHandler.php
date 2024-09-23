@@ -153,9 +153,9 @@ if (!class_exists('IDonateAjaxHandler')) {
 					<div class="idonate-donor-modal_wrapper" id="idonate_popup_ajax_content">
 						<div class="donor_info">
 							<div class="donor_info_image">
-								<?php if (idonatefile_img($user_id)) : ?>
+								<?php if (idonate_profile_img($user_id)) : ?>
 									<?php
-									echo wp_kses_post(idonatefile_img($user_id));
+									echo wp_kses_post(idonate_profile_img($user_id));
 									?>
 								<?php else :
 									echo '<img src="' . esc_url(IDONATE_DIR_URL) . 'src/assets/images/donorplaceholder.jpeg"  alt="' . esc_attr(get_user_meta($user_id, 'idonate_donor_full_name', true)) . '"/>';
@@ -603,10 +603,11 @@ if (!class_exists('IDonateAjaxHandler')) {
 			}
 			
 			$option = get_option('idonate_settings');
+			$rp_request_per_page = isset($option['rp_request_per_page']) ? $option['rp_request_per_page'] : '';
 
 			// request per page
-			if ($option['rp_request_per_page']) {
-				$rperpage =  $option['rp_request_per_page'];
+			if ($rp_request_per_page) {
+				$rperpage =  $rp_request_per_page;
 			} else {
 				$rperpage = 10;
 			}

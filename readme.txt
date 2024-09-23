@@ -5,7 +5,7 @@ Tags: blood donation, blood request, donate blood, online blood donation, Blood 
 Requires at least: 5.3
 Tested up to: 6.6.1
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 2.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -130,14 +130,29 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 6. Frontend Donor Login
 7. Dashboard Welcome Page
 8. Dashboard Blood Requests List
-9. Dashboard Donors List
-10. Dashboard Settings General
-11. Dashboard Settings Donors Settings
-12. Dashboard Settings Request Settings
-13. Dashboard Settings Page Settings
-14. Dashboard Settings Advance Settings
+9. Dashboard Add Blood Requests
+10. Dashboard Donors List
+11. Dashboard Settings General
+12. Dashboard Settings Donors Settings
+13. Dashboard Settings Request Settings
+14. Dashboard Settings Page Settings
+15. Dashboard Settings Advance Settings
 
 == Changelog ==
+= 2.0.3 - Sep 07, 2024
+- Fixed: Admin pro settings CSS not loading issue
+
+= 2.0.2 - August 17, 2024
+- Fixed: Icon hover issue.
+- Fixed: Other css issue.
+- Fixed: State select option for single country.
+- Update: Icons for admin dashboard.
+- Added: Sherpur district for Bangladesh
+
+= 2.0.1 - August 08, 2024
+
+- Fixed: Warnings after the first installation of plugin.
+- Fixed: Other css issue.
 
 = 2.0.0 - July 30, 2024
 
@@ -155,42 +170,49 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 - Update: Advanced social sharing option for blood requests and donors.
 
 1.9.1
+
 - Compitibility with WordPress 6.5.5
 
 1.8.1
+
 - Compitiblity with wordpress 6.4.1
 
 1.7.0
 - Compitiblity with wordpress 6.3
 
 Idonate 1.6
-1. Support bootstrap 4.0.0
-2. Change design in blood request page.
-3. Add social share option in request single page.
-4. Fixed other css issue.
-5. More update coming soon.
+
+- Support bootstrap 4.0.0
+- Change design in blood request page.
+- Add social share option in request single page.
+- Fixed other css issue.
+- More update coming soon.
 
 Idonate 1.5
-1. Fixed plugin active error.
+
+- Fixed plugin active error.
 
 Idonate 1.4
-1. Add pagination in request page.
-2. Add country and state field.
-3. Add recaptcha.
-4  Add single country use option.
-5. Add request approval option.
+
+- Add pagination in request page.
+- Add country and state field.
+- Add recaptcha.
+- Add single country use option.
+- Add request approval option.
 
 Idonate 1.3
-1. Add Auto blood request delete option after past blood needed date
-2. Fixed other some issue
+
+- Add Auto blood request delete option after past blood needed date
+- Fixed other some issue
 
 Idonate 1.2
-1. Fontawesome Icon Load option
-2. Change request design
-3. fixed some other issue
+
+- Fontawesome Icon Load option
+- Change request design
+- Fixed some other issue
 
 Idonate 1.1
-1. Fixed settings option select box issue
+- Fixed settings option select box issue
 
 == Upgrade Notice ==
 

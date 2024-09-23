@@ -135,24 +135,40 @@ class ShortcodePostBloodRequest
 						</div>
 					</div>
 					<div class="idonate_row idonate_col">
-						<div class="idonate_col_item">
-							<label for="bloodgroup"><?php esc_html_e('Country', 'idonate'); ?></label>
-							<select class="form-control country" name="country">
-								<?php
-								$allowed_html = array(
-									'option' => array(
-										'value' => array(),
-										'selected' => array(),  // Allow the selected attribute
-									),
-								);
-								echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
-								?>
-							</select>
-						</div>
+						<?php if (!$options['enable_single_country'] || empty($options['idonate_country'])) : ?>
+							<div class="idonate_col_item">
+								<label for="bloodgroup"><?php esc_html_e('Country', 'idonate'); ?></label>
+								<select class="form-control country" name="country">
+									<?php
+									$allowed_html = array(
+										'option' => array(
+											'value' => array(),
+											'selected' => array(),  // Allow the selected attribute
+										),
+									);
+									echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
+									?>
+								</select>
+							</div>
+						<?php endif; ?>
 						<div class="idonate_col_item">
 							<label for="bloodgroup"><?php esc_html_e('State', 'idonate'); ?></label>
 							<select class="form-control state" name="state">
-								<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
+								<?php if (!$options['enable_single_country'] || empty($options['idonate_country'])) : ?>
+									<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
+								<?php else : ?>
+									<option><?php esc_html_e('Select State', 'idonate'); ?></option>
+								<?php
+									$path = IDONATE_COUNTRIES . 'states/' . $options['idonate_country'] . '.php';
+									include($path);
+									global $states;
+									foreach ($states as $key => $state) {
+										foreach ($state as $key => $value) {
+											echo '<option value="' . $key . '">' . $value . '</option>';
+										}
+									}
+								endif;
+								?>
 							</select>
 						</div>
 					</div>
@@ -170,20 +186,20 @@ class ShortcodePostBloodRequest
 					?>
 						<div class="idonate_row idonate_col">
 							<div class="idonate_col_item">
+								<?php
+								$recaptchaLabel = $options['idonate_recapthca_label'] ? $options['idonate_recapthca_label'] : '';
+								if ($recaptchaLabel) {
+								?>
+									<label for="recaptcha"><?php echo esc_html($recaptchaLabel); ?></label>
 							<?php
-							$recaptchaLabel = $options['idonate_recapthca_label'] ? $options['idonate_recapthca_label'] : '';
-							if ($recaptchaLabel) {
-							?>
-								<label for="recaptcha"><?php echo esc_html($recaptchaLabel); ?></label>
-						<?php
+								}
+								echo '<div class="g-recaptcha" data-sitekey="' . esc_attr($sitekey) . '"></div></div></div>';
 							}
-							echo '<div class="g-recaptcha" data-sitekey="' . esc_attr($sitekey) . '"></div></div></div>';
-						}
-						wp_nonce_field('request_nonce_action', 'request_submit_nonce_check');
-						?>
-						<div class="idonate_row idonate_col">
-							<button type="submit" name="request_submit" class="request_submit_button"><?php echo esc_html__('Blood Request', 'idonate'); ?></button>
-						</div>
+							wp_nonce_field('request_nonce_action', 'request_submit_nonce_check');
+							?>
+							<div class="idonate_row idonate_col">
+								<button type="submit" name="request_submit" class="request_submit_button"><?php echo esc_html__('Blood Request', 'idonate'); ?></button>
+							</div>
 				</form>
 			</div>
 

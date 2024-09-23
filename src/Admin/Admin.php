@@ -13,6 +13,7 @@
 
 namespace ThemeAtelier\Idonate\Admin;
 
+use ThemeAtelier\Idonate\Admin\DBUpdates;
 use ThemeAtelier\Idonate\Admin\Views\Views;
 use ThemeAtelier\Idonate\Admin\Settings\Settings;
 use ThemeAtelier\Idonate\Helpers\DonorFunctions;
@@ -64,6 +65,7 @@ class Admin
         $this->min         = defined('WP_DEBUG') && WP_DEBUG ? '' : '.min';
         $donorFunctions    = new DonorFunctions();
         $IDonateAjaxHandler    = new IDonateAjaxHandler();
+        new DBUpdates();
         Views::metaboxes('idonate_metaboxes'); // Generator metaboxes.
         add_action('admin_menu', array($this, 'add_plugin_page'));
         Settings::options('idonate_settings'); // Setting options.
@@ -309,6 +311,12 @@ class Admin
         if ($hook === 'idonate_page_idonate-donor') {
             wp_enqueue_style('datatables');
         }
+
+
+        if ('idonate_page_idonate-settings' == $hook) {
+            wp_enqueue_style('idonate-settings-admin');
+        }
+
         wp_enqueue_style('idonate-admin');
     }
     /**
