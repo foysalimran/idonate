@@ -103,6 +103,8 @@ Here are the most notable features of IDonate Blood Donation:
 
 ➡️ **[BizReview](https://wordpress.org/plugins/bizreview/)** - The ultimate WordPress plugin to show Google Business and Google Place Reviews.
 
+➡️ **[WhatsApp Chat Support](https://wordpress.org/plugins/chat-help/)** - Unlimited customer support tool that allows visitors to engage using "WhatsApp" or "WhatsApp Business". WhatsApp button included.
+
 ➡️ **[Eventful](https://wordpress.org/plugins/eventful/)** - Elevate your event management with this dynamic addon, enhancing ‘The Events Calendar’ with versatile layouts, advanced filtering, and user-friendly features for superior event showcasing.
 
 == FREQUENTLY ASKED QUESTIONS ==
@@ -126,17 +128,20 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 2. Frontend Submit Blood Request
 3. Frontend Donors Listing
 4. Frontend Donors Listing Table
-5. Frontend Donor Registration
-6. Frontend Donor Login
-7. Dashboard Welcome Page
-8. Dashboard Blood Requests List
-9. Dashboard Add Blood Requests
-10. Dashboard Donors List
-11. Dashboard Settings General
-12. Dashboard Settings Donors Settings
-13. Dashboard Settings Request Settings
-14. Dashboard Settings Page Settings
-15. Dashboard Settings Advance Settings
+5. Dashboard After Login
+6. Dashboard My Profile
+7. Dashboard Settings Page
+8. Frontend Donor Registration
+9. Frontend Donor Login
+10. Dashboard Welcome Page
+11. Dashboard Blood Requests List
+12. Dashboard Add Blood Requests
+13. Dashboard Donors List
+14. Dashboard Settings General
+15. Dashboard Settings Donors Settings
+16. Dashboard Settings Request Settings
+17. Dashboard Settings Page Settings
+18. Dashboard Settings Advance Settings
 
 == Changelog ==
 = 2.1.0 - September 23, 2024 =
