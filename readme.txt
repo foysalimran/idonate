@@ -1,7 +1,7 @@
 === IDonate - Blood Donation, Request And Donor Management System ===
 Contributors: ThemeAtelier, faysal61
 Donate link: https://bloodwp.com
-Tags: blood donation, blood request, donate blood, online blood donation, Blood management system
+Tags: blood, blood wp, blood donation, blood request, Blood management system
 Requires at least: 5.3
 Tested up to: 6.6.2
 Requires PHP: 7.4
@@ -9,11 +9,22 @@ Stable tag: 2.1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-A professional WordPress plugin for listing blood donation and blood request for helping peoples.
+Efficient WordPress plugin for managing blood donations, requests, and donors to connect people in need.
 
 == Description ==
 
-iDonate is a professional blood donation and blood request plugin. This plugin will allow you to add a form to submit blood request and the submissions will be listed in a page where other users who want to donate blood the could see and help them from the listed information. It has very nice UI and powerful admin settings panel what is very easy to use. It can be also set into Widgets of WordPress. This plugin is suitable for any donation, non-profit, clinic, hospital, doctors websites who want to provide some extra facilities to help find blood.
+=iDonate - Blood Donation and Request Management Plugin for WordPress=
+
+iDonate is a lightweight, powerful WordPress plugin designed to streamline the process of managing blood donations and requests. Whether you're setting up a blood donation platform or looking to manage blood requests, iDonate connects **blood donors** and **recipients** efficiently, making life-saving blood donations easier to facilitate.
+
+This full-featured Blood Donation management system offers everything needed to run a comprehensive blood donation website. Visitors can submit blood requests through a **dedicated request form**, and all submissions are displayed in a public listing. The listing includes an **advanced search form**, allowing potential donors to filter and find blood requests based on location, blood type, urgency, and more.
+
+Blood donors have access to a **dedicated dashboard**, where they can manage their profiles and donation information. Donors can **register, log in**, and **update their details** such as contact information, blood type, availability, and location at any time. This ensures that their information is always current and readily available to those searching for donors. 
+
+In addition to its robust functionality, iDonate offers a clean, intuitive **UI** and an **easy-to-use admin panel**, making it ideal for blood banks, hospitals, and organizations looking to create an efficient blood donation system on their WordPress site.
+
+iDonate is fully responsive and optimized for speed, ensuring seamless performance on any device while delivering an enhanced user experience for both donors and recipients.
+
 
 **👁️[Plugin Demo](https://bloodwp.com/) | 🚀[Pro Version](https://1.envato.market/idonate) | 👩🏼‍💻[Support](https://wordpress.org/support/plugin/idonate/) | 🌟[Rate this plugin](https://wordpress.org/support/plugin/idonate/reviews/#new-post)**
 
@@ -31,83 +42,85 @@ iDonate is a professional blood donation and blood request plugin. This plugin w
 * **Donor Registration System** – We know many people around you are eager to donate blood to those in need. That's why IDonate includes a robust Blood Donor Management System. It features a Blood Donor Registration Form, allowing anyone to become a blood donor by filling out the form. The donor lists are displayed on the Donor page and the donor table page, complete with all their information. Both pages have an advanced search option to help you easily find specific donors easily.
 
 
-== HERE’S WHAT USERS SAY ABOUT "IDonate – blood request management system" ==
+== Listen to What People Have to Say: ==
 
->😻 __Awesome helpful plugin__
+🙆 "Excellent plugin with nice features. Customer support is really wonderful with speedy response. I look forward to see more updates & improvements in features list. Thanks ThemeAtelier for a best plugin." - myrajput
 
->I’m using this plugin in my blood donation website and add new feature.If any user need blood they can post request for blood in my site.
-- By @Rahi Saiful
+🙆 "Very nice & clean code as well, i can select just one reason, or i would select many design, code quality, flexibility, customizability and great customer support! Good luck!" - CoderCafeThemes
 
+🙆 "I’m using this plugin in my blood donation website and add new feature.If any user need blood they can post request for blood in my site." - Rahi Saiful
 
->😻 __for Customer Support__
-
->Excellent plugin with nice features. Customer support is really wonderful with speedy response. I look forward to see more updates & improvements in features list. Thanks ThemeAtelier for a best plugin.
-- By @myrajput
-
-
->😻 __for Feature Availability__
-
->A great purpose on this item, very deserved five stars.
-- By @webdesigntrade
-
->😻 __for Code Quality__
-
->Very nice & clean code as well, i can select just one reason, or i would select many design, code quality, flexibility, customizability and great customer support! Good luck!
-- By @CoderCafeThemes
+🙆 "A great purpose on this item, very deserved five stars." - webdesigntrade
 
 
 == 🌟 Top Features ==
-Here are the most notable features of IDonate Blood Donation:
 
-👉 Advanced frontend form for donor registration.  
-👉 Advanced backend form for adding donors by site admin.  
-👉 Donors View, Edit, Delete options from backend by site admin.  
-👉 Donors review and approval option by site admin.  
-👉 Donors listing with advanced search feature.  
-👉 Donors single page.  
-👉 Advanced frontend blood request submission form.  
-👉 Easy to manage requests and add new requests with custom post types from admin panel.  
-👉 Blood requests review and approval option by site admin.  
-👉 Blood Request listing with advanced search feature.  
-👉 Blood Request single page.  
-👉 Auto-Delete Expired Blood Requests - Never delete, delete on the date when blood is needed, and delete 1 week after the blood is needed.  
-👉 Essential shortcodes for Donor registration form, Donor listing, Donor listing Table, Blood Requests listing, Blood request form, and Statistics.  
-👉 Auto create essential pages on plugin activation.  
-👉 Options to add your own container width for pages for different devices.  
-👉 Google reCAPTCHA for spam protection for all forms.  
-👉 Can use the whole system for a single country only.  
-👉 Advanced social sharing option for blood requests and donors.  
-👉 Custom pages can be used as IDonage pages.  
-👉 Specific login and logout redirect page can be set.  
-👉 Custom widgets for statistics and blood requests.  
-👉 Extremely user-friendly Admin Panel.  
-👉 Multisite Supported.  
-👉 Multilingual Ready.  
-👉 RTL Supported.  
-👉 Widget Supported.  
-👉 Compatible with any theme.  
-👉 Advanced Settings to enqueue or dequeue Scripts/CSS.  
-👉 Custom CSS field to override styles.  
-👉 Developer-friendly & easy to customize.  
-👉 SEO friendly & optimized for speed.  
-👉 Support all modern browsers: IE, Firefox, Chrome, Safari, Opera, Edge, etc.  
-👉 Documentation and Video Tutorials.  
-👉 Fast and Active Support.  
-👉 And much more.
+### Key Features of iDonate Blood Donation:
 
-== OTHER AMAZING PRODUCTS FROM ThemeAtelier ==
+- **Advanced Frontend Donor Registration Form**: Allow users to easily register as blood donors via a fully customizable form.
+- **Backend Donor Management**: Admins can add donors through a dedicated backend form.
+- **Complete Donor Management**: View, edit, and delete donor profiles from the backend with ease.
+- **Donor Review & Approval**: Site admins can review and approve donor registrations before they are listed.
+- **Donor Listing with Advanced Search**: Easily search for donors based on criteria like blood type, location, and availability.
+- **Donor Dashboard**: Each donor gets a personal dashboard to manage their profile and update details.
+- **Donor Statistics Page**: Donors can view their personal statistics within the dashboard.
+- **Individual Donor Profile Pages**: Each donor has a dedicated page displaying their information and availability.
+- **Advanced Blood Request Submission Form**: Visitors can submit blood requests through a user-friendly frontend form.
+- **Admin Blood Request Management**: Easily manage and create new blood requests from the admin panel using custom post types.
+- **Request Review & Approval**: Admins can review, approve, and display blood requests.
+- **Blood Request Listings with Advanced Search**: Public blood request listings come with an advanced search feature for quick access to relevant requests.
+- **Individual Blood Request Pages**: Each blood request gets a dedicated single page with detailed information.
+- **Auto-Delete Expired Requests**: Automatically delete blood requests based on expiration settings: never delete, delete on the blood-needed date, or delete 1 week after the need date.
+- **Essential Shortcodes**: Includes shortcodes for donor registration, donor listings, blood requests, request forms, and donor statistics for easy embedding.
+- **Automatic Page Creation**: The plugin automatically creates all necessary pages on activation.
+- **Custom Container Width**: Set custom container widths for plugin pages to optimize display across different devices.
+- **Google reCAPTCHA Integration**: Protect all forms from spam using Google reCAPTCHA.
+- **Single-Country Mode**: Restrict the plugin’s functionality to one country for more targeted usage.
+- **Advanced Social Sharing**: Enable users to share blood requests and donor profiles on social media.
+- **Custom Pages for iDonate**: Use your own custom pages as the main iDonate pages.
+- **Login and Logout Redirect**: Set specific pages to redirect users upon login or logout.
+- **Custom Widgets**: Add custom widgets to display donor statistics and blood requests.
+- **User-Friendly Admin Panel**: Manage all aspects of blood donation and requests with an intuitive admin interface.
+- **Multisite Compatibility**: Fully supported in multisite WordPress setups.
+- **Multilingual Ready**: Easily translate iDonate into multiple languages.
+- **RTL Support**: Fully compatible with right-to-left languages.
+- **Widget Support**: Supports custom widgets for better integration.
+- **Theme Compatibility**: Compatible with all WordPress themes.
+- **Advanced Script/CSS Management**: Use advanced settings to enqueue or dequeue scripts and styles.
+- **Custom CSS Support**: Add custom CSS to override plugin styles as needed.
+- **No Coding Required**: We’ve focused on creating an intuitive UI/UX, making it simple for anyone to use. Just activate the plugin, add autometically created pages on your website menu or where ever you want to show. No technical skills are needed—everything is set up quickly and effortlessly!
+- **Developer-Friendly**: Built with developers in mind for easy customization and integration.
+- **SEO Optimized**: The plugin is optimized for search engines to ensure better visibility.
+- **Cross-Browser Compatibility**: Works seamlessly across all modern browsers including IE, Firefox, Chrome, Safari, Opera, and Edge.
+- **Comprehensive Documentation & Tutorials**: Includes detailed documentation and video tutorials for easy setup and use.
+- **Frequent Updates**: We are continuously enhancing the iDonate plugin with new features, bug fixes, and security improvements. You can count on regular updates to ensure optimal performance and the latest functionalities.
+- **Fast and Active Support**: Get quick and responsive support whenever you need help.
+
+= Author =
+Designed and Developed with Love by [__ThemeAtelier__](https://themeatelier.net/)
+
+== OTHER AMAZING PRODUCTS BY: ThemeAtelier ==
 
 ➡️ **[Domain For Sale](https://wordpress.org/plugins/domain-for-sale/)** - The most trendy domain for sale plugin for WordPress.
 
 ➡️ **[Greet – Video Bubble Warm Welcome Plugin](https://wordpress.org/plugins/greet-bubble/)** - A powerful and user-friendly video bubble plugin for WordPress that provides website owners with the opportunity to create a dynamic and engaging welcome experience for their visitors.
 
-➡️ **[BizReview](https://wordpress.org/plugins/bizreview/)** - The ultimate WordPress plugin to show Google Business and Google Place Reviews.
-
 ➡️ **[WhatsApp Chat Support](https://wordpress.org/plugins/chat-help/)** - Unlimited customer support tool that allows visitors to engage using "WhatsApp" or "WhatsApp Business". WhatsApp button included.
+
+➡️ **[Domain For Sale](https://wordpress.org/plugins/domain-for-sale/)** - Transform your unused domain names into cash with this easy-to-use plugin that provides a professional template, customizable options, and a contact form for effortless selling.
 
 ➡️ **[Eventful](https://wordpress.org/plugins/eventful/)** - Elevate your event management with this dynamic addon, enhancing ‘The Events Calendar’ with versatile layouts, advanced filtering, and user-friendly features for superior event showcasing.
 
+➡️ **[BizReview](https://wordpress.org/plugins/bizreview/)** - The ultimate WordPress plugin to show Google Business and Google Place Reviews.
+
+
 == FREQUENTLY ASKED QUESTIONS ==
+
+=Is iDonate free?=
+Yes! iDonate is completely free and will always remain so. We also offer a Pro version with additional premium features for those looking for more advanced functionality.
+
+=Do I need coding skills to use iDonate?=
+No coding skills are required! With just a few clicks, you can easily set up and start using iDonate without any technical expertise.
 
 = Where do I get Support? =
 
@@ -116,6 +129,17 @@ You can contact us trough this channels
 
 = Is it translation ready? =
 Yes. The plugin is totally translation ready. If it's not support in your language you need to edit it with any translation plugin.
+
+=Is iDonate Multilingual Ready?=
+Yes, iDonate is fully translation-ready and compatible with popular translation plugins like WPML, Polylang, Loco Translate, qTranslate-X, GTranslate, Google Language Translator, WPGlobus, and more.
+
+=Is iDonate compatible with Multisite?=
+Absolutely! iDonate works seamlessly with WordPress multisite networks.
+
+=Love this plugin and want to support its improvement?=
+If you enjoy using iDonate, please consider leaving us a [5 stars rating](https://wordpress.org/support/plugin/idonate/reviews/?filter=5#new-post). Your valuable feedback helps us continue improving and making iDonate even better.
+
+Thank you!
 
 == Installation ==
 
@@ -225,5 +249,4 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 * Fixed settings option select box issue
 
 == Upgrade Notice ==
-
 It’s recommended to have a backup of your website before hitting the update button.
