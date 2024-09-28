@@ -13,7 +13,7 @@ Efficient WordPress plugin for managing blood donations, requests, and donors to
 
 == Description ==
 
-=iDonate - Blood Donation and Request Management Plugin for WordPress=
+===iDonate - Blood Donation and Request Management Plugin for WordPress===
 
 iDonate is a lightweight, powerful WordPress plugin designed to streamline the process of managing blood donations and requests. Whether you're setting up a blood donation platform or looking to manage blood requests, iDonate connects **blood donors** and **recipients** efficiently, making life-saving blood donations easier to facilitate.
 
