@@ -27,7 +27,7 @@ iDonate is fully responsive and optimized for speed, ensuring seamless performan
 **👁️[Plugin Demo](https://bloodwp.com/) | 🚀[Pro Version](https://1.envato.market/idonate) | 👩🏼‍💻[Support](https://wordpress.org/support/plugin/idonate/) | 🌟[Rate this plugin](https://wordpress.org/support/plugin/idonate/reviews/#new-post)**
 
 == Video demo ==
-[youtube https://youtu.be/uGkFNqZy3SQ]
+[youtube https://youtu.be/S7s7MBen6-E]
 
 
 = IDonate 2.0.0 =
