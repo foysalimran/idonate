@@ -1,6 +1,6 @@
 {
   "name": "idonate",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "WordPress Blood Donation Plugin",
   "main": "index.js",
   "scripts": {

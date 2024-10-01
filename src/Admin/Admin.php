@@ -160,7 +160,7 @@ class Admin
                 <div class="idonate-after-copy-shortcode"><i class="icofont-check-circled"></i><?php esc_html_e('Shortcode Copied to Clipboard!', 'idonate'); ?></div>
             </div>
             <div class="idonate_shortcodes" style="padding:0px">
-                <iframe width="100%" height="315" style="border-radius: 6px" src="https://www.youtube.com/embed/uGkFNqZy3SQ?si=5aPGXksFU8ScV4Ac" title="<?php echo esc_attr('YouTube video player', 'idoante-pro'); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="315" style="border-radius: 6px" src="https://www.youtube.com/embed/S7s7MBen6-E" title="<?php echo esc_attr('YouTube video player', 'idoante-pro'); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 <?php
