@@ -47,11 +47,12 @@ class FilterBar
                 $states[$stateCode] = $state;
             }
         }
-
         $bloodgroups = array_unique($bloodgroups);
         sort($bloodgroups);
         $availabilitys = array_unique($availabilitys);
         sort($availabilitys);
+        $availabilitys = array_diff($availabilitys, array('select'));
+        $availabilitys = array_values($availabilitys);
         $countries = array_unique($countries);
         asort($countries);
         $states = array_unique($states);
