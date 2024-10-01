@@ -23,9 +23,11 @@ class ShortcodeRegisterDonor
 	public function shortcode_register_donor()
 	{
 		$options = get_option('idonate_settings');
-
+		$form_title = isset($options['donor_register_form_title']) ? $options['donor_register_form_title'] : '';
+		$form_subtitle = isset($options['donor_register_form_subtitle']) ? $options['donor_register_form_subtitle'] : '';
 		$idonate_recaptcha_active = isset($options['idonate_recaptcha_active']) ? $options['idonate_recaptcha_active'] : '';
 		$sitekey = $options['idonate_recaptcha_sitekey'] ? $options['idonate_recaptcha_sitekey'] : '';
+		$idonate_countryhide = isset($options['idonate_countryhide']) ? $options['idonate_countryhide'] : '';
 
 		ob_start();
 ?>
@@ -125,45 +127,55 @@ class ShortcodeRegisterDonor
 								</div>
 							</div>
 						</div>
-						<div class="idonate_row idonate_col">
-							<?php if (!$options['enable_single_country'] || empty($options['idonate_country'])) : ?>
+
+						<?php
+						if ($idonate_countryhide) :
+							$enable_single_country = isset($options['enable_single_country']) ? $options['enable_single_country'] : false;
+							$idonate_country = isset($options['idonate_country']) ? $options['idonate_country'] : '';
+
+						?>
+							<div class="idonate_row idonate_col">
+								<?php if (!$enable_single_country || ($idonate_country == '')) : ?>
+									<div class="idonate_col_item">
+										<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
+										<select id="country" class="form-control country" name="country">
+											<?php
+											$allowed_html = array(
+												'option' => array(
+													'value' => array(),
+													'selected' => array(),  // Allow the selected attribute
+												),
+											);
+											echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
+											?>
+										</select>
+									</div>
+								<?php endif; ?>
 								<div class="idonate_col_item">
-									<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
-									<select id="country" class="form-control country" name="country">
+									<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
+									<select class="form-control state" name="state">
+										<?php if (!$enable_single_country || ($idonate_country == '')) : ?>
+											<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
+										<?php else : ?>
+											<option><?php esc_html_e('Select State', 'idonate'); ?></option>
 										<?php
-										$allowed_html = array(
-											'option' => array(
-												'value' => array(),
-												'selected' => array(),  // Allow the selected attribute
-											),
-										);
-										echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
+											$path = IDONATE_COUNTRIES . 'states/' . $options['idonate_country'] . '.php';
+											include($path);
+											global $states;
+											foreach ($states as $key => $state) {
+												foreach ($state as $key => $value) {
+													echo '<option value="' . $key . '">' . $value . '</option>';
+												}
+											}
+										endif;
 										?>
+
 									</select>
 								</div>
-							<?php endif; ?>
-							<div class="idonate_col_item">
-								<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
-								<select class="form-control state" name="state">
-									<?php if (!$options['enable_single_country'] || empty($options['idonate_country'])) : ?>
-										<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
-									<?php else : ?>
-										<option><?php esc_html_e('Select State', 'idonate'); ?></option>
-									<?php
-										$path = IDONATE_COUNTRIES . 'states/' . $options['idonate_country'] . '.php';
-										include($path);
-										global $states;
-										foreach ($states as $key => $state) {
-											foreach ($state as $key => $value) {
-												echo '<option value="' . $key . '">' . $value . '</option>';
-											}
-										}
-									endif;
-									?>
-
-								</select>
 							</div>
-						</div>
+						<?php
+						endif;
+						?>
 						<div class="idonate_row idonate_col">
 							<div class="idonate_col_item">
 								<div class="dp-col-12">
