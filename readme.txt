@@ -5,7 +5,7 @@ Tags: blood, blood wp, blood donation, blood request, Blood management system
 Requires at least: 5.3
 Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -37,7 +37,6 @@ iDonate is fully responsive and optimized for speed, ensuring seamless performan
 * **Blood Request System** – IDonate includes a powerful Blood Request Form designed for those in need of blood. Site visitors can easily request blood by filling out the form, which includes essential fields such as the patient's name, blood group, location, address, and more. Requests can be posted directly or set to require admin approval. In the latter case, the request will be reviewed and approved by an admin before being published on the website. The Blood Request System encompasses the Blood Request Form, request postings, and approval functionalities.
 
 * **Donor Registration System** – We know many people around you are eager to donate blood to those in need. That's why IDonate includes a robust Blood Donor Management System. It features a Blood Donor Registration Form, allowing anyone to become a blood donor by filling out the form. The donor lists are displayed on the Donor page and the donor table page, complete with all their information. Both pages have an advanced search option to help you easily find specific donors easily.
-
 
 == Listen to What People Have to Say: ==
 

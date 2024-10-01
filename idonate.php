@@ -3,7 +3,7 @@
 Plugin Name:  IDonate - Blood Donation Management System
 Plugin URI:   https://bloodwp.com/
 Description:  Idonate is a complete solution for creating a Blood Request & Blood Donor Management System in WordPress way. The plugin is highly customizable and developer-friendly with top-notch support.
-Version:      2.1.0
+Version:      2.1.1
 Author:       ThemeAtelier
 Author URI:   https://themeatelier.net/
 License:      GPL-2.0+
@@ -19,7 +19,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use ThemeAtelier\Idonate\Idonate;
 
-define('IDONATE_VERSION', '2.1.0');
+define('IDONATE_VERSION', '2.1.1');
 define('IDONATE_FILE', __FILE__);
 define('IDONATE_DIR_URL', plugin_dir_url(__FILE__));
 define('IDONATE_DIR_URL_ADMIN', IDONATE_DIR_URL . 'src/Admin/');
