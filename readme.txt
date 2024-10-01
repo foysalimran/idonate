@@ -165,8 +165,8 @@ Thank you!
 
 == Changelog ==
 = 2.1.2 - October 01, 2024 =
-* Fixed: CSS
-* Update: Code structure
+* Improved: Some CSS codes
+* Update: In some PHP code structure
 
 = 2.1.1 - October 01, 2024 =
 * Update: Plugin intro video
