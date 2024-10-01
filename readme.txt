@@ -29,7 +29,6 @@ iDonate is fully responsive and optimized for speed, ensuring seamless performan
 == Video demo ==
 [youtube https://youtu.be/S7s7MBen6-E]
 
-
 = IDonate 2.0.0 =
 **IDonate 2.0.0** has been completely rebuilt, offering numerous improvements and exciting new features.
 
@@ -166,6 +165,9 @@ Thank you!
 18. Dashboard Settings Advance Settings
 
 == Changelog ==
+= 2.1.1 - October 01, 2024 =
+* Update: Plugin intro video
+
 = 2.1.0 - September 23, 2024 =
 * New: Added Dashboard page.
 * New: Moved the Login page under the Dashboard.
@@ -178,7 +180,7 @@ Thank you!
 * New: Option to change the donor profile single page slug.
 * New: Added LinkedIn and website fields for donors in the Social Profile section.
 * Update: Refreshed the Dashboard page UI for donors.
-* TESTED: WordPress 6.6.2 compatibility.
+* Tested: WordPress 6.6.2 compatibility.
 
 = 2.0.3 - Sep 07, 2024 =
 * Fixed: Admin pro settings CSS not loading issue
