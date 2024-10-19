@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-19 09:35+0000\n"
+"POT-Creation-Date: 2024-10-19 09:45+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -54,7 +54,7 @@ msgstr ""
 msgid "Shortcode Copied to Clipboard!"
 msgstr ""
 
-#: src/Admin/Admin.php:179, src/Admin/Admin.php:184, src/Admin/Admin.php:190, src/Admin/Admin.php:389, src/Admin/Admin.php:390, src/Admin/Settings/IDonateSettings.php:571, src/Admin/Views/WidgetBloodRequiest.php:110, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:201
+#: src/Admin/Admin.php:179, src/Admin/Admin.php:184, src/Admin/Admin.php:190, src/Admin/Admin.php:389, src/Admin/Admin.php:390, src/Admin/Settings/IDonateRequestSettings.php:142, src/Admin/Views/WidgetBloodRequiest.php:110, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:201
 msgid "Blood Request"
 msgstr ""
 
@@ -1018,7 +1018,7 @@ msgstr ""
 msgid "City field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:122, src/Admin/Settings/IDonateSettings.php:135, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:140, src/Frontend/Templates/dashboard/settings/address.php:48, src/Frontend/Templates/FilterBar.php:84, src/Frontend/Templates/RequestFilterBar.php:91, src/js-templates/donor-profile-edit.php:94
+#: src/Admin/Helpers/donor-panel.php:122, src/Admin/Settings/IDonateGeneralSettings.php:135, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:140, src/Frontend/Templates/dashboard/settings/address.php:48, src/Frontend/Templates/FilterBar.php:84, src/Frontend/Templates/RequestFilterBar.php:91, src/js-templates/donor-profile-edit.php:94
 msgid "Select Country"
 msgstr ""
 
@@ -1078,595 +1078,595 @@ msgstr ""
 msgid "Action"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:44
-msgid "GENERAL"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:50
-msgid "Container Width"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:51
-msgid "Set plugin pages container maximum width in different devices."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:64
-msgid "Section Padding"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:65
-msgid "Set plugin pages section padding in different devices."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:81
-msgid "Main Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:82
-msgid "Main Border Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:89
-msgid "Activate reCAPTCHA for Forms"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:90
-msgid "When enabled, reCAPTCHA will be activated on all forms to enhance security and prevent spam submissions."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:91, src/Admin/Settings/IDonateSettings.php:124, src/Admin/Settings/IDonateSettings.php:269, src/Admin/Settings/IDonateSettings.php:280, src/Admin/Settings/IDonateSettings.php:483
-msgid "Enable"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:92, src/Admin/Settings/IDonateSettings.php:125, src/Admin/Settings/IDonateSettings.php:270, src/Admin/Settings/IDonateSettings.php:281, src/Admin/Settings/IDonateSettings.php:484
-msgid "Disable"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:106
-msgid "reCAPTCHA Secret Key"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:107, src/Admin/Settings/IDonateSettings.php:115
-msgid "Create google recaptcha <a href=\"https://www.google.com/recaptcha/admin#list\">sitekey and secretkey</a>"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:108
-msgid "Set your generated recaptcha secret key."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:114
-msgid "Recaptcha Site Key"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:116
-msgid "Set your generated recaptcha site key."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:122
-msgid "Single Country Mode"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:123
-msgid "When enabled, the forms will display only the selected country in the country field"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:143
-msgid "Social Share"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:148
-msgid "Sharing Media"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:152
-msgid "Choose an option"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:154
-msgid "Facebook"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:155
-msgid "Twitter"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:156
-msgid "LinkedIn"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:157
-msgid "Pinterest"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:158, src/Admin/Views/General.php:97, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:123, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:124, src/Frontend/Templates/single-blood_request.php:115
-msgid "Email"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:159
-msgid "Instagram"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:160
-msgid "VK"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:161
-msgid "digg"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:162
-msgid "Tumblr"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:163
-msgid "Reddit"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:164
-msgid "WhatsApp"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:165
-msgid "Xing"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:171
-msgid "Margin"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:186
-msgid "Icon Shape"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:190
-msgid "Circle"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:194
-msgid "Rounded"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:198
-msgid "Square"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:202
-msgid "Icon only"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:210
-msgid "Custom Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:216
-msgid "Icon Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:218
-msgid "Icon"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:219
-msgid "Icon Hover"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:220
-msgid "Background"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:221
-msgid "Background Hover"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:222
-msgid "Border Hover"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:236
-msgid "Icon Border"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:254
-msgid "DONOR SETTINGS"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:267
-msgid "Require Admin Approval for Donor Registration"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:268
-msgid "When enabled, all donor registrations will require admin approval before being accepted to ensure the validity and reliability of the information."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:278
-msgid "Require User Login to View Donors"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:279
-msgid "When enabled, users must log in to view the list of donors, ensuring the privacy and security of donor information."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:289, src/Admin/Settings/IDonateSettings.php:491
-msgid "Column(s)"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:290, src/Admin/Settings/IDonateSettings.php:492
-msgid "Set number of column(s) in different devices for responsive view."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:298, src/Admin/Settings/IDonateSettings.php:500
-msgid "<i class=\"icofont-monitor\"></i> <b> Large Desktop </b> - is larger than 1200px,<br><i class=\"icofont-laptop\"></i> <b>Desktop</b> - size is larger than 992px,<br> <i class=\"icofont-surface-tablet\"></i> <b>Tablet</b> - Size is larger than 768,<br> <i class=\"icofont-android-tablet\"></i> <b> Mobile Landscape </b> - size is larger than 576px.,<br> <i class=\"icofont-android-tablet\"></i> <b> Mobile </b> - size is smaller than 576px."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:304
-msgid "Donor Per Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:305
-msgid "Set the number of donors displayed per page in the donor listings."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:312
-msgid "Open Donor View Details Button"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:313
-msgid "Choose how the donor details should displayed on"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:315, src/Admin/Settings/IDonateSettings.php:518
-msgid "On Single Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:316, src/Admin/Settings/IDonateSettings.php:519
-msgid "On Pop Up"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:323
-msgid "Donor Single Page Slug"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:330, src/Admin/Settings/IDonateSettings.php:526
-msgid "Enable Next/Prev"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:331
-msgid "Allow navigation between donors using next and previous buttons in the popup view."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:339
-msgid "Show/Hide Donor Search Options"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:340
-msgid "Toggle the visibility of donor search options in the donor listings."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:341, src/Admin/Settings/IDonateSettings.php:364, src/Admin/Settings/IDonateSettings.php:376, src/Admin/Settings/IDonateSettings.php:388, src/Admin/Settings/IDonateSettings.php:443, src/Admin/Settings/IDonateSettings.php:584, src/Admin/Settings/IDonateSettings.php:595
-msgid "Show"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:342, src/Admin/Settings/IDonateSettings.php:352, src/Admin/Settings/IDonateSettings.php:365, src/Admin/Settings/IDonateSettings.php:377, src/Admin/Settings/IDonateSettings.php:389, src/Admin/Settings/IDonateSettings.php:444, src/Admin/Settings/IDonateSettings.php:585, src/Admin/Settings/IDonateSettings.php:596
-msgid "Hide"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:350
-msgid "Restrict Contact Info Visibility"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:353
-msgid "Show for everyone"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:354
-msgid "Only logged in user"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:362
-msgid "Show/Hide Email From Donor Listing"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:363
-msgid "Show/Hide email address from donor listing."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:374
-msgid "Show/Hide Mobile Number"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:375, src/Admin/Settings/IDonateSettings.php:387
-msgid "Show/Hide donors mobile number from donor listing."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:386
-msgid "Show/Hide Social Share"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:402
-msgid "Title for Donor Registration Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:403
-msgid "The title displayed on the donor registration form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:404, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:39
-msgid "Blood Donors Register"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:410
-msgid "Subtitle for Donor Registration Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:411
-msgid "The subtitle displayed on the donor registration form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:412, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:40
-msgid "Please fill the following information to register donor."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:419
-msgid "Donor Login Form Title"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:420
-msgid "The title displayed on the donor login form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:427
-msgid "Donor Profile Edit Form Title"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:428
-msgid "The title displayed on the donor profile edit form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:441
-msgid "Show/Hide country and state fields"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:442
-msgid "Toggle the visibility of country and state fields"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:453, src/Admin/Settings/IDonateSettings.php:605
-msgid "Set request form text and background color."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:455, src/Admin/Settings/IDonateSettings.php:607
-msgid "Background Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:456, src/Admin/Settings/IDonateSettings.php:608
-msgid "Text Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:469
-msgid "REQUEST SETTINGS"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:481
-msgid "Require Admin Approval for Blood Requests"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:482
-msgid "When enabled, all blood request posts will require your approval before being published to ensure accuracy and appropriateness."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:506
-msgid "Blood Request Per Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:507
-msgid "Set the number of blood requests displayed per page in the blood requests listings."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:515
-msgid "Open Request View Details"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:516
-msgid "Choose how the request details should displayed on"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:527
-msgid "Allow navigation between requests using next and previous buttons in the popup view."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:533
-msgid "Auto-Delete Expired Blood Requests"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:534
-msgid "Automatically remove blood requests that are no longer needed. "
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:536
-msgid "Never Delete"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:537
-msgid "Delete on Blood Needed Date"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:538
-msgid "Delete One Week After Blood Needed Date"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:539
-msgid "Delete Two Weeks After Blood Needed Date (Pro)"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:540
-msgid "Delete One Month After Blood Needed Date (Pro)"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:553
-msgid "Blood Request Form Title"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:554
-msgid "The title displayed on the request form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:555, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:42
-msgid "Submit Your Request"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:561
-msgid "Blood Request Form Sub Title"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:562
-msgid "The subtitle displayed on the request form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:563, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:44
-msgid "Please fill the following information to post your blood request."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:569
-msgid "Submit Button Label for Request Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:570
-msgid "The label text displayed on the submit button of the request form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:582
-msgid "Show/Hide Country and State Fields On the Request Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:593
-msgid "Show/Hide Image Upload Field On the Request Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:604
-msgid "Request Form Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:622
-msgid "PAGE SETTINGS"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:632
-msgid "Dashboard Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:634
-msgid "Select your dashboard page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:635, src/Admin/Settings/IDonateSettings.php:647, src/Admin/Settings/IDonateSettings.php:659, src/Admin/Settings/IDonateSettings.php:671, src/Admin/Settings/IDonateSettings.php:695, src/Admin/Settings/IDonateSettings.php:707, src/Admin/Settings/IDonateSettings.php:722
-msgid "Select a page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:644
-msgid "Blood Request Listing Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:646
-msgid "Select your page to display blood requests. Default page name: Request"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:656
-msgid "Blood Request Form Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:668
-msgid "Donor Listing Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:670
-msgid "Select your page to display donors. Default page name: Donors"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:680
-msgid "Donor Table Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:682
-msgid "Select your page to display donor table. Default page name: Donor Table"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:692
-msgid "Donor Register Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:694
-msgid "Select your page to display donor registraion form. Default page name: Donor Register"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:704
-msgid "After Login Redirect Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:705
-msgid "Select your page to redirect after successful login. Default page name: Home page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:719
-msgid "After Logout Redirect Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:720
-msgid "Select your page to redirect after successful logout. Default page name: Login page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:730
+#: src/Admin/Settings/IDonateAdvanceSettings.php:39
 msgid "ADVANCE SETTINGS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:742
+#: src/Admin/Settings/IDonateAdvanceSettings.php:51
 msgid "Delete Default Pages On Plugin Deactivation"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:743
+#: src/Admin/Settings/IDonateAdvanceSettings.php:52
 msgid "Check this box if you would like Idonate plugin to completely remove all pages created by default."
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:747
+#: src/Admin/Settings/IDonateAdvanceSettings.php:56
 msgid "Enqueue or Dequeue CSS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:752
+#: src/Admin/Settings/IDonateAdvanceSettings.php:61
 msgid "IcoFont"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:753, src/Admin/Settings/IDonateSettings.php:762, src/Admin/Settings/IDonateSettings.php:771, src/Admin/Settings/IDonateSettings.php:784, src/Admin/Settings/IDonateSettings.php:793, src/Admin/Settings/IDonateSettings.php:802
+#: src/Admin/Settings/IDonateAdvanceSettings.php:62, src/Admin/Settings/IDonateAdvanceSettings.php:71, src/Admin/Settings/IDonateAdvanceSettings.php:80, src/Admin/Settings/IDonateAdvanceSettings.php:93, src/Admin/Settings/IDonateAdvanceSettings.php:102, src/Admin/Settings/IDonateAdvanceSettings.php:111
 msgid "Enqueued"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:754, src/Admin/Settings/IDonateSettings.php:763, src/Admin/Settings/IDonateSettings.php:772, src/Admin/Settings/IDonateSettings.php:785, src/Admin/Settings/IDonateSettings.php:794, src/Admin/Settings/IDonateSettings.php:803
+#: src/Admin/Settings/IDonateAdvanceSettings.php:63, src/Admin/Settings/IDonateAdvanceSettings.php:72, src/Admin/Settings/IDonateAdvanceSettings.php:81, src/Admin/Settings/IDonateAdvanceSettings.php:94, src/Admin/Settings/IDonateAdvanceSettings.php:103, src/Admin/Settings/IDonateAdvanceSettings.php:112
 msgid "Dequeued"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:761, src/Admin/Settings/IDonateSettings.php:783
+#: src/Admin/Settings/IDonateAdvanceSettings.php:70, src/Admin/Settings/IDonateAdvanceSettings.php:92
 msgid "Magnific Popup"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:770, src/Admin/Settings/IDonateSettings.php:792
+#: src/Admin/Settings/IDonateAdvanceSettings.php:79, src/Admin/Settings/IDonateAdvanceSettings.php:101
 msgid "Data Tables"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:778
+#: src/Admin/Settings/IDonateAdvanceSettings.php:87
 msgid "Enqueue or Dequeue JS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:801
+#: src/Admin/Settings/IDonateAdvanceSettings.php:110
 msgid "Form Validate"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:815
+#: src/Admin/Settings/IDonateAdvanceSettings.php:124
 msgid "CUSTOM CSS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:825
+#: src/Admin/Settings/IDonateAdvanceSettings.php:134
 msgid "CUSTOM JS"
 msgstr ""
 
-#: src/Admin/Settings/Settings.php:25, src/Admin/Settings/Settings.php:30
+#: src/Admin/Settings/IDonateDonorSettings.php:40
+msgid "DONOR SETTINGS"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:53
+msgid "Require Admin Approval for Donor Registration"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:54
+msgid "When enabled, all donor registrations will require admin approval before being accepted to ensure the validity and reliability of the information."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:55, src/Admin/Settings/IDonateDonorSettings.php:66, src/Admin/Settings/IDonateGeneralSettings.php:91, src/Admin/Settings/IDonateGeneralSettings.php:124, src/Admin/Settings/IDonateRequestSettings.php:54
+msgid "Enable"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:56, src/Admin/Settings/IDonateDonorSettings.php:67, src/Admin/Settings/IDonateGeneralSettings.php:92, src/Admin/Settings/IDonateGeneralSettings.php:125, src/Admin/Settings/IDonateRequestSettings.php:55
+msgid "Disable"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:64
+msgid "Require User Login to View Donors"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:65
+msgid "When enabled, users must log in to view the list of donors, ensuring the privacy and security of donor information."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:75, src/Admin/Settings/IDonateRequestSettings.php:62
+msgid "Column(s)"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:76, src/Admin/Settings/IDonateRequestSettings.php:63
+msgid "Set number of column(s) in different devices for responsive view."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:84, src/Admin/Settings/IDonateRequestSettings.php:71
+msgid "<i class=\"icofont-monitor\"></i> <b> Large Desktop </b> - is larger than 1200px,<br><i class=\"icofont-laptop\"></i> <b>Desktop</b> - size is larger than 992px,<br> <i class=\"icofont-surface-tablet\"></i> <b>Tablet</b> - Size is larger than 768,<br> <i class=\"icofont-android-tablet\"></i> <b> Mobile Landscape </b> - size is larger than 576px.,<br> <i class=\"icofont-android-tablet\"></i> <b> Mobile </b> - size is smaller than 576px."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:90
+msgid "Donor Per Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:91
+msgid "Set the number of donors displayed per page in the donor listings."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:98
+msgid "Open Donor View Details Button"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:99
+msgid "Choose how the donor details should displayed on"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:101, src/Admin/Settings/IDonateRequestSettings.php:89
+msgid "On Single Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:102, src/Admin/Settings/IDonateRequestSettings.php:90
+msgid "On Pop Up"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:109
+msgid "Donor Single Page Slug"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:116, src/Admin/Settings/IDonateRequestSettings.php:97
+msgid "Enable Next/Prev"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:117
+msgid "Allow navigation between donors using next and previous buttons in the popup view."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:125
+msgid "Show/Hide Donor Search Options"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:126
+msgid "Toggle the visibility of donor search options in the donor listings."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:127, src/Admin/Settings/IDonateDonorSettings.php:150, src/Admin/Settings/IDonateDonorSettings.php:162, src/Admin/Settings/IDonateDonorSettings.php:174, src/Admin/Settings/IDonateDonorSettings.php:229, src/Admin/Settings/IDonateRequestSettings.php:155, src/Admin/Settings/IDonateRequestSettings.php:166
+msgid "Show"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:128, src/Admin/Settings/IDonateDonorSettings.php:138, src/Admin/Settings/IDonateDonorSettings.php:151, src/Admin/Settings/IDonateDonorSettings.php:163, src/Admin/Settings/IDonateDonorSettings.php:175, src/Admin/Settings/IDonateDonorSettings.php:230, src/Admin/Settings/IDonateRequestSettings.php:156, src/Admin/Settings/IDonateRequestSettings.php:167
+msgid "Hide"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:136
+msgid "Restrict Contact Info Visibility"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:139
+msgid "Show for everyone"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:140
+msgid "Only logged in user"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:148
+msgid "Show/Hide Email From Donor Listing"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:149
+msgid "Show/Hide email address from donor listing."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:160
+msgid "Show/Hide Mobile Number"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:161, src/Admin/Settings/IDonateDonorSettings.php:173
+msgid "Show/Hide donors mobile number from donor listing."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:172
+msgid "Show/Hide Social Share"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:188
+msgid "Title for Donor Registration Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:189
+msgid "The title displayed on the donor registration form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:190, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:39
+msgid "Blood Donors Register"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:196
+msgid "Subtitle for Donor Registration Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:197
+msgid "The subtitle displayed on the donor registration form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:198, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:40
+msgid "Please fill the following information to register donor."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:205
+msgid "Donor Login Form Title"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:206
+msgid "The title displayed on the donor login form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:213
+msgid "Donor Profile Edit Form Title"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:214
+msgid "The title displayed on the donor profile edit form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:227
+msgid "Show/Hide country and state fields"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:228
+msgid "Toggle the visibility of country and state fields"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:239, src/Admin/Settings/IDonateRequestSettings.php:176
+msgid "Set request form text and background color."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:241, src/Admin/Settings/IDonateRequestSettings.php:178
+msgid "Background Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:242, src/Admin/Settings/IDonateRequestSettings.php:179
+msgid "Text Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:44
+msgid "GENERAL"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:50
+msgid "Container Width"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:51
+msgid "Set plugin pages container maximum width in different devices."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:64
+msgid "Section Padding"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:65
+msgid "Set plugin pages section padding in different devices."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:81
+msgid "Main Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:82
+msgid "Main Border Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:89
+msgid "Activate reCAPTCHA for Forms"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:90
+msgid "When enabled, reCAPTCHA will be activated on all forms to enhance security and prevent spam submissions."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:106
+msgid "reCAPTCHA Secret Key"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:107, src/Admin/Settings/IDonateGeneralSettings.php:115
+msgid "Create google recaptcha <a href=\"https://www.google.com/recaptcha/admin#list\">sitekey and secretkey</a>"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:108
+msgid "Set your generated recaptcha secret key."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:114
+msgid "Recaptcha Site Key"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:116
+msgid "Set your generated recaptcha site key."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:122
+msgid "Single Country Mode"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:123
+msgid "When enabled, the forms will display only the selected country in the country field"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:143
+msgid "Social Share"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:148
+msgid "Sharing Media"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:152
+msgid "Choose an option"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:154
+msgid "Facebook"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:155
+msgid "Twitter"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:156
+msgid "LinkedIn"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:157
+msgid "Pinterest"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:158, src/Admin/Views/General.php:97, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:123, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:124, src/Frontend/Templates/single-blood_request.php:115
+msgid "Email"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:159
+msgid "Instagram"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:160
+msgid "VK"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:161
+msgid "digg"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:162
+msgid "Tumblr"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:163
+msgid "Reddit"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:164
+msgid "WhatsApp"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:165
+msgid "Xing"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:171
+msgid "Margin"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:186
+msgid "Icon Shape"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:190
+msgid "Circle"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:194
+msgid "Rounded"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:198
+msgid "Square"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:202
+msgid "Icon only"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:210
+msgid "Custom Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:216
+msgid "Icon Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:218
+msgid "Icon"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:219
+msgid "Icon Hover"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:220
+msgid "Background"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:221
+msgid "Background Hover"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:222
+msgid "Border Hover"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:236
+msgid "Icon Border"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:39
+msgid "PAGE SETTINGS"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:49
+msgid "Dashboard Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:51
+msgid "Select your dashboard page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:52, src/Admin/Settings/IDonatePageSettings.php:64, src/Admin/Settings/IDonatePageSettings.php:76, src/Admin/Settings/IDonatePageSettings.php:88, src/Admin/Settings/IDonatePageSettings.php:112, src/Admin/Settings/IDonatePageSettings.php:124, src/Admin/Settings/IDonatePageSettings.php:139
+msgid "Select a page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:61
+msgid "Blood Request Listing Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:63
+msgid "Select your page to display blood requests. Default page name: Request"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:73
+msgid "Blood Request Form Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:85
+msgid "Donor Listing Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:87
+msgid "Select your page to display donors. Default page name: Donors"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:97
+msgid "Donor Table Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:99
+msgid "Select your page to display donor table. Default page name: Donor Table"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:109
+msgid "Donor Register Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:111
+msgid "Select your page to display donor registraion form. Default page name: Donor Register"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:121
+msgid "After Login Redirect Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:122
+msgid "Select your page to redirect after successful login. Default page name: Home page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:136
+msgid "After Logout Redirect Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:137
+msgid "Select your page to redirect after successful logout. Default page name: Login page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:40
+msgid "REQUEST SETTINGS"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:52
+msgid "Require Admin Approval for Blood Requests"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:53
+msgid "When enabled, all blood request posts will require your approval before being published to ensure accuracy and appropriateness."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:77
+msgid "Blood Request Per Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:78
+msgid "Set the number of blood requests displayed per page in the blood requests listings."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:86
+msgid "Open Request View Details"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:87
+msgid "Choose how the request details should displayed on"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:98
+msgid "Allow navigation between requests using next and previous buttons in the popup view."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:104
+msgid "Auto-Delete Expired Blood Requests"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:105
+msgid "Automatically remove blood requests that are no longer needed. "
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:107
+msgid "Never Delete"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:108
+msgid "Delete on Blood Needed Date"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:109
+msgid "Delete One Week After Blood Needed Date"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:110
+msgid "Delete Two Weeks After Blood Needed Date (Pro)"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:111
+msgid "Delete One Month After Blood Needed Date (Pro)"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:124
+msgid "Blood Request Form Title"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:125
+msgid "The title displayed on the request form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:126, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:42
+msgid "Submit Your Request"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:132
+msgid "Blood Request Form Sub Title"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:133
+msgid "The subtitle displayed on the request form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:134, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:44
+msgid "Please fill the following information to post your blood request."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:140
+msgid "Submit Button Label for Request Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:141
+msgid "The label text displayed on the submit button of the request form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:153
+msgid "Show/Hide Country and State Fields On the Request Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:164
+msgid "Show/Hide Image Upload Field On the Request Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:175
+msgid "Request Form Color"
+msgstr ""
+
+#: src/Admin/Settings/Settings.php:29, src/Admin/Settings/Settings.php:34
 msgid "IDonate Settings"
 msgstr ""
 
