@@ -729,3 +729,7 @@ span.show-shortcode {
   color: #35b747;
   font-weight: bold;
 }
+.select_pro_only .idonate-fieldset select {
+  pointer-events: none;
+  opacity: 0.6;
+}

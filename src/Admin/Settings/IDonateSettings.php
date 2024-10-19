@@ -344,6 +344,18 @@ class IDonateSettings
 										'default' 	=> true,
 									),
 									array(
+										'id'       => 'restrict_contact_info',
+										'type'     => 'select',
+										'class'      => 'select_pro_only',
+										'title'    => esc_html__('Restrict Contact Info Visibility', 'idonate'),
+										'options'  => array(
+											'hide' => esc_html__('Hide', 'idonate'),
+											'show_for_everyone' => esc_html__('Show for everyone', 'idonate'),
+											'only_login_user' => esc_html__('Only logged in user', 'idonate'),
+										),
+										'default' => 'show_for_everyone',
+									),
+									array(
 										'id'       => 'hide_email',
 										'type'     => 'switcher',
 										'class'      => 'switcher_pro_only',
@@ -353,6 +365,7 @@ class IDonateSettings
 										'text_off'	=> esc_html__('Hide', 'idonate'),
 										'text_width'	=> '80',
 										'default' 	=> true,
+										'dependency' 	=> array('restrict_contact_info', '!=', 'hide'),
 									),
 									array(
 										'id'       => 'hide_mobile_number',
@@ -364,11 +377,12 @@ class IDonateSettings
 										'text_off'	=> esc_html__('Hide', 'idonate'),
 										'text_width'	=> '80',
 										'default' 	=> true,
+										'dependency' 	=> array('restrict_contact_info', '!=', 'hide'),
 									),
 									array(
 										'id'       => 'hide_donor_social_share',
 										'type'     => 'switcher',
-										'class'      => 'switcher_pro_only',
+										'class'    => 'switcher_pro_only',
 										'title'    => esc_html__('Show/Hide Social Share', 'idonate'),
 										'desc'	=> esc_html__('Show/Hide donors mobile number from donor listing.', 'idonate'),
 										'text_on'	=> esc_html__('Show', 'idonate'),

@@ -2,7 +2,8 @@
 
 use ThemeAtelier\Idonate\Helpers\Countries\Countries;
 
-$generalOpt = get_option('idonate_settings');
+$setting_options = get_option('idonate_settings');
+$idonate_countryhide = isset($setting_options['idonate_countryhide']) ? $setting_options['idonate_countryhide'] : '';
 ?>
 <!-- Contact Us Form -->
 <form action="#" id="form" method="post" name="form" enctype="multipart/form-data">
@@ -86,30 +87,32 @@ $generalOpt = get_option('idonate_settings');
 			<input id="city" name="city" value="{{data.city}}" placeholder="<?php esc_attr_e('City', 'idonate') ?>" type="text">
 		</div>
 	</div>
-
-	<div class="idonate_row idonate_col">
-		<div class="idonate_col_item" data-select="{{data.contycode}}">
-			<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
-			<select id="country" class="form-control country" name="country">
-				<?php
-				$allowed_html = array(
-					'option' => array(
-						'value' => array(),
-						'selected' => array(),  // Allow the selected attribute
-					),
-				);
-				echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
-				?>
-			</select>
+	<?php if (!empty($idonate_countryhide)) : ?>
+		<div class="idonate_row idonate_col">
+			<?php if (!$setting_options['enable_single_country'] || empty($setting_options['idonate_country'])) : ?>
+				<div class="idonate_col_item" data-select="{{data.contycode}}">
+					<label for="country"><?php esc_html_e('Select Country', 'idonate'); ?></label>
+					<select id="country" class="form-control country" name="country">
+						<?php
+						$allowed_html = array(
+							'option' => array(
+								'value' => array(),
+								'selected' => array(),  // Allow the selected attribute
+							),
+						);
+						echo wp_kses(Countries::IDONATE_COUNTRIES_options(), $allowed_html);
+						?>
+					</select>
+				</div>
+			<?php endif; ?>
+			<div class="idonate_col_item" data-select="{{data.statecode}}">
+				<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
+				<select class="form-control state" name="state">
+					<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
+				</select>
+			</div>
 		</div>
-		<div class="idonate_col_item" data-select="{{data.statecode}}">
-			<label for="state"><?php esc_html_e('Select State', 'idonate'); ?></label>
-			<select class="form-control state" name="state">
-				<option><?php esc_html_e('Select Country First', 'idonate'); ?></option>
-			</select>
-		</div>
-	</div>
-
+	<?php endif; ?>
 
 	<div class="idonate_row idonate_col">
 		<div class="idonate_col_item">
