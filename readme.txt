@@ -5,7 +5,7 @@ Tags: blood, blood wp, blood donation, blood request, Blood management system
 Requires at least: 5.3
 Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 2.1.2
+Stable tag: 2.1.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -164,6 +164,10 @@ Thank you!
 18. Dashboard Settings Advance Settings
 
 == Changelog ==
+= 2.1.3 - October 19, 2024 =
+* Fixed: Country and state field issue.
+* Update: Code compatibility.
+
 = 2.1.2 - October 01, 2024 =
 * Fixed: CSS
 * Update: Code structure
