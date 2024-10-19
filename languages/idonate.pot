@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-23 08:45+0000\n"
+"POT-Creation-Date: 2024-10-19 09:55+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -54,7 +54,7 @@ msgstr ""
 msgid "Shortcode Copied to Clipboard!"
 msgstr ""
 
-#: src/Admin/Admin.php:179, src/Admin/Admin.php:184, src/Admin/Admin.php:190, src/Admin/Admin.php:389, src/Admin/Admin.php:390, src/Admin/Settings/IDonateSettings.php:550, src/Admin/Views/WidgetBloodRequiest.php:110, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:201
+#: src/Admin/Admin.php:179, src/Admin/Admin.php:184, src/Admin/Admin.php:190, src/Admin/Admin.php:389, src/Admin/Admin.php:390, src/Admin/Settings/IDonateRequestSettings.php:142, src/Admin/Views/WidgetBloodRequiest.php:110, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:201
 msgid "Blood Request"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgstr ""
 msgid "No Blood Request Found in Trash"
 msgstr ""
 
-#: src/Admin/Admin.php:220, src/Admin/Helpers/donor-panel.php:60, src/Admin/Helpers/donor-panel.php:199, src/Frontend/Shortcode/DonorShortcode.php:54, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:76, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:68, src/Frontend/Templates/dashboard/dashboard.php:37, src/Frontend/Templates/dashboard/settings/profile.php:51, src/Frontend/Templates/single-blood_request.php:95, src/js-templates/donor-profile-edit.php:29
+#: src/Admin/Admin.php:220, src/Admin/Helpers/donor-panel.php:60, src/Admin/Helpers/donor-panel.php:199, src/Frontend/Shortcode/DonorShortcode.php:54, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:76, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:70, src/Frontend/Templates/dashboard/dashboard.php:37, src/Frontend/Templates/dashboard/settings/profile.php:51, src/Frontend/Templates/single-blood_request.php:95, src/js-templates/donor-profile-edit.php:30
 msgid "Blood Group"
 msgstr ""
 
@@ -658,7 +658,7 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: src/Admin/Framework/fields/select/select.php:56, src/Admin/Helpers/donor-panel.php:137, src/Admin/Helpers/donor-panel.php:142, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:160, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:146, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:151, src/Frontend/Templates/dashboard/settings/address.php:61, src/Frontend/Templates/FilterBar.php:92, src/Frontend/Templates/RequestFilterBar.php:100, src/js-templates/donor-profile-edit.php:106
+#: src/Admin/Framework/fields/select/select.php:56, src/Admin/Helpers/donor-panel.php:137, src/Admin/Helpers/donor-panel.php:142, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:160, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:155, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:160, src/Frontend/Templates/dashboard/settings/address.php:64, src/Frontend/Templates/FilterBar.php:93, src/Frontend/Templates/RequestFilterBar.php:100, src/js-templates/donor-profile-edit.php:109
 msgid "Select State"
 msgstr ""
 
@@ -926,135 +926,135 @@ msgstr ""
 msgid "Blood Donors Register "
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:46, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:54, src/Frontend/Templates/dashboard/settings/profile.php:37, src/js-templates/donor-profile-edit.php:14
+#: src/Admin/Helpers/donor-panel.php:46, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:56, src/Frontend/Templates/dashboard/settings/profile.php:37, src/js-templates/donor-profile-edit.php:15
 msgid "Full Name"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:47, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:55, src/Helpers/DonorFunctions.php:176
+#: src/Admin/Helpers/donor-panel.php:47, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:57, src/Helpers/DonorFunctions.php:176
 msgid "Full Name field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:47, src/Admin/Helpers/donor-panel.php:198, src/Frontend/Shortcode/DonorShortcode.php:53, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:55, src/js-templates/donor-profile-edit.php:15
+#: src/Admin/Helpers/donor-panel.php:47, src/Admin/Helpers/donor-panel.php:198, src/Frontend/Shortcode/DonorShortcode.php:53, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:57, src/js-templates/donor-profile-edit.php:16
 msgid "Name"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:50, src/Admin/Helpers/donor-panel.php:51, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:58, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:59, src/Frontend/Templates/dashboard/settings/profile.php:41, src/js-templates/donor-profile-edit.php:18, src/js-templates/donor-profile-edit.php:19
+#: src/Admin/Helpers/donor-panel.php:50, src/Admin/Helpers/donor-panel.php:51, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:60, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:61, src/Frontend/Templates/dashboard/settings/profile.php:41, src/js-templates/donor-profile-edit.php:19, src/js-templates/donor-profile-edit.php:20
 msgid "User Name"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:51, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:59
+#: src/Admin/Helpers/donor-panel.php:51, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:61
 msgid "User Name field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:56, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:64, src/Frontend/Templates/dashboard/settings/profile.php:47, src/js-templates/donor-profile-edit.php:25
+#: src/Admin/Helpers/donor-panel.php:56, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:66, src/Frontend/Templates/dashboard/settings/profile.php:47, src/js-templates/donor-profile-edit.php:26
 msgid "E-Mail ID"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:57, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:65
+#: src/Admin/Helpers/donor-panel.php:57, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:67
 msgid "Enter a valid email address."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:57, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:65, src/js-templates/donor-profile-edit.php:26
+#: src/Admin/Helpers/donor-panel.php:57, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:67, src/js-templates/donor-profile-edit.php:27
 msgid "E-Mail"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:62, src/Admin/Helpers/donor-panel.php:84, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:78, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:70, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:92, src/Frontend/Templates/dashboard/settings/profile.php:53, src/Frontend/Templates/dashboard/settings/profile.php:89, src/js-templates/donor-profile-edit.php:31, src/js-templates/donor-profile-edit.php:54
+#: src/Admin/Helpers/donor-panel.php:62, src/Admin/Helpers/donor-panel.php:84, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:78, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:72, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:94, src/Frontend/Templates/dashboard/settings/profile.php:53, src/Frontend/Templates/dashboard/settings/profile.php:89, src/js-templates/donor-profile-edit.php:32, src/js-templates/donor-profile-edit.php:55
 msgid "-----Select-----"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:82, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:90, src/Frontend/Templates/dashboard/settings/profile.php:80, src/js-templates/donor-profile-edit.php:52
+#: src/Admin/Helpers/donor-panel.php:82, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:92, src/Frontend/Templates/dashboard/settings/profile.php:80, src/js-templates/donor-profile-edit.php:53
 msgid "Availability to donate blood"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:85, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:93, src/Frontend/Templates/dashboard/settings/profile.php:83, src/js-templates/donor-profile-edit.php:55
+#: src/Admin/Helpers/donor-panel.php:85, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:95, src/Frontend/Templates/dashboard/settings/profile.php:83, src/js-templates/donor-profile-edit.php:56
 msgid "Available"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:86, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:94, src/Frontend/Templates/dashboard/settings/profile.php:84, src/js-templates/donor-profile-edit.php:56
+#: src/Admin/Helpers/donor-panel.php:86, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:96, src/Frontend/Templates/dashboard/settings/profile.php:84, src/js-templates/donor-profile-edit.php:57
 msgid "Unavailable"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:90, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:98, src/Frontend/Templates/dashboard/settings/profile.php:103, src/Frontend/Templates/single-donor.php:152, src/js-templates/donor-profile-edit.php:60
+#: src/Admin/Helpers/donor-panel.php:90, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:100, src/Frontend/Templates/dashboard/settings/profile.php:103, src/Frontend/Templates/single-donor.php:152, src/js-templates/donor-profile-edit.php:61
 msgid "Gender"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:92, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:100, src/Frontend/Templates/dashboard/settings/profile.php:106, src/js-templates/donor-profile-edit.php:62
+#: src/Admin/Helpers/donor-panel.php:92, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:102, src/Frontend/Templates/dashboard/settings/profile.php:106, src/js-templates/donor-profile-edit.php:63
 msgid "Male"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:93, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:101, src/Frontend/Templates/dashboard/settings/profile.php:107, src/js-templates/donor-profile-edit.php:63
+#: src/Admin/Helpers/donor-panel.php:93, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:103, src/Frontend/Templates/dashboard/settings/profile.php:107, src/js-templates/donor-profile-edit.php:64
 msgid "Female"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:94, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:102, src/Frontend/Templates/dashboard/settings/profile.php:108, src/js-templates/donor-profile-edit.php:64
+#: src/Admin/Helpers/donor-panel.php:94, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:104, src/Frontend/Templates/dashboard/settings/profile.php:108, src/js-templates/donor-profile-edit.php:65
 msgid "Other"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:100, src/Admin/Helpers/donor-panel.php:101, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:108, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:109, src/Frontend/Templates/dashboard/settings/profile.php:114, src/js-templates/donor-profile-edit.php:70, src/js-templates/donor-profile-edit.php:72
+#: src/Admin/Helpers/donor-panel.php:100, src/Admin/Helpers/donor-panel.php:101, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:110, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:111, src/Frontend/Templates/dashboard/settings/profile.php:114, src/js-templates/donor-profile-edit.php:71, src/js-templates/donor-profile-edit.php:73
 msgid "Date Of Birth"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:101, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:109, src/Helpers/DonorFunctions.php:188
+#: src/Admin/Helpers/donor-panel.php:101, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:111, src/Helpers/DonorFunctions.php:188
 msgid "Date of birth field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:104, src/Admin/Helpers/donor-panel.php:105, src/Admin/Views/General.php:92, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:119, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:120, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:112, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:113, src/Frontend/Templates/dashboard/settings/profile.php:118, src/Frontend/Templates/single-blood_request.php:111, src/js-templates/donor-profile-edit.php:75, src/js-templates/donor-profile-edit.php:76
+#: src/Admin/Helpers/donor-panel.php:104, src/Admin/Helpers/donor-panel.php:105, src/Admin/Views/General.php:92, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:119, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:120, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:114, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:115, src/Frontend/Templates/dashboard/settings/profile.php:118, src/Frontend/Templates/single-blood_request.php:111, src/js-templates/donor-profile-edit.php:76, src/js-templates/donor-profile-edit.php:77
 msgid "Mobile Number"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:105, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:113, src/Helpers/DonorFunctions.php:201
+#: src/Admin/Helpers/donor-panel.php:105, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:115, src/Helpers/DonorFunctions.php:201
 msgid "Mobile Number field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:110, src/Admin/Helpers/donor-panel.php:111, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:118, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:119, src/Frontend/Templates/dashboard/settings/profile.php:124, src/Frontend/Templates/single-donor.php:162, src/js-templates/donor-profile-edit.php:81, src/js-templates/donor-profile-edit.php:82
+#: src/Admin/Helpers/donor-panel.php:110, src/Admin/Helpers/donor-panel.php:111, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:120, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:121, src/Frontend/Templates/dashboard/settings/profile.php:124, src/Frontend/Templates/single-donor.php:162, src/js-templates/donor-profile-edit.php:82, src/js-templates/donor-profile-edit.php:83
 msgid "Land Line Number"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:114, src/Admin/Helpers/donor-panel.php:115, src/Admin/Views/General.php:102, src/Frontend/Shortcode/DonorShortcode.php:58, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:129, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:130, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:123, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:124, src/Frontend/Templates/dashboard/settings/address.php:96, src/Frontend/Templates/single-blood_request.php:134, src/Frontend/Templates/single-donor.php:175, src/js-templates/donor-profile-edit.php:85, src/js-templates/donor-profile-edit.php:86
+#: src/Admin/Helpers/donor-panel.php:114, src/Admin/Helpers/donor-panel.php:115, src/Admin/Views/General.php:102, src/Frontend/Shortcode/DonorShortcode.php:58, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:129, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:130, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:125, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:126, src/Frontend/Templates/dashboard/settings/address.php:96, src/Frontend/Templates/single-blood_request.php:134, src/Frontend/Templates/single-donor.php:175, src/js-templates/donor-profile-edit.php:86, src/js-templates/donor-profile-edit.php:87
 msgid "City"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:115, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:130, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:124, src/Helpers/DonorFunctions.php:214
+#: src/Admin/Helpers/donor-panel.php:115, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:130, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:126, src/Helpers/DonorFunctions.php:214
 msgid "City field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:122, src/Admin/Settings/IDonateSettings.php:135, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:131, src/Frontend/Templates/dashboard/settings/address.php:46, src/Frontend/Templates/FilterBar.php:83, src/Frontend/Templates/RequestFilterBar.php:91, src/js-templates/donor-profile-edit.php:92
+#: src/Admin/Helpers/donor-panel.php:122, src/Admin/Settings/IDonateGeneralSettings.php:135, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:140, src/Frontend/Templates/dashboard/settings/address.php:48, src/Frontend/Templates/FilterBar.php:84, src/Frontend/Templates/RequestFilterBar.php:91, src/js-templates/donor-profile-edit.php:94
 msgid "Select Country"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:140, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:158, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:149, src/js-templates/donor-profile-edit.php:108
+#: src/Admin/Helpers/donor-panel.php:140, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:158, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:158, src/js-templates/donor-profile-edit.php:111
 msgid "Select Country First"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:160, src/Admin/Views/General.php:107, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:133, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:170, src/Frontend/Templates/dashboard/settings/address.php:30, src/Frontend/Templates/dashboard/settings/address.php:102, src/Frontend/Templates/dashboard/settings/nav-bar.php:34, src/Frontend/Templates/single-blood_request.php:138, src/Frontend/Templates/single-donor.php:181, src/js-templates/donor-profile-edit.php:116
+#: src/Admin/Helpers/donor-panel.php:160, src/Admin/Views/General.php:107, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:133, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:182, src/Frontend/Templates/dashboard/settings/address.php:33, src/Frontend/Templates/dashboard/settings/address.php:102, src/Frontend/Templates/dashboard/settings/nav-bar.php:34, src/Frontend/Templates/single-blood_request.php:138, src/Frontend/Templates/single-donor.php:181, src/js-templates/donor-profile-edit.php:119
 msgid "Address"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:161, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:171
+#: src/Admin/Helpers/donor-panel.php:161, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:183
 msgid "Please select your address."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:167, src/Admin/Helpers/donor-panel.php:168, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:177, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:178, src/Frontend/Templates/dashboard/settings/nav-bar.php:29, src/Frontend/Templates/dashboard/settings/reset-password.php:29
+#: src/Admin/Helpers/donor-panel.php:167, src/Admin/Helpers/donor-panel.php:168, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:189, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:190, src/Frontend/Templates/dashboard/settings/nav-bar.php:29, src/Frontend/Templates/dashboard/settings/reset-password.php:29
 msgid "Password"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:168, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:178
+#: src/Admin/Helpers/donor-panel.php:168, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:190
 msgid "Password field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:171, src/Admin/Helpers/donor-panel.php:172, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:181, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:182
+#: src/Admin/Helpers/donor-panel.php:171, src/Admin/Helpers/donor-panel.php:172, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:193, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:194
 msgid "Re-type Password"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:172, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:182
+#: src/Admin/Helpers/donor-panel.php:172, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:194
 msgid "Retype password field can't be empty."
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:178, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:187, src/Frontend/Templates/dashboard/settings/profile.php:134, src/js-templates/donor-profile-edit.php:145
+#: src/Admin/Helpers/donor-panel.php:178, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:199, src/Frontend/Templates/dashboard/settings/profile.php:134, src/js-templates/donor-profile-edit.php:148
 msgid "Upload Profile Picture"
 msgstr ""
 
-#: src/Admin/Helpers/donor-panel.php:180, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:189
+#: src/Admin/Helpers/donor-panel.php:180, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:201
 msgid "your image"
 msgstr ""
 
@@ -1078,571 +1078,595 @@ msgstr ""
 msgid "Action"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:44
-msgid "GENERAL"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:50
-msgid "Container Width"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:51
-msgid "Set plugin pages container maximum width in different devices."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:64
-msgid "Section Padding"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:65
-msgid "Set plugin pages section padding in different devices."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:81
-msgid "Main Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:82
-msgid "Main Border Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:89
-msgid "Activate reCAPTCHA for Forms"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:90
-msgid "When enabled, reCAPTCHA will be activated on all forms to enhance security and prevent spam submissions."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:91, src/Admin/Settings/IDonateSettings.php:124, src/Admin/Settings/IDonateSettings.php:269, src/Admin/Settings/IDonateSettings.php:280, src/Admin/Settings/IDonateSettings.php:462
-msgid "Enable"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:92, src/Admin/Settings/IDonateSettings.php:125, src/Admin/Settings/IDonateSettings.php:270, src/Admin/Settings/IDonateSettings.php:281, src/Admin/Settings/IDonateSettings.php:463
-msgid "Disable"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:106
-msgid "reCAPTCHA Secret Key"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:107, src/Admin/Settings/IDonateSettings.php:115
-msgid "Create google recaptcha <a href=\"https://www.google.com/recaptcha/admin#list\">sitekey and secretkey</a>"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:108
-msgid "Set your generated recaptcha secret key."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:114
-msgid "Recaptcha Site Key"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:116
-msgid "Set your generated recaptcha site key."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:122
-msgid "Single Country Mode"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:123
-msgid "When enabled, the forms will display only the selected country in the country field"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:143
-msgid "Social Share"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:148
-msgid "Sharing Media"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:152
-msgid "Choose an option"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:154
-msgid "Facebook"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:155
-msgid "Twitter"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:156
-msgid "LinkedIn"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:157
-msgid "Pinterest"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:158, src/Admin/Views/General.php:97, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:123, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:124, src/Frontend/Templates/single-blood_request.php:115
-msgid "Email"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:159
-msgid "Instagram"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:160
-msgid "VK"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:161
-msgid "digg"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:162
-msgid "Tumblr"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:163
-msgid "Reddit"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:164
-msgid "WhatsApp"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:165
-msgid "Xing"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:171
-msgid "Margin"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:186
-msgid "Icon Shape"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:190
-msgid "Circle"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:194
-msgid "Rounded"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:198
-msgid "Square"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:202
-msgid "Icon only"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:210
-msgid "Custom Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:216
-msgid "Icon Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:218
-msgid "Icon"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:219
-msgid "Icon Hover"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:220
-msgid "Background"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:221
-msgid "Background Hover"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:222
-msgid "Border Hover"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:236
-msgid "Icon Border"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:254
-msgid "DONOR SETTINGS"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:267
-msgid "Require Admin Approval for Donor Registration"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:268
-msgid "When enabled, all donor registrations will require admin approval before being accepted to ensure the validity and reliability of the information."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:278
-msgid "Require User Login to View Donors"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:279
-msgid "When enabled, users must log in to view the list of donors, ensuring the privacy and security of donor information."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:289, src/Admin/Settings/IDonateSettings.php:470
-msgid "Column(s)"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:290, src/Admin/Settings/IDonateSettings.php:471
-msgid "Set number of column(s) in different devices for responsive view."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:298, src/Admin/Settings/IDonateSettings.php:479
-msgid "<i class=\"icofont-monitor\"></i> <b> Large Desktop </b> - is larger than 1200px,<br><i class=\"icofont-laptop\"></i> <b>Desktop</b> - size is larger than 992px,<br> <i class=\"icofont-surface-tablet\"></i> <b>Tablet</b> - Size is larger than 768,<br> <i class=\"icofont-android-tablet\"></i> <b> Mobile Landscape </b> - size is larger than 576px.,<br> <i class=\"icofont-android-tablet\"></i> <b> Mobile </b> - size is smaller than 576px."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:304
-msgid "Donor Per Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:305
-msgid "Set the number of donors displayed per page in the donor listings."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:312
-msgid "Open Donor View Details Button"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:313
-msgid "Choose how the donor details should displayed on"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:315, src/Admin/Settings/IDonateSettings.php:497
-msgid "On Single Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:316, src/Admin/Settings/IDonateSettings.php:498
-msgid "On Pop Up"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:323, src/Admin/Settings/IDonateSettings.php:505
-msgid "Enable Next/Prev"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:324
-msgid "Allow navigation between donors using next and previous buttons in the popup view."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:332
-msgid "Show/Hide Donor Search Options"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:333
-msgid "Toggle the visibility of donor search options in the donor listings."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:334, src/Admin/Settings/IDonateSettings.php:345, src/Admin/Settings/IDonateSettings.php:356, src/Admin/Settings/IDonateSettings.php:367, src/Admin/Settings/IDonateSettings.php:422, src/Admin/Settings/IDonateSettings.php:563, src/Admin/Settings/IDonateSettings.php:574
-msgid "Show"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:335, src/Admin/Settings/IDonateSettings.php:346, src/Admin/Settings/IDonateSettings.php:357, src/Admin/Settings/IDonateSettings.php:368, src/Admin/Settings/IDonateSettings.php:423, src/Admin/Settings/IDonateSettings.php:564, src/Admin/Settings/IDonateSettings.php:575
-msgid "Hide"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:343
-msgid "Show/Hide Email From Donor Listing"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:344
-msgid "Show/Hide email address from donor listing."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:354
-msgid "Show/Hide Mobile Number"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:355, src/Admin/Settings/IDonateSettings.php:366
-msgid "Show/Hide donors mobile number from donor listing."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:365
-msgid "Show/Hide Social Share"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:381
-msgid "Title for Donor Registration Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:382
-msgid "The title displayed on the donor registration form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:383, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:37
-msgid "Blood Donors Register"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:389
-msgid "Subtitle for Donor Registration Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:390
-msgid "The subtitle displayed on the donor registration form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:391, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:38
-msgid "Please fill the following information to register donor."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:398
-msgid "Donor Login Form Title"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:399
-msgid "The title displayed on the donor login form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:406
-msgid "Donor Profile Edit Form Title"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:407
-msgid "The title displayed on the donor profile edit form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:420
-msgid "Show/Hide country and state fields"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:421
-msgid "Toggle the visibility of country and state fields"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:432, src/Admin/Settings/IDonateSettings.php:584
-msgid "Set request form text and background color."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:434, src/Admin/Settings/IDonateSettings.php:586
-msgid "Background Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:435, src/Admin/Settings/IDonateSettings.php:587
-msgid "Text Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:448
-msgid "REQUEST SETTINGS"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:460
-msgid "Require Admin Approval for Blood Requests"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:461
-msgid "When enabled, all blood request posts will require your approval before being published to ensure accuracy and appropriateness."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:485
-msgid "Blood Request Per Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:486
-msgid "Set the number of blood requests displayed per page in the blood requests listings."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:494
-msgid "Open Request View Details"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:495
-msgid "Choose how the request details should displayed on"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:506
-msgid "Allow navigation between requests using next and previous buttons in the popup view."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:512
-msgid "Auto-Delete Expired Blood Requests"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:513
-msgid "Automatically remove blood requests that are no longer needed. "
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:515
-msgid "Never Delete"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:516
-msgid "Delete on Blood Needed Date"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:517
-msgid "Delete One Week After Blood Needed Date"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:518
-msgid "Delete Two Weeks After Blood Needed Date (Pro)"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:519
-msgid "Delete One Month After Blood Needed Date (Pro)"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:532
-msgid "Blood Request Form Title"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:533
-msgid "The title displayed on the request form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:534, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:42
-msgid "Submit Your Request"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:540
-msgid "Blood Request Form Sub Title"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:541
-msgid "The subtitle displayed on the request form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:542, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:44
-msgid "Please fill the following information to post your blood request."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:548
-msgid "Submit Button Label for Request Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:549
-msgid "The label text displayed on the submit button of the request form."
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:561
-msgid "Show/Hide Country and State Fields On the Request Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:572
-msgid "Show/Hide Image Upload Field On the Request Form"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:583
-msgid "Request Form Color"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:601
-msgid "PAGE SETTINGS"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:611
-msgid "Blood Request Listing Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:613
-msgid "Select your page to display blood requests. Default page name: Request"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:614, src/Admin/Settings/IDonateSettings.php:626, src/Admin/Settings/IDonateSettings.php:638, src/Admin/Settings/IDonateSettings.php:662, src/Admin/Settings/IDonateSettings.php:674, src/Admin/Settings/IDonateSettings.php:689
-msgid "Select a page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:623
-msgid "Blood Request Form Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:635
-msgid "Donor Listing Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:637
-msgid "Select your page to display donors. Default page name: Donors"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:647
-msgid "Donor Table Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:649
-msgid "Select your page to display donor table. Default page name: Donor Table"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:659
-msgid "Donor Register Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:661
-msgid "Select your page to display donor registraion form. Default page name: Donor Register"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:671
-msgid "After Login Redirect Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:672
-msgid "Select your page to redirect after successful login. Default page name: Home page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:686
-msgid "After Logout Redirect Page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:687
-msgid "Select your page to redirect after successful logout. Default page name: Login page"
-msgstr ""
-
-#: src/Admin/Settings/IDonateSettings.php:697
+#: src/Admin/Settings/IDonateAdvanceSettings.php:39
 msgid "ADVANCE SETTINGS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:709
+#: src/Admin/Settings/IDonateAdvanceSettings.php:51
 msgid "Delete Default Pages On Plugin Deactivation"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:710
+#: src/Admin/Settings/IDonateAdvanceSettings.php:52
 msgid "Check this box if you would like Idonate plugin to completely remove all pages created by default."
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:714
+#: src/Admin/Settings/IDonateAdvanceSettings.php:56
 msgid "Enqueue or Dequeue CSS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:719
+#: src/Admin/Settings/IDonateAdvanceSettings.php:61
 msgid "IcoFont"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:720, src/Admin/Settings/IDonateSettings.php:729, src/Admin/Settings/IDonateSettings.php:738, src/Admin/Settings/IDonateSettings.php:751, src/Admin/Settings/IDonateSettings.php:760, src/Admin/Settings/IDonateSettings.php:769
+#: src/Admin/Settings/IDonateAdvanceSettings.php:62, src/Admin/Settings/IDonateAdvanceSettings.php:71, src/Admin/Settings/IDonateAdvanceSettings.php:80, src/Admin/Settings/IDonateAdvanceSettings.php:93, src/Admin/Settings/IDonateAdvanceSettings.php:102, src/Admin/Settings/IDonateAdvanceSettings.php:111
 msgid "Enqueued"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:721, src/Admin/Settings/IDonateSettings.php:730, src/Admin/Settings/IDonateSettings.php:739, src/Admin/Settings/IDonateSettings.php:752, src/Admin/Settings/IDonateSettings.php:761, src/Admin/Settings/IDonateSettings.php:770
+#: src/Admin/Settings/IDonateAdvanceSettings.php:63, src/Admin/Settings/IDonateAdvanceSettings.php:72, src/Admin/Settings/IDonateAdvanceSettings.php:81, src/Admin/Settings/IDonateAdvanceSettings.php:94, src/Admin/Settings/IDonateAdvanceSettings.php:103, src/Admin/Settings/IDonateAdvanceSettings.php:112
 msgid "Dequeued"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:728, src/Admin/Settings/IDonateSettings.php:750
+#: src/Admin/Settings/IDonateAdvanceSettings.php:70, src/Admin/Settings/IDonateAdvanceSettings.php:92
 msgid "Magnific Popup"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:737, src/Admin/Settings/IDonateSettings.php:759
+#: src/Admin/Settings/IDonateAdvanceSettings.php:79, src/Admin/Settings/IDonateAdvanceSettings.php:101
 msgid "Data Tables"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:745
+#: src/Admin/Settings/IDonateAdvanceSettings.php:87
 msgid "Enqueue or Dequeue JS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:768
+#: src/Admin/Settings/IDonateAdvanceSettings.php:110
 msgid "Form Validate"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:782
+#: src/Admin/Settings/IDonateAdvanceSettings.php:124
 msgid "CUSTOM CSS"
 msgstr ""
 
-#: src/Admin/Settings/IDonateSettings.php:792
+#: src/Admin/Settings/IDonateAdvanceSettings.php:134
 msgid "CUSTOM JS"
 msgstr ""
 
-#: src/Admin/Settings/Settings.php:25, src/Admin/Settings/Settings.php:30
+#: src/Admin/Settings/IDonateDonorSettings.php:40
+msgid "DONOR SETTINGS"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:53
+msgid "Require Admin Approval for Donor Registration"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:54
+msgid "When enabled, all donor registrations will require admin approval before being accepted to ensure the validity and reliability of the information."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:55, src/Admin/Settings/IDonateDonorSettings.php:66, src/Admin/Settings/IDonateGeneralSettings.php:91, src/Admin/Settings/IDonateGeneralSettings.php:124, src/Admin/Settings/IDonateRequestSettings.php:54
+msgid "Enable"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:56, src/Admin/Settings/IDonateDonorSettings.php:67, src/Admin/Settings/IDonateGeneralSettings.php:92, src/Admin/Settings/IDonateGeneralSettings.php:125, src/Admin/Settings/IDonateRequestSettings.php:55
+msgid "Disable"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:64
+msgid "Require User Login to View Donors"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:65
+msgid "When enabled, users must log in to view the list of donors, ensuring the privacy and security of donor information."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:75, src/Admin/Settings/IDonateRequestSettings.php:62
+msgid "Column(s)"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:76, src/Admin/Settings/IDonateRequestSettings.php:63
+msgid "Set number of column(s) in different devices for responsive view."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:84, src/Admin/Settings/IDonateRequestSettings.php:71
+msgid "<i class=\"icofont-monitor\"></i> <b> Large Desktop </b> - is larger than 1200px,<br><i class=\"icofont-laptop\"></i> <b>Desktop</b> - size is larger than 992px,<br> <i class=\"icofont-surface-tablet\"></i> <b>Tablet</b> - Size is larger than 768,<br> <i class=\"icofont-android-tablet\"></i> <b> Mobile Landscape </b> - size is larger than 576px.,<br> <i class=\"icofont-android-tablet\"></i> <b> Mobile </b> - size is smaller than 576px."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:90
+msgid "Donor Per Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:91
+msgid "Set the number of donors displayed per page in the donor listings."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:98
+msgid "Open Donor View Details Button"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:99
+msgid "Choose how the donor details should displayed on"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:101, src/Admin/Settings/IDonateRequestSettings.php:89
+msgid "On Single Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:102, src/Admin/Settings/IDonateRequestSettings.php:90
+msgid "On Pop Up"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:109
+msgid "Donor Single Page Slug"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:116, src/Admin/Settings/IDonateRequestSettings.php:97
+msgid "Enable Next/Prev"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:117
+msgid "Allow navigation between donors using next and previous buttons in the popup view."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:125
+msgid "Show/Hide Donor Search Options"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:126
+msgid "Toggle the visibility of donor search options in the donor listings."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:127, src/Admin/Settings/IDonateDonorSettings.php:150, src/Admin/Settings/IDonateDonorSettings.php:162, src/Admin/Settings/IDonateDonorSettings.php:174, src/Admin/Settings/IDonateDonorSettings.php:229, src/Admin/Settings/IDonateRequestSettings.php:155, src/Admin/Settings/IDonateRequestSettings.php:166
+msgid "Show"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:128, src/Admin/Settings/IDonateDonorSettings.php:138, src/Admin/Settings/IDonateDonorSettings.php:151, src/Admin/Settings/IDonateDonorSettings.php:163, src/Admin/Settings/IDonateDonorSettings.php:175, src/Admin/Settings/IDonateDonorSettings.php:230, src/Admin/Settings/IDonateRequestSettings.php:156, src/Admin/Settings/IDonateRequestSettings.php:167
+msgid "Hide"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:136
+msgid "Restrict Contact Info Visibility"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:139
+msgid "Show for everyone"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:140
+msgid "Only logged in user"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:148
+msgid "Show/Hide Email From Donor Listing"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:149
+msgid "Show/Hide email address from donor listing."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:160
+msgid "Show/Hide Mobile Number"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:161, src/Admin/Settings/IDonateDonorSettings.php:173
+msgid "Show/Hide donors mobile number from donor listing."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:172
+msgid "Show/Hide Social Share"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:188
+msgid "Title for Donor Registration Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:189
+msgid "The title displayed on the donor registration form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:190, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:39
+msgid "Blood Donors Register"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:196
+msgid "Subtitle for Donor Registration Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:197
+msgid "The subtitle displayed on the donor registration form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:198, src/Frontend/Shortcode/ShortcodeRegisterDonor.php:40
+msgid "Please fill the following information to register donor."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:205
+msgid "Donor Login Form Title"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:206
+msgid "The title displayed on the donor login form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:213
+msgid "Donor Profile Edit Form Title"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:214
+msgid "The title displayed on the donor profile edit form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:227
+msgid "Show/Hide country and state fields"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:228
+msgid "Toggle the visibility of country and state fields"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:239, src/Admin/Settings/IDonateRequestSettings.php:176
+msgid "Set request form text and background color."
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:241, src/Admin/Settings/IDonateRequestSettings.php:178
+msgid "Background Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateDonorSettings.php:242, src/Admin/Settings/IDonateRequestSettings.php:179
+msgid "Text Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:44
+msgid "GENERAL"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:50
+msgid "Container Width"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:51
+msgid "Set plugin pages container maximum width in different devices."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:64
+msgid "Section Padding"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:65
+msgid "Set plugin pages section padding in different devices."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:81
+msgid "Main Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:82
+msgid "Main Border Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:89
+msgid "Activate reCAPTCHA for Forms"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:90
+msgid "When enabled, reCAPTCHA will be activated on all forms to enhance security and prevent spam submissions."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:106
+msgid "reCAPTCHA Secret Key"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:107, src/Admin/Settings/IDonateGeneralSettings.php:115
+msgid "Create google recaptcha <a href=\"https://www.google.com/recaptcha/admin#list\">sitekey and secretkey</a>"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:108
+msgid "Set your generated recaptcha secret key."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:114
+msgid "Recaptcha Site Key"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:116
+msgid "Set your generated recaptcha site key."
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:122
+msgid "Single Country Mode"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:123
+msgid "When enabled, the forms will display only the selected country in the country field"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:143
+msgid "Social Share"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:148
+msgid "Sharing Media"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:152
+msgid "Choose an option"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:154
+msgid "Facebook"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:155
+msgid "Twitter"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:156
+msgid "LinkedIn"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:157
+msgid "Pinterest"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:158, src/Admin/Views/General.php:97, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:123, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:124, src/Frontend/Templates/single-blood_request.php:115
+msgid "Email"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:159
+msgid "Instagram"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:160
+msgid "VK"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:161
+msgid "digg"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:162
+msgid "Tumblr"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:163
+msgid "Reddit"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:164
+msgid "WhatsApp"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:165
+msgid "Xing"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:171
+msgid "Margin"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:186
+msgid "Icon Shape"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:190
+msgid "Circle"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:194
+msgid "Rounded"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:198
+msgid "Square"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:202
+msgid "Icon only"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:210
+msgid "Custom Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:216
+msgid "Icon Color"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:218
+msgid "Icon"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:219
+msgid "Icon Hover"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:220
+msgid "Background"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:221
+msgid "Background Hover"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:222
+msgid "Border Hover"
+msgstr ""
+
+#: src/Admin/Settings/IDonateGeneralSettings.php:236
+msgid "Icon Border"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:39
+msgid "PAGE SETTINGS"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:49
+msgid "Dashboard Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:51
+msgid "Select your dashboard page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:52, src/Admin/Settings/IDonatePageSettings.php:64, src/Admin/Settings/IDonatePageSettings.php:76, src/Admin/Settings/IDonatePageSettings.php:88, src/Admin/Settings/IDonatePageSettings.php:112, src/Admin/Settings/IDonatePageSettings.php:124, src/Admin/Settings/IDonatePageSettings.php:139
+msgid "Select a page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:61
+msgid "Blood Request Listing Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:63
+msgid "Select your page to display blood requests. Default page name: Request"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:73
+msgid "Blood Request Form Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:85
+msgid "Donor Listing Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:87
+msgid "Select your page to display donors. Default page name: Donors"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:97
+msgid "Donor Table Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:99
+msgid "Select your page to display donor table. Default page name: Donor Table"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:109
+msgid "Donor Register Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:111
+msgid "Select your page to display donor registraion form. Default page name: Donor Register"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:121
+msgid "After Login Redirect Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:122
+msgid "Select your page to redirect after successful login. Default page name: Home page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:136
+msgid "After Logout Redirect Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonatePageSettings.php:137
+msgid "Select your page to redirect after successful logout. Default page name: Login page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:40
+msgid "REQUEST SETTINGS"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:52
+msgid "Require Admin Approval for Blood Requests"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:53
+msgid "When enabled, all blood request posts will require your approval before being published to ensure accuracy and appropriateness."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:77
+msgid "Blood Request Per Page"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:78
+msgid "Set the number of blood requests displayed per page in the blood requests listings."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:86
+msgid "Open Request View Details"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:87
+msgid "Choose how the request details should displayed on"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:98
+msgid "Allow navigation between requests using next and previous buttons in the popup view."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:104
+msgid "Auto-Delete Expired Blood Requests"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:105
+msgid "Automatically remove blood requests that are no longer needed. "
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:107
+msgid "Never Delete"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:108
+msgid "Delete on Blood Needed Date"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:109
+msgid "Delete One Week After Blood Needed Date"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:110
+msgid "Delete Two Weeks After Blood Needed Date (Pro)"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:111
+msgid "Delete One Month After Blood Needed Date (Pro)"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:124
+msgid "Blood Request Form Title"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:125
+msgid "The title displayed on the request form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:126, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:42
+msgid "Submit Your Request"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:132
+msgid "Blood Request Form Sub Title"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:133
+msgid "The subtitle displayed on the request form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:134, src/Frontend/Shortcode/ShortcodePostBloodRequest.php:44
+msgid "Please fill the following information to post your blood request."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:140
+msgid "Submit Button Label for Request Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:141
+msgid "The label text displayed on the submit button of the request form."
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:153
+msgid "Show/Hide Country and State Fields On the Request Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:164
+msgid "Show/Hide Image Upload Field On the Request Form"
+msgstr ""
+
+#: src/Admin/Settings/IDonateRequestSettings.php:175
+msgid "Request Form Color"
+msgstr ""
+
+#: src/Admin/Settings/Settings.php:29, src/Admin/Settings/Settings.php:34
 msgid "IDonate Settings"
 msgstr ""
 
@@ -1658,7 +1682,7 @@ msgstr ""
 msgid "Patient Blood Group"
 msgstr ""
 
-#: src/Admin/Views/General.php:63, src/Frontend/Templates/FilterBar.php:66, src/Frontend/Templates/RequestFilterBar.php:79
+#: src/Admin/Views/General.php:63, src/Frontend/Templates/FilterBar.php:67, src/Frontend/Templates/RequestFilterBar.php:79
 msgid "Select Blood Group"
 msgstr ""
 
@@ -1802,15 +1826,15 @@ msgstr ""
 msgid "Land Line Number: "
 msgstr ""
 
-#: src/Frontend/Manager.php:264, src/Frontend/Manager.php:412, src/Helpers/IDonateAjaxHandler.php:293, src/js-templates/donor-profile-view.php:35
+#: src/Frontend/Manager.php:264, src/Frontend/Manager.php:412, src/Helpers/IDonateAjaxHandler.php:298, src/js-templates/donor-profile-view.php:35
 msgid "Country: "
 msgstr ""
 
-#: src/Frontend/Manager.php:269, src/Frontend/Manager.php:419, src/Helpers/IDonateAjaxHandler.php:297, src/js-templates/donor-profile-view.php:42
+#: src/Frontend/Manager.php:269, src/Frontend/Manager.php:419, src/Helpers/IDonateAjaxHandler.php:302, src/js-templates/donor-profile-view.php:42
 msgid "State: "
 msgstr ""
 
-#: src/Frontend/Manager.php:273, src/Frontend/Manager.php:425, src/Helpers/IDonateAjaxHandler.php:301, src/js-templates/donor-profile-view.php:49
+#: src/Frontend/Manager.php:273, src/Frontend/Manager.php:425, src/Helpers/IDonateAjaxHandler.php:306, src/js-templates/donor-profile-view.php:49
 msgid "City: "
 msgstr ""
 
@@ -1818,19 +1842,19 @@ msgstr ""
 msgid "Address: "
 msgstr ""
 
-#: src/Frontend/Manager.php:287, src/Helpers/IDonateAjaxHandler.php:203, src/Helpers/IDonateAjaxHandler.php:314
+#: src/Frontend/Manager.php:287, src/Helpers/IDonateAjaxHandler.php:208, src/Helpers/IDonateAjaxHandler.php:319
 msgid "Close (Esc)"
 msgstr ""
 
-#: src/Frontend/Manager.php:343, src/Frontend/Manager.php:399, src/Helpers/IDonateAjaxHandler.php:281
+#: src/Frontend/Manager.php:343, src/Frontend/Manager.php:399, src/Helpers/IDonateAjaxHandler.php:286
 msgid "Email: "
 msgstr ""
 
-#: src/Frontend/Manager.php:348, src/Frontend/Manager.php:394, src/Helpers/IDonateAjaxHandler.php:285, src/js-templates/donor-profile-view.php:79
+#: src/Frontend/Manager.php:348, src/Frontend/Manager.php:394, src/Helpers/IDonateAjaxHandler.php:290, src/js-templates/donor-profile-view.php:79
 msgid "Mobile Number: "
 msgstr ""
 
-#: src/Frontend/Manager.php:358, src/Helpers/IDonateAjaxHandler.php:257
+#: src/Frontend/Manager.php:358, src/Helpers/IDonateAjaxHandler.php:262
 msgid "Patient Name: "
 msgstr ""
 
@@ -1846,11 +1870,11 @@ msgstr ""
 msgid "Blood Unit / Bag (S): "
 msgstr ""
 
-#: src/Frontend/Manager.php:388, src/Helpers/IDonateAjaxHandler.php:277
+#: src/Frontend/Manager.php:388, src/Helpers/IDonateAjaxHandler.php:282
 msgid "Purpose: "
 msgstr ""
 
-#: src/Frontend/Manager.php:404, src/Helpers/IDonateAjaxHandler.php:289
+#: src/Frontend/Manager.php:404, src/Helpers/IDonateAjaxHandler.php:294
 msgid "Hospital Name: "
 msgstr ""
 
@@ -1870,23 +1894,23 @@ msgstr ""
 msgid "Date Of Birth :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:140, src/Helpers/IDonateAjaxHandler.php:180
+#: src/Frontend/Shortcode/DonorShortcode.php:140, src/Helpers/IDonateAjaxHandler.php:185
 msgid "Land Line Number :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:144, src/Helpers/IDonateAjaxHandler.php:185
+#: src/Frontend/Shortcode/DonorShortcode.php:144, src/Helpers/IDonateAjaxHandler.php:190
 msgid "Country :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:149, src/Helpers/IDonateAjaxHandler.php:190
+#: src/Frontend/Shortcode/DonorShortcode.php:149, src/Helpers/IDonateAjaxHandler.php:195
 msgid "State :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:153, src/Helpers/IDonateAjaxHandler.php:194
+#: src/Frontend/Shortcode/DonorShortcode.php:153, src/Helpers/IDonateAjaxHandler.php:199
 msgid "City :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:154, src/Helpers/IDonateAjaxHandler.php:195
+#: src/Frontend/Shortcode/DonorShortcode.php:154, src/Helpers/IDonateAjaxHandler.php:200
 msgid "Address :"
 msgstr ""
 
@@ -1962,7 +1986,7 @@ msgstr ""
 msgid "Name:"
 msgstr ""
 
-#: src/Frontend/Templates/dashboard/my-profile.php:60, src/Helpers/IDonateAjaxHandler.php:196, src/js-templates/donor-profile-delete.php:4
+#: src/Frontend/Templates/dashboard/my-profile.php:60, src/Helpers/IDonateAjaxHandler.php:201, src/js-templates/donor-profile-delete.php:4
 msgid "User Name:"
 msgstr ""
 
@@ -2010,7 +2034,7 @@ msgstr ""
 msgid "City:"
 msgstr ""
 
-#: src/Frontend/Templates/dashboard/my-profile.php:96, src/Helpers/IDonateAjaxHandler.php:305
+#: src/Frontend/Templates/dashboard/my-profile.php:96, src/Helpers/IDonateAjaxHandler.php:310
 msgid "Address:"
 msgstr ""
 
@@ -2022,19 +2046,19 @@ msgstr ""
 msgid "Social Profile"
 msgstr ""
 
-#: src/Frontend/Templates/dashboard/settings/reset-password.php:42, src/js-templates/donor-profile-edit.php:123, src/js-templates/donor-profile-edit.php:124
+#: src/Frontend/Templates/dashboard/settings/reset-password.php:42, src/js-templates/donor-profile-edit.php:126, src/js-templates/donor-profile-edit.php:127
 msgid "New Password"
 msgstr ""
 
-#: src/Frontend/Templates/dashboard/settings/reset-password.php:46, src/js-templates/donor-profile-edit.php:127, src/js-templates/donor-profile-edit.php:128
+#: src/Frontend/Templates/dashboard/settings/reset-password.php:46, src/js-templates/donor-profile-edit.php:130, src/js-templates/donor-profile-edit.php:131
 msgid "Re-type New Password"
 msgstr ""
 
-#: src/Frontend/Templates/dashboard/settings/social-profile.php:43, src/js-templates/donor-profile-edit.php:133, src/js-templates/donor-profile-edit.php:134
+#: src/Frontend/Templates/dashboard/settings/social-profile.php:43, src/js-templates/donor-profile-edit.php:136, src/js-templates/donor-profile-edit.php:137
 msgid "Facebook Url"
 msgstr ""
 
-#: src/Frontend/Templates/dashboard/settings/social-profile.php:47, src/js-templates/donor-profile-edit.php:137, src/js-templates/donor-profile-edit.php:138
+#: src/Frontend/Templates/dashboard/settings/social-profile.php:47, src/js-templates/donor-profile-edit.php:140, src/js-templates/donor-profile-edit.php:141
 msgid "Twitter Url"
 msgstr ""
 
@@ -2046,15 +2070,15 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: src/Frontend/Templates/FilterBar.php:64
+#: src/Frontend/Templates/FilterBar.php:65
 msgid "Enter Donor Name"
 msgstr ""
 
-#: src/Frontend/Templates/FilterBar.php:72
+#: src/Frontend/Templates/FilterBar.php:73
 msgid "Select Availability"
 msgstr ""
 
-#: src/Frontend/Templates/FilterBar.php:96, src/Frontend/Templates/RequestFilterBar.php:105
+#: src/Frontend/Templates/FilterBar.php:97, src/Frontend/Templates/RequestFilterBar.php:105
 msgid "Enter City"
 msgstr ""
 
@@ -17959,67 +17983,67 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:129, src/Helpers/IDonateAjaxHandler.php:225, src/Helpers/IDonateAjaxHandler.php:414, src/Helpers/IDonateAjaxHandler.php:445, src/Helpers/IDonateAjaxHandler.php:457, src/Helpers/IDonateAjaxHandler.php:488, src/Helpers/IDonateAjaxHandler.php:499, src/Helpers/IDonateAjaxHandler.php:601
+#: src/Helpers/IDonateAjaxHandler.php:134, src/Helpers/IDonateAjaxHandler.php:230, src/Helpers/IDonateAjaxHandler.php:419, src/Helpers/IDonateAjaxHandler.php:450, src/Helpers/IDonateAjaxHandler.php:462, src/Helpers/IDonateAjaxHandler.php:493, src/Helpers/IDonateAjaxHandler.php:504, src/Helpers/IDonateAjaxHandler.php:606
 msgid "Nonce verification failed"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:166
+#: src/Helpers/IDonateAjaxHandler.php:171
 msgid "Name : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:167
+#: src/Helpers/IDonateAjaxHandler.php:172
 msgid "Gender : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:168
+#: src/Helpers/IDonateAjaxHandler.php:173
 msgid "Date Of Birth : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:169
+#: src/Helpers/IDonateAjaxHandler.php:174
 msgid "Email : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:170
+#: src/Helpers/IDonateAjaxHandler.php:175
 msgid "Mobile : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:172
+#: src/Helpers/IDonateAjaxHandler.php:177
 msgid "Availability  : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:174
+#: src/Helpers/IDonateAjaxHandler.php:179
 msgid "Blood Group : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:214, src/Helpers/IDonateAjaxHandler.php:325
+#: src/Helpers/IDonateAjaxHandler.php:219, src/Helpers/IDonateAjaxHandler.php:330
 msgid "Delete"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:215, src/Helpers/IDonateAjaxHandler.php:326
+#: src/Helpers/IDonateAjaxHandler.php:220, src/Helpers/IDonateAjaxHandler.php:331
 msgid "Approve"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:261
+#: src/Helpers/IDonateAjaxHandler.php:266
 msgid "Patient Age:"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:265
+#: src/Helpers/IDonateAjaxHandler.php:270
 msgid "Blood Group:"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:269
+#: src/Helpers/IDonateAjaxHandler.php:274
 msgid "When Need Blood?:"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:273
+#: src/Helpers/IDonateAjaxHandler.php:278
 msgid "Blood Unit / Bag (S):"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:591
+#: src/Helpers/IDonateAjaxHandler.php:596
 msgid "Sorry. No donors match your criteria."
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:691
+#: src/Helpers/IDonateAjaxHandler.php:696
 msgid "Sorry. No requests matched your criteria."
 msgstr ""
 
@@ -18043,15 +18067,15 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
-#: src/js-templates/donor-profile-edit.php:9
+#: src/js-templates/donor-profile-edit.php:10
 msgid "Donor Edit"
 msgstr ""
 
-#: src/js-templates/donor-profile-edit.php:148
+#: src/js-templates/donor-profile-edit.php:151
 msgid "Profile pic"
 msgstr ""
 
-#: src/js-templates/donor-profile-edit.php:156
+#: src/js-templates/donor-profile-edit.php:159
 msgid "Submit"
 msgstr ""
 

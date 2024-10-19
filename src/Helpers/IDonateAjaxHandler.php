@@ -107,13 +107,18 @@ if (!class_exists('IDonateAjaxHandler')) {
 		}
 		public function idonate_country_to_states_ajax()
 		{
-			$path = IDONATE_COUNTRIES . 'states/' . $_POST['country'] . '.php';
-			if (isset($_POST['country']) && file_exists($path)) {
+			$options = get_option('idonate_settings');
+			$enable_single_country = isset($options['enable_single_country']) ? $options['enable_single_country'] : false;
+			$idonate_country = isset($options['idonate_country']) ? $options['idonate_country'] : '';
+			$selected_country = $_POST['country'];
+			if ($enable_single_country && !empty($idonate_country)) {
+				$selected_country = $idonate_country;
+			}
+			$path = IDONATE_COUNTRIES . 'states/' . $selected_country . '.php';
+			if (isset($selected_country) && file_exists($path)) {
 				include($path);
-
-
 				global $states;
-				echo  wp_json_encode($states[$_POST['country']]);
+				echo  wp_json_encode($states[$selected_country]);
 				die();
 			}
 		}

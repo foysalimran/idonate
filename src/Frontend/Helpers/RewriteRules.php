@@ -52,7 +52,7 @@ class RewriteRules
     {
 
         $options = get_option('idonate_settings');
-		$donor_view_slug = isset($options['donor_view_slug']) ? $options['donor_view_slug'] : '';
+		$donor_view_slug = isset($options['donor_view_slug']) ? $options['donor_view_slug'] : 'donor';
         $dashboard_page = isset($options['dashboard_page']) ? $options['dashboard_page'] : '';
                 
         if(!empty($dashboard_page)) {

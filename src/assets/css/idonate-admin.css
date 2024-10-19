@@ -604,10 +604,20 @@ span.show-shortcode {
   padding: 8px 0px;
   font-size: 14px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.idonate_donor_modal .donor_content p strong {
-  float: left;
+.idonate_donor_modal .donor_content .available i {
+  color: #146d14;
 }
+.idonate_donor_modal .donor_content .unavailable i {
+  color: #ff0000;
+}
+.idonate_donor_modal .donor_info_image {
+  text-align: center;
+}
+
 .idonate_donor_modal .donor_info_image {
   text-align: center;
 }
@@ -718,4 +728,8 @@ span.show-shortcode {
 .idonate-get-pro-text {
   color: #35b747;
   font-weight: bold;
+}
+.select_pro_only .idonate-fieldset select {
+  pointer-events: none;
+  opacity: 0.6;
 }

@@ -3,7 +3,11 @@
 namespace ThemeAtelier\Idonate\Admin\Settings;
 
 use ThemeAtelier\Idonate\Admin\Framework\Classes\IDONATE;
-use ThemeAtelier\Idonate\Admin\Settings\IDonateSettings;
+use ThemeAtelier\Idonate\Admin\Settings\IDonateGeneralSettings;
+use ThemeAtelier\Idonate\Admin\Settings\IDonateDonorSettings;
+use ThemeAtelier\Idonate\Admin\Settings\IDonateRequestSettings;
+use ThemeAtelier\Idonate\Admin\Settings\IDonatePageSettings;
+use ThemeAtelier\Idonate\Admin\Settings\IDonateAdvanceSettings;
 
 /**
  * Settings class to create all settings options for Woo Idonate.
@@ -41,6 +45,10 @@ class Settings
 		);
 
 		// Serialized Ahead!
-		IDonateSettings::section($prefix);
+		IDonateGeneralSettings::section($prefix);
+		IDonateDonorSettings::section($prefix);
+		IDonateRequestSettings::section($prefix);
+		IDonatePageSettings::section($prefix);
+		IDonateAdvanceSettings::section($prefix);
 	}
 }
