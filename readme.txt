@@ -1,7 +1,7 @@
 === IDonate - Blood Donation, Request And Donor Management System ===
 Contributors: ThemeAtelier, faysal61
 Donate link: https://bloodwp.com
-Tags: blood, blood wp, blood donation, blood request, Blood management system
+Tags: Blood, Donation, Donor, Request, Charity
 Requires at least: 5.3
 Tested up to: 6.6.2
 Requires PHP: 7.4
@@ -164,10 +164,10 @@ Thank you!
 18. Dashboard Settings Advance Settings
 
 == Changelog ==
-= 2.1.4 - October 19, 2024 =
+= 2.1.4 - October 22, 2024 =
 * Improved: Responsive on mobile friendly.
 
-= 2.1.3 - October 19, 2024 =
+= 2.1.3 - October 21, 2024 =
 * Fixed: Country and state field issue.
 * Update: Code compatibility.
 
