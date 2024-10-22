@@ -44,6 +44,14 @@
   border-right: 1px solid var(--idonate-border);
   height: 100%;
 }
+@media screen and (max-width: 992px) {
+  .idonate .dashboard__menu {
+    border-right: none;
+    border-bottom: 1px solid var(--idonate-border);
+    display: none;
+    transition: all 0.3s ease;
+  }
+}
 .idonate .dashboard__menu li {
   border-bottom: none !important;
   padding-bottom: 0 !important;
@@ -65,9 +73,28 @@
   background-color: var(--idonate-primary);
   color: var(--idonate-white);
 }
+.idonate .dashboard_left_menu {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .idonate .dashboard_left_menu {
+    display: block;
+  }
+  .idonate .dashboard_left_menu .icon {
+    font-size: 24px;
+  }
+  .idonate .dashboard_left_menu .icon .dashboard-navigation {
+    cursor: pointer;
+  }
+}
 .idonate .donor_dashboard {
   padding: 15px;
   padding-top: 30px;
+}
+@media screen and (max-width: 992px) {
+  .idonate .donor_dashboard {
+    padding-top: 0;
+  }
 }
 .idonate .donor_dashboard h3 {
   font-size: 28px;
@@ -110,6 +137,12 @@
 }
 .idonate .dashboard_menu {
   border-top: 1px solid var(--idonate-border);
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 992px) {
+  .idonate .dashboard_menu.active .dashboard__menu {
+    display: block;
+  }
 }
 .idonate .dashboard_menu__divider {
   border: 1px solid var(--idonate-border) !important;
@@ -118,6 +151,11 @@
 .idonate__wrapper {
   padding: 15px;
   padding-top: 30px;
+}
+@media screen and (max-width: 992px) {
+  .idonate__wrapper {
+    padding-top: 0;
+  }
 }
 .idonate__wrapper .settings_nav {
   list-style: none;
@@ -238,6 +276,15 @@
 }
 .idonate .justify-end {
   justify-content: flex-end;
+}
+.idonate .justify-center {
+  justify-content: center;
+}
+.idonate .justify-between {
+  justify-content: space-between;
+}
+.idonate .align-items-center {
+  align-items: center;
 }
 .idonate .search_area {
   display: flex;
@@ -514,6 +561,15 @@ Idonate alerts
 .section-padding {
   padding: 80px 0;
   width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+.px-2 {
+  padding: 0 10px;
 }
 
 .idonate_button {

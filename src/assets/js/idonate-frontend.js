@@ -468,4 +468,10 @@
       element.parentNode.removeChild(element);
     }
   }, 3000); // 3000 milliseconds = 3 seconds
+
+  const dashboardNavigation = document.querySelector(".dashboard-navigation");
+  const dashboardMenu = document.querySelector(".dashboard_menu");
+  dashboardNavigation.addEventListener("click", () => {
+    dashboardMenu.classList.toggle("active");
+  });
 })(jQuery);

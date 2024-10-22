@@ -46,7 +46,7 @@ $dashboard_page_name = apply_filters('idonate_dashboard_sub_page_template', $das
 ?>
 <div class="idonate dashboard section-padding">
     <div class="ta-container">
-        <div class="ta-row">
+        <div class="ta-row justify-between align-items-center px-2">
             <div class="dashboard__header_left">
                 <div class="dashboard__header_left__logo">
                     <?php
@@ -84,6 +84,9 @@ $dashboard_page_name = apply_filters('idonate_dashboard_sub_page_template', $das
                     }
                     ?>
                 </div>
+            </div>
+            <div class="dashboard_left_menu">
+                <div class="icon"><i class="icofont-navigation-menu dashboard-navigation"></i></div>
             </div>
         </div>
         <div class="ta-row dashboard_menu">

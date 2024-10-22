@@ -164,6 +164,9 @@ Thank you!
 18. Dashboard Settings Advance Settings
 
 == Changelog ==
+= 2.1.4 - October 19, 2024 =
+* Improved: Responsive on mobile friendly.
+
 = 2.1.3 - October 19, 2024 =
 * Fixed: Country and state field issue.
 * Update: Code compatibility.
