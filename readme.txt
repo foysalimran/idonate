@@ -97,8 +97,6 @@ Designed and Developed with Love by [__ThemeAtelier__](https://themeatelier.net/
 
 == OTHER AMAZING PRODUCTS BY: ThemeAtelier ==
 
-➡️ **[Domain For Sale](https://wordpress.org/plugins/domain-for-sale/)** - The most trendy domain for sale plugin for WordPress.
-
 ➡️ **[Greet – Video Bubble Warm Welcome Plugin](https://wordpress.org/plugins/greet-bubble/)** - A powerful and user-friendly video bubble plugin for WordPress that provides website owners with the opportunity to create a dynamic and engaging welcome experience for their visitors.
 
 ➡️ **[WhatsApp Chat Support](https://wordpress.org/plugins/chat-help/)** - Unlimited customer support tool that allows visitors to engage using "WhatsApp" or "WhatsApp Business". WhatsApp button included.
@@ -108,7 +106,6 @@ Designed and Developed with Love by [__ThemeAtelier__](https://themeatelier.net/
 ➡️ **[Eventful](https://wordpress.org/plugins/eventful/)** - Elevate your event management with this dynamic addon, enhancing ‘The Events Calendar’ with versatile layouts, advanced filtering, and user-friendly features for superior event showcasing.
 
 ➡️ **[BizReview](https://wordpress.org/plugins/bizreview/)** - The ultimate WordPress plugin to show Google Business and Google Place Reviews.
-
 
 == FREQUENTLY ASKED QUESTIONS ==
 
