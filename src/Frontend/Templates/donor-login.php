@@ -41,7 +41,7 @@ Helpers::idonate_custom_header();
 						wp_login_form($args);
 						?>
 						<br>
-						<p><?php echo esc_html__('Don\'t have an account?', 'idonate-pro'); ?> <a href="<?php echo esc_url(site_url('/donor-register')); ?>"><?php echo esc_html__('Register Now'); ?></a></p>
+						<p><?php echo esc_html__('Don\'t have an account?', 'idonate'); ?> <a href="<?php echo esc_url(site_url('/donor-register')); ?>"><?php echo esc_html__('Register Now'); ?></a></p>
 					</div>
 				</div>
 			</div>

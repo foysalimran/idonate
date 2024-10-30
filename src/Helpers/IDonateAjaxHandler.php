@@ -65,9 +65,12 @@ if (!class_exists('IDonateAjaxHandler')) {
 			);
 
 			$id = '';
-			if (isset($_REQUEST['id']) && absint($_REQUEST['id'])) {
-				$id = $_REQUEST['id'];
-			}
+			if ( isset( $_REQUEST['request_nonce_check'] ) && wp_verify_nonce( wp_unslash( $_REQUEST['request_nonce_check'] ), 'request_nonce_action' ) ) {
+				if ( isset( $_REQUEST['id'] ) ) {
+					// Unslash and sanitize the ID.
+					$id = absint( wp_unslash( $_REQUEST['id'] ) );
+				}
+			}			
 
 			$data = array();
 			if ($id) {
@@ -110,7 +113,7 @@ if (!class_exists('IDonateAjaxHandler')) {
 			$options = get_option('idonate_settings');
 			$enable_single_country = isset($options['enable_single_country']) ? $options['enable_single_country'] : false;
 			$idonate_country = isset($options['idonate_country']) ? $options['idonate_country'] : '';
-			$selected_country = $_POST['country'];
+			$selected_country = sanitize_text_field(wp_unslash( $_POST['country'] ));
 			if ($enable_single_country && !empty($idonate_country)) {
 				$selected_country = $idonate_country;
 			}
@@ -593,7 +596,7 @@ if (!class_exists('IDonateAjaxHandler')) {
 			if (count($users) > 0) {
 				Manager::views_html($users, $total_donor, $number, $paged, $pagenum_link);
 			} else {
-				echo '<h3 class="notmatch">' . esc_html__('Sorry. No donors match your criteria.', 'idonate') . '</h3>';
+				echo '<p class="idonate-alert idonate-alert-error">' . esc_html__('Sorry. No donors match your criteria.', 'idonate') . '</p>';
 			}
 			$html = ob_get_clean();
 
@@ -693,7 +696,7 @@ if (!class_exists('IDonateAjaxHandler')) {
 			if ($total_posts > 0) {
 				Manager::request_views_html($loops, $pagenum_link);
 			} else {
-				echo '<h3 class="notmatch">' . esc_html__('Sorry. No requests matched your criteria.', 'idonate') . '</h3>';
+				echo '<p class="idonate-alert idonate-alert-error">' . esc_html__('Sorry. No requests matched your criteria.', 'idonate') . '</p>';
 			}
 			$html = ob_get_clean();
 			wp_send_json_success(array('html' => $html));

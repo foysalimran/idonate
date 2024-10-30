@@ -161,6 +161,11 @@ Thank you!
 18. Dashboard Settings Advance Settings
 
 == Changelog ==
+= 2.1.5 - October 26, 2024 =
+* Fixed: Issue with profile information updates.
+* Fixed: Compliance issues with WordPress Coding Standards (WPCS).
+* Updated: Overhauled plugin code structure for improved performance and functionality.
+
 = 2.1.4 - October 26, 2024 =
 * Improved: Responsive CSS for mobile devices.
 

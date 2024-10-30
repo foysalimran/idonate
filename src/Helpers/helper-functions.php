@@ -670,7 +670,7 @@ if (! function_exists('idonate_function')) {
 
 		// Prepare the basepath.
 		$home_url  = get_home_url();
-		$parsed    = parse_url($home_url);
+		$parsed    = wp_parse_url($home_url);
 		$base_path = (is_array($parsed) && isset($parsed['path'])) ? $parsed['path'] : '/';
 		$base_path = rtrim($base_path, '/') . '/';
 		// Get current URL.

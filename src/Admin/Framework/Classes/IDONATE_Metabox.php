@@ -316,7 +316,7 @@ if (!class_exists('IDONATE_Metabox')) {
       echo ($has_nav && $nav_type === 'normal') ? '<div class="idonate-nav-background"></div>' : '';
 
       if ($is_preview) {
-        echo '<a class="btn btn-success" id="idonate-show-preview" data-id="' . esc_attr($post->ID) . '"href=""> <i class="idonate-eye-alt" aria-hidden="true"></i> ' . esc_html__('Show Preview', 'event-organizer-showcase')  . '</a>';
+        echo '<a class="btn btn-success" id="idonate-show-preview" data-id="' . esc_attr($post->ID) . '"href=""> <i class="idonate-eye-alt" aria-hidden="true"></i> ' . esc_html__('Show Preview', 'idonate')  . '</a>';
       }
 
       echo '<div class="clear"></div>';

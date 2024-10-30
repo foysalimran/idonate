@@ -18,8 +18,6 @@ class RequestFilterBar
 {
     public static function request_filter($loop)
     {
-        $option = get_option('idonate_settings');
-
         $bgroups = array();
         $countries = array();
         $states = array();
@@ -74,21 +72,21 @@ class RequestFilterBar
 ?>
         <form id="idonate-filter-form">
             <div class="search_area">
-                <input type="text" name="name" id="name" placeholder="<?php esc_html_e('Enter Request Title', 'idonate'); ?>" />
+                <input type="text" name="name" id="name" placeholder="<?php echo esc_html__('Enter Request Title', 'idonate'); ?>" />
                 <select name="bloodgroup" id="bloodgroup">
-                    <option value=""><?php esc_html_e('Select Blood Group', 'idonate'); ?></option>
+                    <option value=""><?php echo esc_html__('Select Blood Group', 'idonate'); ?></option>
                     <?php foreach ($bgroups as $group) : ?>
                         <option value="<?php echo esc_attr($group); ?>"><?php echo esc_html($group); ?></option>
                     <?php endforeach; ?>
                 </select>
-                <input type="date" name="start_date" id="start_date" placeholder="<?php esc_html_e('Start Date', 'idonate'); ?>" />
-                <input type="date" name="end_date" id="end_date" placeholder="<?php esc_html_e('End Date', 'idonate'); ?>" />
+                <input type="date" name="start_date" id="start_date" placeholder="<?php echo esc_html__('Start Date', 'idonate'); ?>" />
+                <input type="date" name="end_date" id="end_date" placeholder="<?php echo esc_html__('End Date', 'idonate'); ?>" />
             </div>
             <div class="search_area">
                 <?php
                 if (!empty($country)) : ?>
                     <select name="country" id="country" class="country">
-                        <option value=""><?php esc_html_e('Select Country', 'idonate'); ?></option>
+                        <option value=""><?php echo esc_html__('Select Country', 'idonate'); ?></option>
                         <?php foreach ($countries as $key => $country) : ?>
                             <option value="<?php echo esc_attr($key); ?>"><?php echo esc_html($country); ?></option>
                         <?php endforeach; ?>
@@ -97,12 +95,12 @@ class RequestFilterBar
                 if (!empty($state)) :
                 ?>
                     <select name="state" id="state" class="state" data-state="<?php echo esc_attr($states); ?>">
-                        <option value=""><?php esc_html_e('Select State', 'idonate'); ?></option>
+                        <option value=""><?php echo esc_html__('Select State', 'idonate'); ?></option>
                     </select>
                 <?php
                 endif; ?>
 
-                <input type="text" name="city" id="city" placeholder="<?php esc_html_e('Enter City', 'idonate'); ?>" />
+                <input type="text" name="city" id="city" placeholder="<?php echo esc_html__('Enter City', 'idonate'); ?>" />
                 <button type="button" id="reset-button"><i class="icofont-undo"></i></button>
             </div>
         </form>

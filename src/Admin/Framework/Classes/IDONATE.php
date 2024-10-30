@@ -508,7 +508,7 @@ if (!class_exists('IDONATE')) {
 
           $query['display'] = 'swap';
 
-          wp_enqueue_style('idonate-google-web-fonts', esc_url(add_query_arg($query, '//fonts.googleapis.com/css')), array(), null);
+          wp_enqueue_style('idonate-google-web-fonts', esc_url(add_query_arg($query, '//fonts.googleapis.com/css')), array(), null, '1.6.26');
         }
 
         if (!empty(self::$webfonts['async'])) {
@@ -519,7 +519,7 @@ if (!class_exists('IDONATE')) {
             $fonts[] = $family . ((!empty($styles)) ? ':' . implode(',', $styles) : '');
           }
 
-          wp_enqueue_script('idonate-google-web-fonts', esc_url('//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'), array(), null);
+          wp_enqueue_script('idonate-google-web-fonts', esc_url('//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'), array(), null, '1.6.26');
 
           wp_localize_script('idonate-google-web-fonts', 'WebFontConfig', array('google' => array('families' => $fonts)));
         }

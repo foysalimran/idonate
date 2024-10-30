@@ -142,17 +142,16 @@ class ShortcodeRegisterDonor
 										<?php else : ?>
 											<option><?php esc_html_e('Select State', 'idonate'); ?></option>
 										<?php
-											$path = IDONATE_COUNTRIES . 'states/' . $options['idonate_country'] . '.php';
+											$path = IDONATE_COUNTRIES . 'states/' . $idonate_country . '.php';
 											include($path);
 											global $states;
 											foreach ($states as $key => $state) {
 												foreach ($state as $key => $value) {
-													echo '<option value="' . $key . '">' . $value . '</option>';
+													echo '<option value="' . esc_attr($key) . '">' . esc_html($value) . '</option>';
 												}
 											}
 										endif;
 										?>
-
 									</select>
 								</div>
 							</div>
@@ -197,7 +196,7 @@ class ShortcodeRegisterDonor
 							<div class="idonate_col_item">
 								<?php
 								if ($idonate_recaptcha_active) {
-									$recaptchaLabel = $options['idonate_recapthca_label'] ? $options['idonate_recapthca_label'] : '';
+									$recaptchaLabel = isset($options['idonate_recapthca_label']) ? $options['idonate_recapthca_label'] : '';
 									if ($recaptchaLabel) {
 								?>
 										<label for="recaptcha"><?php echo esc_html($recaptchaLabel); ?></label>
