@@ -30,7 +30,6 @@ if (isset($wp_query->query_vars['idonate_dashboard_page']) && $wp_query->query_v
     $dashboard_page_name = $wp_query->query_vars['idonate_dashboard_page'];
 }
 
-
 /**
  * Getting dashboard sub pages
  */
@@ -41,16 +40,14 @@ if (isset($wp_query->query_vars['idonate_dashboard_sub_page']) && $wp_query->que
     }
 }
 $dashboard_page_name = apply_filters('idonate_dashboard_sub_page_template', $dashboard_page_name);
-
-
 ?>
 <div class="idonate dashboard section-padding">
     <div class="ta-container">
-        <div class="ta-row">
+        <div class="ta-row justify-between align-items-center px-2">
             <div class="dashboard__header_left">
                 <div class="dashboard__header_left__logo">
                     <?php
-                    echo Helpers::get_idonate_avatar($user, 'xl')
+                    echo wp_kses_post(Helpers::get_idonate_avatar($user, 'xl'));
                     ?>
                 </div>
                 <div class="dashboard__header_left__info">
@@ -84,6 +81,9 @@ $dashboard_page_name = apply_filters('idonate_dashboard_sub_page_template', $das
                     }
                     ?>
                 </div>
+            </div>
+            <div class="dashboard_left_menu">
+                <div class="icon"><i class="icofont-navigation-menu dashboard-navigation"></i></div>
             </div>
         </div>
         <div class="ta-row dashboard_menu">
@@ -124,11 +124,7 @@ $dashboard_page_name = apply_filters('idonate_dashboard_sub_page_template', $das
                         if ($separator) {
                             echo '<li class="dashboard_menu__divider"></li>';
                             if ($menu_title) {
-                    ?>
-                                <li>
-                                    <?php echo esc_html($menu_title); ?>
-                                </li>
-                            <?php
+                                echo ' <li>' . esc_html($menu_title) . '</li>';
                             }
                         } else {
                             if ('index' === $dashboard_key) {
@@ -137,11 +133,10 @@ $dashboard_page_name = apply_filters('idonate_dashboard_sub_page_template', $das
                             $active_class    = $dashboard_key == $dashboard_page_name ? 'active' : '';
                             $menu_link = apply_filters('idonate_dashboard_menu_link', $menu_link, $menu_title);
                             $data_no_instant = 'logout' == $dashboard_key ? wp_logout_url() : $menu_link;
-                            ?>
+                    ?>
 
                             <li class='<?php echo esc_attr($active_class); ?>'>
                                 <a href="<?php echo esc_url($data_no_instant); ?>">
-
                                     <?php
                                     echo wp_kses(
                                         $menu_icon,

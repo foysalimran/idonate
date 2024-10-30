@@ -272,7 +272,6 @@ class Countries
 	// idonate countries
 	public static function IDONATE_COUNTRIES()
 	{
-
 		$options = get_option('idonate_settings');
 
 		$countries = self::idonate_all_countries();
@@ -304,15 +303,10 @@ class Countries
 	// State Name by country and state code
 	public static function idonate_states_name_by_code($countryCode, $statesCode)
 	{
-
 		global $states;
-
 		$sendstate = '';
-
 		if ($countryCode) {
-
 			if (file_exists(IDONATE_COUNTRIES . 'states/' . $countryCode . '.php')) {
-
 				include(IDONATE_COUNTRIES . 'states/' . $countryCode . '.php');
 				if (!empty($states[$countryCode][$statesCode])) {
 					$sendstate = $states[$countryCode][$statesCode];
@@ -327,21 +321,16 @@ class Countries
 	public static function IDONATE_COUNTRIES_options($selected = '')
 	{
 		$countries = self::IDONATE_COUNTRIES();
-
 		$opt = '';
 		foreach ($countries as $key => $country) {
-
-			// 
 			$selectedcount = '';
 			if ($selected) {
 				if ($key === $selected) {
 					$selectedcount = 'selected';
 				}
 			}
-
 			$opt .= sprintf('<option value="%s" %s>%s</option>', esc_attr($key), $selectedcount, esc_html($country));
 		}
-
 		return $opt;
 	}
 }

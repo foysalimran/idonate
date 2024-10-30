@@ -43,7 +43,7 @@ class IDonateAdvanceSettings
 						'type' => 'tabbed',
 						'tabs' => array(
 							array(
-								'title'  => __('Advance Control', 'idaonte-pro'),
+								'title'  => __('Advance Control', 'idonate'),
 								'fields' => array(
 									array(
 										'id' 	  => 'idonate_data_remove',
@@ -116,7 +116,7 @@ class IDonateAdvanceSettings
 								),
 							),
 							array(
-								'title'  => __('Custom Codes', 'idaonte-pro'),
+								'title'  => __('Custom Codes', 'idonate'),
 								'fields' => array(
 									array(
 										'id'       => 'idoante_custom_css',

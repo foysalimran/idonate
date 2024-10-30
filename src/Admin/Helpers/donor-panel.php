@@ -146,7 +146,7 @@ $obj = new TaT_Donor();
 									global $states;
 									foreach ($states as $key => $state) {
 										foreach ($state as $key => $value) {
-											echo '<option value="' . $key . '">' . $value . '</option>';
+											echo '<option value="' . esc_attr($key) . '">' . esc_html($value) . '</option>';
 										}
 									}
 								endif;

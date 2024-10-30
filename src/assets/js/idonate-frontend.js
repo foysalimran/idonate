@@ -384,8 +384,8 @@
                 .find(".donors")
                 .html(
                   '<h3 class="alert text-center alert-danger">' +
-                    response.data.message +
-                    "</h3>"
+                  response.data.message +
+                  "</h3>"
                 );
             }
           },
@@ -453,8 +453,8 @@
                 .find(".request")
                 .html(
                   '<h3 class="alert text-center alert-danger">' +
-                    response.data.message +
-                    "</h3>"
+                  response.data.message +
+                  "</h3>"
                 );
             }
           },
@@ -468,4 +468,12 @@
       element.parentNode.removeChild(element);
     }
   }, 3000); // 3000 milliseconds = 3 seconds
+
+  const dashboardNavigation = document.querySelector(".dashboard-navigation");
+  const dashboardMenu = document.querySelector(".dashboard_menu");
+  if (dashboardNavigation) {
+    dashboardNavigation.addEventListener("click", () => {
+      dashboardMenu.classList.toggle("active");
+    });
+  }
 })(jQuery);

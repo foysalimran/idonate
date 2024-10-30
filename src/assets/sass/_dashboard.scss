@@ -36,6 +36,13 @@
       padding: 25px 0;
       border-right: 1px solid var(--idonate-border);
       height: 100%;
+      @media screen and (max-width: 992px) {
+        border-right: none;
+        border-bottom: 1px solid var(--idonate-border);
+
+        display: none;
+        transition: all 0.3s ease;
+      }
       li {
         border-bottom: none !important;
         padding-bottom: 0 !important;
@@ -60,10 +67,25 @@
         }
       }
     }
+    &_left_menu {
+      display: none;
+      @media screen and (max-width: 992px) {
+        display: block;
+        .icon {
+          font-size: 24px;
+          .dashboard-navigation {
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
   .donor_dashboard {
     padding: 15px;
     padding-top: 30px;
+    @media screen and (max-width: 992px) {
+      padding-top: 0;
+    }
     h3 {
       font-size: 28px;
       margin: 0;
@@ -107,6 +129,14 @@
 
   .dashboard_menu {
     border-top: 1px solid var(--idonate-border);
+    transition: all 0.3s ease;
+    @media screen and (max-width: 992px) {
+      &.active {
+        .dashboard__menu {
+          display: block;
+        }
+      }
+    }
     &__divider {
       border: 1px solid var(--idonate-border) !important;
       margin: 10px 0;
@@ -116,6 +146,9 @@
   &__wrapper {
     padding: 15px;
     padding-top: 30px;
+    @media screen and (max-width: 992px) {
+      padding-top: 0;
+    }
     .settings_nav {
       list-style: none;
       padding: 0;

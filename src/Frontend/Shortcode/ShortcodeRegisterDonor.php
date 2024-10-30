@@ -97,37 +97,20 @@ class ShortcodeRegisterDonor
 								</select>
 							</div>
 							<div class="idonate_col_item">
-								<label for="gender"><?php esc_html_e('Gender', 'idonate'); ?></label>
-								<select id="gender" class="form-control gender" name="gender">
-									<option value="Male"><?php esc_html_e('Male', 'idonate'); ?></option>
-									<option value="Female"><?php esc_html_e('Female', 'idonate'); ?></option>
-									<option value="Other"><?php esc_html_e('Other', 'idonate'); ?></option>
-								</select>
-							</div>
-						</div>
-						<div class="idonate_row idonate_col">
-							<div class="idonate_col_item">
 								<label for="datebirth"><?php esc_html_e('Date Of Birth', 'idonate'); ?></label>
 								<input id="datebirth" title="<?php esc_html_e('Date of birth field can\'t be empty.', 'idonate') ?>" name="date_birth" class="form-control" placeholder="<?php esc_html_e('Date Of Birth', 'idonate'); ?>" type="date" required>
 							</div>
+						</div>
+						<div class="idonate_row idonate_col">
 							<div class="idonate_col_item">
 								<label for="mobile"><?php esc_html_e('Mobile Number', 'idonate'); ?></label>
 								<input id="mobile" title="<?php esc_html_e('Mobile Number field can\'t be empty.', 'idonate') ?>" name="mobile" placeholder="<?php esc_attr_e('Mobile Number', 'idonate'); ?>" type="text" required>
 							</div>
-						</div>
-						<div class="idonate_row idonate_col">
 							<div class="idonate_col_item">
 								<label for="landline"><?php esc_html_e('Land Line Number', 'idonate'); ?></label>
 								<input id="landline" name="landline" placeholder="<?php esc_attr_e('Land Line Number', 'idonate'); ?>" type="text">
 							</div>
-							<div class="idonate_col_item">
-								<div class="dp-col-12">
-									<label for="city"><?php esc_html_e('City', 'idonate'); ?></label>
-									<input id="city" title="<?php esc_html_e('City field can\'t be empty.', 'idonate') ?>" name="city" class="form-control" placeholder="<?php esc_html_e('City', 'idonate'); ?>" type="text" required>
-								</div>
-							</div>
 						</div>
-
 						<?php
 						if ($idonate_countryhide) :
 							$enable_single_country = isset($options['enable_single_country']) ? $options['enable_single_country'] : false;
@@ -159,23 +142,30 @@ class ShortcodeRegisterDonor
 										<?php else : ?>
 											<option><?php esc_html_e('Select State', 'idonate'); ?></option>
 										<?php
-											$path = IDONATE_COUNTRIES . 'states/' . $options['idonate_country'] . '.php';
+											$path = IDONATE_COUNTRIES . 'states/' . $idonate_country . '.php';
 											include($path);
 											global $states;
 											foreach ($states as $key => $state) {
 												foreach ($state as $key => $value) {
-													echo '<option value="' . $key . '">' . $value . '</option>';
+													echo '<option value="' . esc_attr($key) . '">' . esc_html($value) . '</option>';
 												}
 											}
 										endif;
 										?>
-
 									</select>
 								</div>
 							</div>
 						<?php
 						endif;
 						?>
+						<div class="idonate_row idonate_col">
+							<div class="idonate_col_item">
+								<div class="dp-col-12">
+									<label for="city"><?php esc_html_e('City', 'idonate'); ?></label>
+									<input id="city" title="<?php esc_html_e('City field can\'t be empty.', 'idonate') ?>" name="city" class="form-control" placeholder="<?php esc_html_e('City', 'idonate'); ?>" type="text" required>
+								</div>
+							</div>
+						</div>
 						<div class="idonate_row idonate_col">
 							<div class="idonate_col_item">
 								<div class="dp-col-12">
@@ -206,7 +196,7 @@ class ShortcodeRegisterDonor
 							<div class="idonate_col_item">
 								<?php
 								if ($idonate_recaptcha_active) {
-									$recaptchaLabel = $options['idonate_recapthca_label'] ? $options['idonate_recapthca_label'] : '';
+									$recaptchaLabel = isset($options['idonate_recapthca_label']) ? $options['idonate_recapthca_label'] : '';
 									if ($recaptchaLabel) {
 								?>
 										<label for="recaptcha"><?php echo esc_html($recaptchaLabel); ?></label>

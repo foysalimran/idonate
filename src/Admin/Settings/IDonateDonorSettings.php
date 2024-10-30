@@ -45,7 +45,7 @@ class IDonateDonorSettings
 						'tabs' => array(
 
 							array(
-								'title'  => __('Donor Listings Settings', 'idaonte-pro'),
+								'title'  => __('Donor Listings Settings', 'idonate'),
 								'fields' => array(
 									array(
 										'id'       => 'donor_register_status',
@@ -179,7 +179,7 @@ class IDonateDonorSettings
 								),
 							),
 							array(
-								'title'  => __('Text Settings (Pro)', 'idaonte-pro'),
+								'title'  => __('Text Settings (Pro)', 'idonate'),
 								'fields' => array(
 									array(
 										'id'       	=> 'donor_register_form_title',
@@ -218,7 +218,7 @@ class IDonateDonorSettings
 								),
 							),
 							array(
-								'title'  => __('Form Settings', 'idaonte-pro'),
+								'title'  => __('Form Settings', 'idonate'),
 								'fields' => array(
 									array(
 										'id'       => 'idonate_countryhide',
@@ -235,7 +235,7 @@ class IDonateDonorSettings
 										'id'        => 'donor_form_color',
 										'type'      => 'color_group',
 										'class'      => 'pro_only_field',
-										'title'     => esc_html__('Donor Form Color', 'idonat-pro'),
+										'title'     => esc_html__('Donor Form Color', 'idonate'),
 										'desc'	=> esc_html__('Set request form text and background color.', 'idonate'),
 										'options'   => array(
 											'background' => esc_html__('Background Color', 'idonate'),

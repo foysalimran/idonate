@@ -104,7 +104,7 @@ Helpers::idonate_custom_header();
 
 					if ($fb || $twitter) :
 					?>
-						<p class="social-icon"><strong><?php esc_html_e('Social Media :', 'idonate'); ?></strong>
+						<p class="social-icon"><strong><?php echo esc_html__('Social Media :', 'idonate'); ?></strong>
 						<?php
 					endif;
 						?>

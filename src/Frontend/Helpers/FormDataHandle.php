@@ -32,21 +32,21 @@ class FormDataHandle
 			$response = DonorFunctions::idonate_recaptcha_response();
 			if (!empty($response['status'])) {
 				// ADD THE FORM INPUT TO $testimonial_form ARRAY.
-				$title = isset($_POST['title']) ? $_POST['title'] : '';
-				$patientname = isset($_POST['patientname']) ? $_POST['patientname'] : '';
-				$purpose = isset($_POST['purpose']) ? $_POST['purpose'] : '';
-				$bloodgroup = isset($_POST['bloodgroup']) ? $_POST['bloodgroup'] : '';
-				$patientage = isset($_POST['patientage']) ? $_POST['patientage'] : '';
-				$needblood = isset($_POST['needblood']) ? $_POST['needblood'] : '';
-				$email = isset($_POST['email']) ? $_POST['email'] : '';
-				$bloodunits = isset($_POST['bloodunits']) ? $_POST['bloodunits'] : '';
-				$mobilenumber = isset($_POST['mobilenumber']) ? $_POST['mobilenumber'] : '';
-				$hospitalname = isset($_POST['hospitalname']) ? $_POST['hospitalname'] : '';
-				$country = isset($_POST['country']) ? $_POST['country'] : '';
-				$state = isset($_POST['state']) ? $_POST['state'] : '';
-				$city = isset($_POST['city']) ? $_POST['city'] : '';
-				$location = isset($_POST['location']) ? $_POST['location'] : '';
-				$details = isset($_POST['details']) ? $_POST['details'] : '';
+				$title = isset($_POST['title']) ? sanitize_text_field(wp_unslash( $_POST['title'] )) : '';
+				$patientname = isset($_POST['patientname']) ? sanitize_text_field(wp_unslash( $_POST['patientname'] )) : '';
+				$purpose = isset($_POST['purpose']) ? sanitize_text_field(wp_unslash( $_POST['purpose'] )) : '';
+				$bloodgroup = isset($_POST['bloodgroup']) ? sanitize_text_field(wp_unslash( $_POST['bloodgroup'] )) : '';
+				$patientage = isset($_POST['patientage']) ? sanitize_text_field(wp_unslash( $_POST['patientage'] )) : '';
+				$needblood = isset($_POST['needblood']) ? sanitize_text_field(wp_unslash( $_POST['needblood'] )) : '';
+				$email = isset($_POST['email']) ? sanitize_text_field(wp_unslash( $_POST['email'] )) : '';
+				$bloodunits = isset($_POST['bloodunits']) ? sanitize_text_field(wp_unslash( $_POST['bloodunits'] )) : '';
+				$mobilenumber = isset($_POST['mobilenumber']) ? sanitize_text_field(wp_unslash( $_POST['mobilenumber'] )) : '';
+				$hospitalname = isset($_POST['hospitalname']) ? sanitize_text_field(wp_unslash( $_POST['hospitalname'] )) : '';
+				$country = isset($_POST['country']) ? sanitize_text_field(wp_unslash( $_POST['country'] )) : '';
+				$state = isset($_POST['state']) ? sanitize_text_field(wp_unslash( $_POST['state'] )) : '';
+				$city = isset($_POST['city']) ? sanitize_text_field(wp_unslash( $_POST['city'] )) : '';
+				$location = isset($_POST['location']) ? sanitize_text_field(wp_unslash( $_POST['location'] )) : '';
+				$details = isset($_POST['details']) ? sanitize_text_field(wp_unslash( $_POST['details'] )) : '';
 
 				$args = array(
 					'post_title'   =>  sanitize_text_field($title),

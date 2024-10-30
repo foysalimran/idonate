@@ -32,10 +32,9 @@ $state = Countries::idonate_states_name_by_code($countrycode, $statecode);
 	<div class="idonate__wrapper">
 		<h3 class="dashboard_content_title"><?php echo esc_html__('My Profile', 'idonate'); ?></h3>
 		<div class="donor-profile">
-
 			<div class="donor-img">
 				<?php
-				echo Helpers::get_idonate_avatar($user, 'xl')
+				echo wp_kses_post(Helpers::get_idonate_avatar($user, 'xl'));
 				?>
 			</div>
 			<div class="personal-info">

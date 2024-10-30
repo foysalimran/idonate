@@ -1,11 +1,11 @@
 === IDonate - Blood Donation, Request And Donor Management System ===
 Contributors: ThemeAtelier, faysal61
 Donate link: https://bloodwp.com
-Tags: blood, blood wp, blood donation, blood request, Blood management system
+Tags: Blood, Donation, Donor, Request, Charity
 Requires at least: 5.3
 Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 2.1.3
+Stable tag: 2.1.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -97,8 +97,6 @@ Designed and Developed with Love by [__ThemeAtelier__](https://themeatelier.net/
 
 == OTHER AMAZING PRODUCTS BY: ThemeAtelier ==
 
-➡️ **[Domain For Sale](https://wordpress.org/plugins/domain-for-sale/)** - The most trendy domain for sale plugin for WordPress.
-
 ➡️ **[Greet – Video Bubble Warm Welcome Plugin](https://wordpress.org/plugins/greet-bubble/)** - A powerful and user-friendly video bubble plugin for WordPress that provides website owners with the opportunity to create a dynamic and engaging welcome experience for their visitors.
 
 ➡️ **[WhatsApp Chat Support](https://wordpress.org/plugins/chat-help/)** - Unlimited customer support tool that allows visitors to engage using "WhatsApp" or "WhatsApp Business". WhatsApp button included.
@@ -108,7 +106,6 @@ Designed and Developed with Love by [__ThemeAtelier__](https://themeatelier.net/
 ➡️ **[Eventful](https://wordpress.org/plugins/eventful/)** - Elevate your event management with this dynamic addon, enhancing ‘The Events Calendar’ with versatile layouts, advanced filtering, and user-friendly features for superior event showcasing.
 
 ➡️ **[BizReview](https://wordpress.org/plugins/bizreview/)** - The ultimate WordPress plugin to show Google Business and Google Place Reviews.
-
 
 == FREQUENTLY ASKED QUESTIONS ==
 
@@ -164,6 +161,11 @@ Thank you!
 18. Dashboard Settings Advance Settings
 
 == Changelog ==
+= 2.1.5 - October 26, 2024 =
+* Fixed: Issue with profile information updates.
+* Fixed: Compliance issues with WordPress Coding Standards (WPCS).
+* Updated: Overhauled plugin code structure for improved performance and functionality.
+
 = 2.1.4 - October 26, 2024 =
 * Improved: Responsive CSS for mobile devices.
 
@@ -172,8 +174,8 @@ Thank you!
 * Update: Code compatibility.
 
 = 2.1.2 - October 01, 2024 =
-* Fixed: CSS
-* Update: Code structure
+* Improved: Some CSS codes
+* Update: In some PHP code structure
 
 = 2.1.1 - October 01, 2024 =
 * Update: Plugin intro video

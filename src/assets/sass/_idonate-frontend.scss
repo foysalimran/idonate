@@ -47,6 +47,15 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .align-items-center {
+    align-items: center;
+  }
 
   // SEARCH AREA
   .search_area {
@@ -292,9 +301,10 @@
       color: var(--idonate-white) !important;
     }
   }
-  .notmatch {
-    color: var(--idonate-error);
-    text-align: center;
+  .request {
+    .idonate-alert-error {
+      margin-top: 24px;
+    }
   }
   .dashboard_content_title {
     font-size: 28px;
@@ -349,6 +359,12 @@ Idonate alerts
 .section-padding {
   padding: 80px 0;
   width: 100%;
+  @media screen and (max-width: 992px) {
+    padding: 60px 0;
+  }
+}
+.px-2 {
+  padding: 0 10px;
 }
 .idonate_button {
   padding: 6px 18px;

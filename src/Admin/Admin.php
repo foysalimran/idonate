@@ -113,9 +113,9 @@ class Admin
         echo '<p>Thank you for using IDonatePro - Blood Donation, Request And Donor Management System.</p>';
         echo ' </div>';
         echo '<div class="idoante-user-heading-bar-right">';
-        echo '<a target="_blank" class="idonate-btn-primary" href="https://themeatelier.net/contact">' . esc_html('Support', 'idonat-pro') . '</a>';
-        echo '<a target="_blank" class="idonate-btn-secondary" href="https://docs.themeatelier.net/docs/idonate/overview/">' . esc_html('Docs', 'idonat-pro') . '</a>';
-        echo '<a target="_blank" class="idonate-btn-primary idonate-btn-pro" href="https://1.envato.market/idonate">' . esc_html('Get Pro', 'idonat-pro') . '</a>';
+        echo '<a target="_blank" class="idonate-btn-primary" href="https://themeatelier.net/contact">' . esc_html('Support', 'idonate') . '</a>';
+        echo '<a target="_blank" class="idonate-btn-secondary" href="https://docs.themeatelier.net/docs/idonate/overview/">' . esc_html('Docs', 'idonate') . '</a>';
+        echo '<a target="_blank" class="idonate-btn-primary idonate-btn-pro" href="https://1.envato.market/idonate">' . esc_html('Get Pro', 'idonate') . '</a>';
         echo ' </div>';
         echo '</div>';
         IdonateDashboardwidgets::dashboard_widget_function();
@@ -160,7 +160,7 @@ class Admin
                 <div class="idonate-after-copy-shortcode"><i class="icofont-check-circled"></i><?php esc_html_e('Shortcode Copied to Clipboard!', 'idonate'); ?></div>
             </div>
             <div class="idonate_shortcodes" style="padding:0px">
-                <iframe width="100%" height="315" style="border-radius: 6px" src="https://www.youtube.com/embed/S7s7MBen6-E" title="<?php echo esc_attr('YouTube video player', 'idoante-pro'); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="315" style="border-radius: 6px" src="https://www.youtube.com/embed/S7s7MBen6-E" title="<?php echo esc_attr('YouTube video player', 'idonate'); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 <?php
@@ -174,6 +174,9 @@ class Admin
      */
     public function blood_request_post_type()
     {
+        $options = get_option('idonate_settings');
+        $blood_request_view_slug = isset($options['blood_request_view_slug']) ? $options['blood_request_view_slug'] : 'blood-request';
+
         $labels     = array(
             'name'               => esc_html__('Blood Requests', 'idonate'),
             'singular_name'      => esc_html__('Blood Request', 'idonate'),
@@ -208,10 +211,11 @@ class Admin
                 'exclude_from_search' => true,
                 'show_in_nav_menus'   => false,
                 'has_archive'         => false,
-                'rewrite'             => array('slug' =>  'blood-request'),
+                'rewrite'             => array('slug' =>  $blood_request_view_slug),
                 'show_in_rest'        => true,
             )
         );
+        flush_rewrite_rules();
     }
 
     // Add custom column to blood_request post type
