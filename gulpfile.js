@@ -18,9 +18,17 @@ const paths = {
     src: "src/assets/css/**/*.css",
     dest: "src/assets/css/",
   },
+  admin_framework_css: {
+    src: "src/Admin/Framework/assets/css/**/*.css",
+    dest: "src/Admin/Framework/assets/css/",
+  },
   js: {
     src: "src/assets/js/**/*.js",
     dest: "src/assets/js/",
+  },
+  admin_framework_js: {
+    src: "src/Admin/Framework/assets/js/**/*.js",
+    dest: "src/Admin/Framework/assets/js/",
   },
 };
 
@@ -141,6 +149,24 @@ gulp.task("cleanMinifiedCSS", function () {
     .src(`${paths.scss.dest}/*.min.css`, { read: false, allowEmpty: true })
     .pipe(clean());
 });
+gulp.task("cleanMinifiedAdminFrameworkCSS", function () {
+  return gulp
+    .src(`${paths.admin_framework_css.dest}/*.min.css`, { read: false, allowEmpty: true })
+    .pipe(clean());
+});
+
+// Clean only minified JavaScript files
+gulp.task("cleanMinifiedJs", function () {
+  return gulp
+    .src(`${paths.js.dest}/*.min.js`, { read: false, allowEmpty: true })
+    .pipe(clean());
+});
+gulp.task("cleanMinifiedAdminFrameworkJs", function () {
+  return gulp
+    .src(`${paths.admin_framework_js.dest}/*.min.js`, { read: false, allowEmpty: true })
+    .pipe(clean());
+});
+
 // Minify CSS
 gulp.task("minify-css", function () {
   return gulp
@@ -150,12 +176,13 @@ gulp.task("minify-css", function () {
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest(paths.scss.dest));
 });
-
-// Clean only minified JavaScript files
-gulp.task("cleanMinifiedJs", function () {
+gulp.task("minify-admin-framework-css", function () {
   return gulp
-    .src(`${paths.js.dest}/*.min.js`, { read: false, allowEmpty: true })
-    .pipe(clean());
+    .src(paths.admin_framework_css.src)
+    .pipe(sass().on("error", sass.logError))
+    .pipe(cleanCSS())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest(paths.admin_framework_css.dest));
 });
 
 // Minify JS
@@ -166,11 +193,20 @@ gulp.task("minify-js", function () {
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest(paths.js.dest));
 });
+gulp.task("minify-admin-framework-js", function () {
+  return gulp
+    .src(paths.admin_framework_js.src)
+    .pipe(uglify())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest(paths.admin_framework_js.dest));
+});
 
 // Watch for changes
 gulp.task("watch", function () {
   gulp.watch(paths.scss.src, gulp.series("cleanMinifiedCSS", "minify-css"));
+  gulp.watch(paths.admin_framework_css.src, gulp.series("cleanMinifiedAdminFrameworkCSS", "minify-admin-framework-css"));
   gulp.watch(paths.js.src, gulp.series("cleanMinifiedJs", "minify-js"));
+  gulp.watch(paths.admin_framework_js.src, gulp.series("cleanMinifiedAdminFrameworkJs", "minify-admin-framework-js"));
   gulp.watch(paths.scss.src, gulp.series(...task_keys));
 });
 
@@ -179,14 +215,20 @@ exports.default = gulp.series(
   "clean-zip",
   "clean-build",
   "cleanMinifiedCSS",
+  "cleanMinifiedAdminFrameworkCSS",
   "minify-css",
+  "minify-admin-framework-css",
   "cleanMinifiedJs",
+  "cleanMinifiedAdminFrameworkJs",
   "minify-js",
+  "minify-admin-framework-js",
   "makepot",
   "copy",
   "make-zip"
 );
 
 exports.minifyCss = gulp.series("cleanMinifiedCSS", "minify-css");
+exports.minifyAdminFrameworkCss = gulp.series("cleanMinifiedAdminFrameworkCSS", "minify-admin-framework-css");
 exports.minifyJs = gulp.series("cleanMinifiedJs", "minify-js");
+exports.minifyAdminFrameworkJs = gulp.series("cleanMinifiedAdminFrameworkJs", "minify-admin-framework-js");
 exports.watch = gulp.series("watch");
