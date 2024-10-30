@@ -280,7 +280,7 @@ class Helpers
 	public static function profile_url($user = 0)
 	{
 		$options = get_option('idonate_settings');
-		$donor_view_slug = isset($options['donor_view_slug']) ? $options['donor_view_slug'] : '';
+		$donor_view_slug = isset($options['donor_view_slug']) ? $options['donor_view_slug'] : 'donor';
 		$site_url = trailingslashit(home_url()) . $donor_view_slug . '/';
 		if (! is_object($user)) {
 			$user = get_userdata(self::get_user_id($user));

@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-30 10:10+0000\n"
+"POT-Creation-Date: 2024-10-30 11:06+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -1210,7 +1210,7 @@ msgstr ""
 msgid "On Pop Up"
 msgstr ""
 
-#: src/Admin/Settings/IDonateDonorSettings.php:109, src/Admin/Settings/IDonateRequestSettings.php:97
+#: src/Admin/Settings/IDonateDonorSettings.php:109
 msgid "Donor Single Page Slug"
 msgstr ""
 
@@ -1642,6 +1642,10 @@ msgstr ""
 msgid "Choose how the request details should displayed on"
 msgstr ""
 
+#: src/Admin/Settings/IDonateRequestSettings.php:97
+msgid "Request Single Page Slug"
+msgstr ""
+
 #: src/Admin/Settings/IDonateRequestSettings.php:105
 msgid "Allow navigation between requests using next and previous buttons in the popup view."
 msgstr ""
@@ -1882,15 +1886,15 @@ msgstr ""
 msgid "Land Line Number: "
 msgstr ""
 
-#: src/Frontend/Manager.php:258, src/Frontend/Manager.php:406, src/Helpers/IDonateAjaxHandler.php:301, src/js-templates/donor-profile-view.php:35
+#: src/Frontend/Manager.php:258, src/Frontend/Manager.php:406, src/Helpers/IDonateAjaxHandler.php:298, src/js-templates/donor-profile-view.php:35
 msgid "Country: "
 msgstr ""
 
-#: src/Frontend/Manager.php:263, src/Frontend/Manager.php:413, src/Helpers/IDonateAjaxHandler.php:305, src/js-templates/donor-profile-view.php:42
+#: src/Frontend/Manager.php:263, src/Frontend/Manager.php:413, src/Helpers/IDonateAjaxHandler.php:302, src/js-templates/donor-profile-view.php:42
 msgid "State: "
 msgstr ""
 
-#: src/Frontend/Manager.php:267, src/Frontend/Manager.php:419, src/Helpers/IDonateAjaxHandler.php:309, src/js-templates/donor-profile-view.php:49
+#: src/Frontend/Manager.php:267, src/Frontend/Manager.php:419, src/Helpers/IDonateAjaxHandler.php:306, src/js-templates/donor-profile-view.php:49
 msgid "City: "
 msgstr ""
 
@@ -1898,19 +1902,19 @@ msgstr ""
 msgid "Address: "
 msgstr ""
 
-#: src/Frontend/Manager.php:281, src/Helpers/IDonateAjaxHandler.php:211, src/Helpers/IDonateAjaxHandler.php:322
+#: src/Frontend/Manager.php:281, src/Helpers/IDonateAjaxHandler.php:208, src/Helpers/IDonateAjaxHandler.php:319
 msgid "Close (Esc)"
 msgstr ""
 
-#: src/Frontend/Manager.php:337, src/Frontend/Manager.php:393, src/Helpers/IDonateAjaxHandler.php:289
+#: src/Frontend/Manager.php:337, src/Frontend/Manager.php:393, src/Helpers/IDonateAjaxHandler.php:286
 msgid "Email: "
 msgstr ""
 
-#: src/Frontend/Manager.php:342, src/Frontend/Manager.php:388, src/Helpers/IDonateAjaxHandler.php:293, src/js-templates/donor-profile-view.php:79
+#: src/Frontend/Manager.php:342, src/Frontend/Manager.php:388, src/Helpers/IDonateAjaxHandler.php:290, src/js-templates/donor-profile-view.php:79
 msgid "Mobile Number: "
 msgstr ""
 
-#: src/Frontend/Manager.php:352, src/Helpers/IDonateAjaxHandler.php:265
+#: src/Frontend/Manager.php:352, src/Helpers/IDonateAjaxHandler.php:262
 msgid "Patient Name: "
 msgstr ""
 
@@ -1926,11 +1930,11 @@ msgstr ""
 msgid "Blood Unit / Bag (S): "
 msgstr ""
 
-#: src/Frontend/Manager.php:382, src/Helpers/IDonateAjaxHandler.php:285
+#: src/Frontend/Manager.php:382, src/Helpers/IDonateAjaxHandler.php:282
 msgid "Purpose: "
 msgstr ""
 
-#: src/Frontend/Manager.php:398, src/Helpers/IDonateAjaxHandler.php:297
+#: src/Frontend/Manager.php:398, src/Helpers/IDonateAjaxHandler.php:294
 msgid "Hospital Name: "
 msgstr ""
 
@@ -1950,23 +1954,23 @@ msgstr ""
 msgid "Date Of Birth :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:140, src/Helpers/IDonateAjaxHandler.php:188
+#: src/Frontend/Shortcode/DonorShortcode.php:140, src/Helpers/IDonateAjaxHandler.php:185
 msgid "Land Line Number :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:144, src/Helpers/IDonateAjaxHandler.php:193
+#: src/Frontend/Shortcode/DonorShortcode.php:144, src/Helpers/IDonateAjaxHandler.php:190
 msgid "Country :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:149, src/Helpers/IDonateAjaxHandler.php:198
+#: src/Frontend/Shortcode/DonorShortcode.php:149, src/Helpers/IDonateAjaxHandler.php:195
 msgid "State :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:153, src/Helpers/IDonateAjaxHandler.php:202
+#: src/Frontend/Shortcode/DonorShortcode.php:153, src/Helpers/IDonateAjaxHandler.php:199
 msgid "City :"
 msgstr ""
 
-#: src/Frontend/Shortcode/DonorShortcode.php:154, src/Helpers/IDonateAjaxHandler.php:203
+#: src/Frontend/Shortcode/DonorShortcode.php:154, src/Helpers/IDonateAjaxHandler.php:200
 msgid "Address :"
 msgstr ""
 
@@ -2042,7 +2046,7 @@ msgstr ""
 msgid "Name:"
 msgstr ""
 
-#: src/Frontend/Templates/dashboard/my-profile.php:59, src/Helpers/IDonateAjaxHandler.php:204, src/js-templates/donor-profile-delete.php:4
+#: src/Frontend/Templates/dashboard/my-profile.php:59, src/Helpers/IDonateAjaxHandler.php:201, src/js-templates/donor-profile-delete.php:4
 msgid "User Name:"
 msgstr ""
 
@@ -2090,7 +2094,7 @@ msgstr ""
 msgid "City:"
 msgstr ""
 
-#: src/Frontend/Templates/dashboard/my-profile.php:95, src/Helpers/IDonateAjaxHandler.php:313
+#: src/Frontend/Templates/dashboard/my-profile.php:95, src/Helpers/IDonateAjaxHandler.php:310
 msgid "Address:"
 msgstr ""
 
@@ -18187,67 +18191,67 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:137, src/Helpers/IDonateAjaxHandler.php:233, src/Helpers/IDonateAjaxHandler.php:422, src/Helpers/IDonateAjaxHandler.php:453, src/Helpers/IDonateAjaxHandler.php:465, src/Helpers/IDonateAjaxHandler.php:496, src/Helpers/IDonateAjaxHandler.php:507, src/Helpers/IDonateAjaxHandler.php:609
+#: src/Helpers/IDonateAjaxHandler.php:134, src/Helpers/IDonateAjaxHandler.php:230, src/Helpers/IDonateAjaxHandler.php:419, src/Helpers/IDonateAjaxHandler.php:450, src/Helpers/IDonateAjaxHandler.php:462, src/Helpers/IDonateAjaxHandler.php:493, src/Helpers/IDonateAjaxHandler.php:504, src/Helpers/IDonateAjaxHandler.php:606
 msgid "Nonce verification failed"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:174
+#: src/Helpers/IDonateAjaxHandler.php:171
 msgid "Name : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:175
+#: src/Helpers/IDonateAjaxHandler.php:172
 msgid "Gender : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:176
+#: src/Helpers/IDonateAjaxHandler.php:173
 msgid "Date Of Birth : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:177
+#: src/Helpers/IDonateAjaxHandler.php:174
 msgid "Email : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:178
+#: src/Helpers/IDonateAjaxHandler.php:175
 msgid "Mobile : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:180
+#: src/Helpers/IDonateAjaxHandler.php:177
 msgid "Availability  : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:182
+#: src/Helpers/IDonateAjaxHandler.php:179
 msgid "Blood Group : "
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:222, src/Helpers/IDonateAjaxHandler.php:333
+#: src/Helpers/IDonateAjaxHandler.php:219, src/Helpers/IDonateAjaxHandler.php:330
 msgid "Delete"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:223, src/Helpers/IDonateAjaxHandler.php:334
+#: src/Helpers/IDonateAjaxHandler.php:220, src/Helpers/IDonateAjaxHandler.php:331
 msgid "Approve"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:269
+#: src/Helpers/IDonateAjaxHandler.php:266
 msgid "Patient Age:"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:273
+#: src/Helpers/IDonateAjaxHandler.php:270
 msgid "Blood Group:"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:277
+#: src/Helpers/IDonateAjaxHandler.php:274
 msgid "When Need Blood?:"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:281
+#: src/Helpers/IDonateAjaxHandler.php:278
 msgid "Blood Unit / Bag (S):"
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:599
+#: src/Helpers/IDonateAjaxHandler.php:596
 msgid "Sorry. No donors match your criteria."
 msgstr ""
 
-#: src/Helpers/IDonateAjaxHandler.php:699
+#: src/Helpers/IDonateAjaxHandler.php:696
 msgid "Sorry. No requests matched your criteria."
 msgstr ""
 

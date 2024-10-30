@@ -65,11 +65,8 @@ if (!class_exists('IDonateAjaxHandler')) {
 			);
 
 			$id = '';
-			if ( isset( $_REQUEST['request_nonce_check'] ) && wp_verify_nonce( wp_unslash( $_REQUEST['request_nonce_check'] ), 'request_nonce_action' ) ) {
-				if ( isset( $_REQUEST['id'] ) ) {
-					// Unslash and sanitize the ID.
-					$id = absint( wp_unslash( $_REQUEST['id'] ) );
-				}
+			if (isset($_REQUEST['id']) && absint($_REQUEST['id'])) {
+				$id = $_REQUEST['id'];
 			}			
 
 			$data = array();

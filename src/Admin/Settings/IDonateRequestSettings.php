@@ -94,7 +94,7 @@ class IDonateRequestSettings
 									array(
 										'id'       	=> 'blood_request_view_slug',
 										'type'     	=> 'text',
-										'title'    	=> esc_html__('Donor Single Page Slug', 'idonate'),
+										'title'    	=> esc_html__('Request Single Page Slug', 'idonate'),
 										'default'	=> 'blood-request',
 										'dependency' => array('request_view_button', '==', 'single_page_link'),
 									),
