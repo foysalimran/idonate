@@ -162,7 +162,8 @@ Thank you!
 
 == Changelog ==
 = 2.1.5 - October 26, 2024 =
-* Fixed: Issue with profile information updates.
+* Added: Display error message on login page for incorrect login information.
+* Fixed: Issue with updating profile information.
 * Fixed: Compliance issues with WordPress Coding Standards (WPCS).
 * Updated: Overhauled plugin code structure for improved performance and functionality.
 

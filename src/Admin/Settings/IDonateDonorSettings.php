@@ -225,7 +225,7 @@ class IDonateDonorSettings
 										'type'     => 'switcher',
 										'class'      => 'switcher_pro_only',
 										'title'    => esc_html__('Show/Hide country and state fields', 'idonate'),
-										'desc'	=> esc_html__('Toggle the visibility of country and state fields', 'idonate'),
+										'desc'		=> esc_html__('Toggle the visibility of country and state fields', 'idonate'),
 										'text_on'	=> esc_html__('Show', 'idonate'),
 										'text_off'	=> esc_html__('Hide', 'idonate'),
 										'text_width'	=> '80',

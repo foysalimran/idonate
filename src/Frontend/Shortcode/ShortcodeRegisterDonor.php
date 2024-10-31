@@ -23,8 +23,8 @@ class ShortcodeRegisterDonor
 	public function shortcode_register_donor()
 	{
 		$options = get_option('idonate_settings');
-		$form_title = isset($options['donor_register_form_title']) ? $options['donor_register_form_title'] : '';
-		$form_subtitle = isset($options['donor_register_form_subtitle']) ? $options['donor_register_form_subtitle'] : '';
+		$form_title = isset($options['donor_register_form_title']) ? $options['donor_register_form_title'] : 'Blood Donors Register';
+		$form_subtitle = isset($options['donor_register_form_subtitle']) ? $options['donor_register_form_subtitle'] : 'Please fill the following information to register donor.';
 		$idonate_recaptcha_active = isset($options['idonate_recaptcha_active']) ? $options['idonate_recaptcha_active'] : '';
 		$sitekey = $options['idonate_recaptcha_sitekey'] ? $options['idonate_recaptcha_sitekey'] : '';
 		$idonate_countryhide = isset($options['idonate_countryhide']) ? $options['idonate_countryhide'] : '';
@@ -36,8 +36,8 @@ class ShortcodeRegisterDonor
 			<div class="request-form">
 				<div class="submit-info">
 					<?php
-					echo '<h2>' . esc_html__('Blood Donors Register', 'idonate') . '</h2>';
-					echo '<p>' . esc_html__('Please fill the following information to register donor.', 'idonate') . '</p>';
+					echo '<h2>' . esc_html($form_title) . '</h2>';
+					echo '<p>' . esc_html($form_subtitle) . '</p>';
 					?>
 					<hr>
 				</div>
