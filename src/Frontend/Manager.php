@@ -90,14 +90,11 @@ class Manager
 
             idonate_donor_pagination($total_donor, $number, $paged, $pagenum_link);
         else :
-            echo '<h3 class="notmatch">' . esc_html__('Sorry. Not match anyone !!!.', 'idonate') . '</h3>';
+            echo '<p class="idonate-alert idonate-alert-error">' . esc_html__('Sorry. Not match anyone !!!.', 'idonate') . '</p>';
         endif;
     }
     public static function request_views_html($loop, $pagenum_link)
     {
-        $options = get_option('idonate_settings');
-        $post_request_number_of_columns = $options['post_request_number_of_columns'] ? $options['post_request_number_of_columns'] : 0;
-
         if ($loop->have_posts()) :
             echo '<div class="ta-row">';
             while ($loop->have_posts()) :
@@ -107,9 +104,6 @@ class Manager
                 $need     = get_post_meta(get_the_ID(), 'idonatepatient_bloodneed', true);
                 $units     = get_post_meta(get_the_ID(), 'idonatepatient_bloodunit', true);
                 $mobnumber     = get_post_meta(get_the_ID(), 'idonatepatient_mobnumber', true);
-                $status     = get_post_meta(get_the_ID(), 'idonatepatient_status', true);
-
-                $image = get_the_post_thumbnail(get_the_ID());
             ?>
 
                 <div class="ta-col-xs-1 ta-col-sm-1 ta-col-md-1 ta-col-lg-3 ta-col-xl-3">
@@ -179,8 +173,8 @@ class Manager
         $user_info = get_userdata($user_id);
         $user_email = $user_info->user_email; // Get user email
 
-        $option = get_option('idonate_settings');
-        $donor_social_share = isset($option['donor_social_share']) ? $option['donor_social_share'] : '';
+        $options = get_option('idonate_settings');
+        $donor_social_share = isset($options['donor_social_share']) ? $options['donor_social_share'] : '';
         $social_sharing_media = isset($donor_social_share['social_sharing_media']) ? $donor_social_share['social_sharing_media'] : '';
         $name = get_user_meta($user_id, 'idonate_donor_full_name', true);
         $permalink = add_query_arg(
@@ -439,7 +433,7 @@ class Manager
                     ?>
                 </div>
             </div>
-            <button title="<?php echo esc_attr('Close (Esc)', 'idoante-pro'); ?>" type="button" class="mfp-close idonate-popup-close">×</button>
+            <button title="<?php echo esc_attr('Close (Esc)', 'idonate'); ?>" type="button" class="mfp-close idonate-popup-close">×</button>
 
             <div id="preloader" style="display: none;">
                 <div class="spinner"></div>

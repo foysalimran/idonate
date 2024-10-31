@@ -294,7 +294,7 @@ function idonate_redirect_login_page($redirect_to, $request, $user)
 {
 
 	$option = get_option('idonate_settings');
-	$page = $option['login_redirect'];
+	$page = isset($option['login_redirect']) ? $option['login_redirect'] : '';
 	$login_page  = '/';
 
 	if (!empty($page)) {
@@ -324,15 +324,8 @@ add_action('login_redirect', 'idonate_redirect_login_page', 10, 3);
  */
 function idonate_login_failed()
 {
-	$options = get_option('idonate_settings');
-	$login_page = $options['login_page'];
 	$login_page_url  = home_url('/');
-
-	if ($login_page) {
-		$login_page_url  = get_permalink($options);
-	}
-
-	wp_redirect($login_page_url . '?login=failed');
+	wp_redirect($login_page_url . 'dashboard?login=failed');
 	exit;
 }
 add_action('wp_login_failed', 'idonate_login_failed');
@@ -344,7 +337,7 @@ function idonate_logout_page()
 {
 
 	$options = get_option('idonate_settings');
-	$logout_redirectpage = $options['logout_redirectpage'];
+	$logout_redirectpage = isset($options['logout_redirectpage']) ? $options['logout_redirectpage'] : '';
 
 	$login_page  = home_url('/');
 
@@ -363,11 +356,11 @@ add_action('wp_logout', 'idonate_logout_page');
 function idonate_profile_edit_permalink()
 {
 	$options = get_option('idonate_settings');
-	$donor_edit_page = $options['donor_edit_page'];
+	$donor_edit_page = isset($options['donor_edit_page']) ? $options['donor_edit_page'] : '';
 	$getpage = 'donor-edit';
 
 	if ($donor_edit_page) {
-		$getpage = get_permalink($options['donor_edit_page']);
+		$getpage = get_permalink($donor_edit_page);
 	}
 	return $getpage;
 }
@@ -377,11 +370,11 @@ function idonate_profile_edit_permalink()
 function idonate_profile_permalink()
 {
 	$options = get_option('idonate_settings');
-	$donor_profile_page = $options['donor_profile_page'];
+	$donor_profile_page = isset($options['donor_profile_page']) ? $options['donor_profile_page'] : '';
 	$getpage = 'donor-profile';
 
 	if ($donor_profile_page) {
-		$getpage = get_permalink($options['donor_profile_page']);
+		$getpage = get_permalink($donor_profile_page);
 	}
 	return $getpage;
 }
@@ -393,11 +386,11 @@ function idonate_is_user_logged_in()
 {
 	if (is_user_logged_in()) {
 		$options = get_option('idonate_settings');
-		$donor_profile_page = $options['donor_profile_page'];
+		$donor_profile_page = isset($options['donor_profile_page']) ? $options['donor_profile_page'] : '';
 		$getpage = 'donor-profile';
 
 		if ($donor_profile_page) {
-			$getpage = $options['donor_profile_page'];
+			$getpage = $donor_profile_page;
 		}
 
 		wp_redirect($getpage);
@@ -670,7 +663,7 @@ if (! function_exists('idonate_function')) {
 
 		// Prepare the basepath.
 		$home_url  = get_home_url();
-		$parsed    = parse_url($home_url);
+		$parsed    = wp_parse_url($home_url);
 		$base_path = (is_array($parsed) && isset($parsed['path'])) ? $parsed['path'] : '/';
 		$base_path = rtrim($base_path, '/') . '/';
 		// Get current URL.

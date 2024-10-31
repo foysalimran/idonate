@@ -384,8 +384,8 @@
                 .find(".donors")
                 .html(
                   '<h3 class="alert text-center alert-danger">' +
-                    response.data.message +
-                    "</h3>"
+                  response.data.message +
+                  "</h3>"
                 );
             }
           },
@@ -453,8 +453,8 @@
                 .find(".request")
                 .html(
                   '<h3 class="alert text-center alert-danger">' +
-                    response.data.message +
-                    "</h3>"
+                  response.data.message +
+                  "</h3>"
                 );
             }
           },
@@ -471,7 +471,9 @@
 
   const dashboardNavigation = document.querySelector(".dashboard-navigation");
   const dashboardMenu = document.querySelector(".dashboard_menu");
-  dashboardNavigation.addEventListener("click", () => {
-    dashboardMenu.classList.toggle("active");
-  });
+  if (dashboardNavigation) {
+    dashboardNavigation.addEventListener("click", () => {
+      dashboardMenu.classList.toggle("active");
+    });
+  }
 })(jQuery);

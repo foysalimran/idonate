@@ -64,26 +64,21 @@ class idonate_blood_request_widget extends WP_Widget
 					$title = get_the_title();
 					$bloodgroup  = get_post_meta(get_the_ID(), 'idonatepatient_bloodgroup', true);
 					$date 		 = get_post_meta(get_the_ID(), 'idonatepatient_bloodneed', true);
-
-					//
 					if ($title) {
 						$title = '<span class="display-block"><strong>' . esc_html($title) . '</strong></span>';
 					} else {
 						$title = '';
 					}
-					//
 					if ($bloodgroup) {
 						$bloodgroup = '<span class="display-block">' . esc_html__('Blood Group: ', 'idonate') . esc_html($bloodgroup) . '</span>';
 					} else {
 						$bloodgroup = '';
 					}
-					//
 					if ($date) {
 						$date = '<span class="display-block">' . esc_html__('Date: ', 'idonate') . esc_html($date) . '</span>';
 					} else {
 						$date = '';
 					}
-					//
 					echo '<li>
 				<a href="' . esc_url(get_the_permalink()) . '" target="_blank">' . wp_kses_post($title . $bloodgroup . $date) . '</a>
 				</li>';
@@ -116,9 +111,6 @@ class idonate_blood_request_widget extends WP_Widget
 		} else {
 			$requestnumber = '5';
 		}
-
-
-		// Widget admin form
 	?>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php esc_html_e('Title:', 'idonate'); ?></label>
@@ -132,7 +124,6 @@ class idonate_blood_request_widget extends WP_Widget
 
 <?php
 	}
-
 
 	// Updating widget replacing old instances with new
 	public function update($new_instance, $old_instance)

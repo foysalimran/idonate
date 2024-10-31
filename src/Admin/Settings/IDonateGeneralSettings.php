@@ -74,9 +74,9 @@ class IDonateGeneralSettings
 					array(
 						'id'        => 'idonate_color_settings',
 						'type'      => 'color_group',
-						'title'     => esc_html__('Color Settings', 'idonat-pro'),
+						'title'     => esc_html__('Color Settings', 'idonate'),
 						'class'		=> 'pro_only_field',
-						'desc'		=> esc_html__('Basic color palette for elements', 'idoante-pro'),
+						'desc'		=> esc_html__('Basic color palette for elements', 'idonate'),
 						'options'   => array(
 							'donor_maincolor' => esc_html__('Main Color', 'idonate'),
 							'donor_bordercolor' => esc_html__('Main Border Color', 'idonate'),
@@ -95,9 +95,9 @@ class IDonateGeneralSettings
 					array(
 						'id' 			=>	'idonate_recapthca_label',
 						'type' 			=>	'text',
-						'title'			=> esc_html__('reCAPTCHA Label', 'idoante-pro'),
-						'desc'			=> esc_html__('Label to display before the reCAPTCHA checkbox.', 'idoante-pro'),
-						'default'		=> esc_html__('Please verify that you are human:', 'idoante-pro'),
+						'title'			=> esc_html__('reCAPTCHA Label', 'idonate'),
+						'desc'			=> esc_html__('Label to display before the reCAPTCHA checkbox.', 'idonate'),
+						'default'		=> esc_html__('Please verify that you are human:', 'idonate'),
 						'dependency' 	=> array('idonate_recaptcha_active', '==', 'true'),
 					),
 					array(

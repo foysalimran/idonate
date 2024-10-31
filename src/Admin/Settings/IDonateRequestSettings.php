@@ -44,7 +44,7 @@ class IDonateRequestSettings
 						'type' => 'tabbed',
 						'tabs' => array(
 							array(
-								'title'  => __('Blood Request Listings Settings', 'idaonte-pro'),
+								'title'  => __('Blood Request Listings Settings', 'idonate'),
 								'fields' => array(
 									array(
 										'id'       => 'donor_request_status',
@@ -92,6 +92,13 @@ class IDonateRequestSettings
 										'default'	=> 'single_page_link',
 									),
 									array(
+										'id'       	=> 'blood_request_view_slug',
+										'type'     	=> 'text',
+										'title'    	=> esc_html__('Request Single Page Slug', 'idonate'),
+										'default'	=> 'blood-request',
+										'dependency' => array('request_view_button', '==', 'single_page_link'),
+									),
+									array(
 										'id'       => 'request_next_prev',
 										'type'     => 'checkbox',
 										'title'    => esc_html__('Enable Next/Prev', 'idonate'),
@@ -115,7 +122,7 @@ class IDonateRequestSettings
 								),
 							),
 							array(
-								'title'  => __('Text Settings (Pro)', 'idaonte-pro'),
+								'title'  => __('Text Settings (Pro)', 'idonate'),
 								'fields' => array(
 									array(
 										'id'       => 'rf_form_title',
@@ -144,14 +151,14 @@ class IDonateRequestSettings
 								),
 							),
 							array(
-								'title'  => __('Form Settings', 'idaonte-pro'),
+								'title'  => __('Form Settings', 'idonate'),
 								'fields' => array(
 									array(
 										'id'       => 'idonate_bloodrequestcountryhide',
 										'type'     => 'switcher',
 										'class'      => 'switcher_pro_only',
 										'title'    => esc_html__('Show/Hide Country and State Fields On the Request Form', 'idonate'),
-										'desc'	=> esc_html__('Toggle the visibility of country and state fields', 'idoante-pro'),
+										'desc'	=> esc_html__('Toggle the visibility of country and state fields', 'idonate'),
 										'text_on'	=> esc_html__('Show', 'idonate'),
 										'text_off'	=> esc_html__('Hide', 'idonate'),
 										'text_width'	=> '80',
@@ -162,7 +169,7 @@ class IDonateRequestSettings
 										'type'     => 'switcher',
 										'class'      => 'switcher_pro_only',
 										'title'    => esc_html__('Show/Hide Image Upload Field On the Request Form', 'idonate'),
-										'desc'	=> esc_html__('Toggle the visibility of image upload field', 'idoante-pro'),
+										'desc'	=> esc_html__('Toggle the visibility of image upload field', 'idonate'),
 										'text_on'	=> esc_html__('Show', 'idonate'),
 										'text_off'	=> esc_html__('Hide', 'idonate'),
 										'text_width'	=> '80',

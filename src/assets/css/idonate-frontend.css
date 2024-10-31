@@ -501,9 +501,8 @@
 .idonate #loginform input[type=submit]:hover {
   color: var(--idonate-white) !important;
 }
-.idonate .notmatch {
-  color: var(--idonate-error);
-  text-align: center;
+.idonate .request .idonate-alert-error {
+  margin-top: 24px;
 }
 .idonate .dashboard_content_title {
   font-size: 28px;
@@ -1136,6 +1135,9 @@ input[type=radio] {
 }
 .idonate-login .login-submit input {
   width: auto;
+}
+.idonate-login .idonate-alert-error {
+  margin-bottom: 15px;
 }
 
 button.request_submit_button,

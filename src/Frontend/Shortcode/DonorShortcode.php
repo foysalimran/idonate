@@ -180,13 +180,10 @@ class DonorShortcode
 													</div>
 												</div>
 											</div>
-
 										</div>
 									</div>
 					</div>
-				<?php
-								endforeach;
-				?>
+				<?php endforeach; ?>
 				</tbody>
 				</table>
 				</div>

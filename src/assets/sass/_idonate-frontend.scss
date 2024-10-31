@@ -301,9 +301,10 @@
       color: var(--idonate-white) !important;
     }
   }
-  .notmatch {
-    color: var(--idonate-error);
-    text-align: center;
+  .request {
+    .idonate-alert-error {
+      margin-top: 24px;
+    }
   }
   .dashboard_content_title {
     font-size: 28px;
@@ -930,6 +931,9 @@ input[type="radio"] {
     input {
       width: auto;
     }
+  }
+  .idonate-alert-error {
+    margin-bottom: 15px;
   }
 }
 

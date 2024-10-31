@@ -34,6 +34,11 @@ Helpers::idonate_custom_header();
 						<h3><?php echo esc_html($donor_lft); ?></h3>
 						<hr>
 						<?php
+						// Display error message if login failed
+						if (isset($_GET['login']) && $_GET['login'] === 'failed') {
+							echo '<div class="idonate-alert idonate-alert-error">' . esc_html__('Login failed. Please check your username and password.', 'idonate') . '</div>';
+						}
+
 						$args = array(
 							'id_username' => 'user',
 							'id_password' => 'pass',
@@ -41,7 +46,7 @@ Helpers::idonate_custom_header();
 						wp_login_form($args);
 						?>
 						<br>
-						<p><?php echo esc_html__('Don\'t have an account?', 'idonate-pro'); ?> <a href="<?php echo esc_url(site_url('/donor-register')); ?>"><?php echo esc_html__('Register Now'); ?></a></p>
+						<p><?php echo esc_html__('Don\'t have an account?', 'idonate'); ?> <a href="<?php echo esc_url(site_url('/donor-register')); ?>"><?php echo esc_html__('Register Now'); ?></a></p>
 					</div>
 				</div>
 			</div>
