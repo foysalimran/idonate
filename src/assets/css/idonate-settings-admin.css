@@ -22,7 +22,7 @@
   .idonate-field.pro_only_field > .idonate-fieldset,
   .idonate-field.pro_only_field > .idonate-fieldset input[type="text"] {
     pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   .idonate-field.pro_only_field > .idonate-fieldset input,
   .idonate-field.pro_only_field > .idonate-fieldset .idonate--icon,
