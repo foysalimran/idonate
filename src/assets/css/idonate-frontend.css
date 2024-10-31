@@ -1136,6 +1136,9 @@ input[type=radio] {
 .idonate-login .login-submit input {
   width: auto;
 }
+.idonate-login .idonate-alert-error {
+  margin-bottom: 15px;
+}
 
 button.request_submit_button,
 input.register_donor {

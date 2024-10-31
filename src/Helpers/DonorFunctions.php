@@ -59,6 +59,14 @@ class DonorFunctions
 				$donarData['landline'] = '';
 			}
 
+			// Check country
+			if (!empty($_POST['country'])) {
+				$donarData['country'] = sanitize_text_field(wp_unslash( $_POST['country'] ));
+			}
+			// Check City
+			if (!empty($_POST['state'])) {
+				$donarData['state'] = sanitize_text_field(wp_unslash( $_POST['state'] ));
+			}
 			// Check City
 			if (!empty($_POST['city'])) {
 				$donarData['city'] = sanitize_text_field(wp_unslash( $_POST['city'] ));
