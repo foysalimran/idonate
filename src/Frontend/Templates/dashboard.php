@@ -59,7 +59,14 @@ $dashboard_page_name = apply_filters('idonate_dashboard_sub_page_template', $das
                     if (in_array('administrator', $user_roles) || in_array('donor', $user_roles)) {
                     ?>
                         <div class="dashboard__header_left__info__name">
-                            <?php echo esc_html($user->display_name); ?>
+                            <?php
+                            $full_name = get_user_meta($user->ID, 'idonate_donor_full_name', true);
+                            if ($full_name) {
+                                echo esc_html($full_name);
+                            } else {
+                                echo esc_html($user->display_name);
+                            }
+                            ?>
                         </div>
                         <?php if ($bloodgroup) { ?>
                             <div class="dashboard__header_left__info__content">

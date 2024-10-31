@@ -70,7 +70,7 @@ $idonate_countryhide = isset($setting_options['idonate_countryhide']) ? $setting
 		<div class="idonate_col_item">
 			<label for="datebirthedit"><?php esc_html_e('Date Of Birth', 'idonate'); ?></label>
 
-			<input id="datebirthedit" name="date_birth" value="{{data.date_birth}}" class="form-control" placeholder="<?php esc_attr_e('Date Of Birth', 'idonate'); ?>" type="text">
+			<input id="datebirthedit" name="date_birth" value="{{data.date_birth}}" class="form-control" placeholder="<?php esc_attr_e('Date Of Birth', 'idonate'); ?>" type="date">
 		</div>
 		<div class="idonate_col_item">
 			<label for="mobile"><?php esc_html_e('Mobile Number', 'idonate'); ?></label>

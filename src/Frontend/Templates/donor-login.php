@@ -34,6 +34,11 @@ Helpers::idonate_custom_header();
 						<h3><?php echo esc_html($donor_lft); ?></h3>
 						<hr>
 						<?php
+						// Display error message if login failed
+						if (isset($_GET['login']) && $_GET['login'] === 'failed') {
+							echo '<div class="idonate-alert idonate-alert-error">' . esc_html__('Login failed. Please check your username and password.', 'idonate') . '</div>';
+						}
+
 						$args = array(
 							'id_username' => 'user',
 							'id_password' => 'pass',
