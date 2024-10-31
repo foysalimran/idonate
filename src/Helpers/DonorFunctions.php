@@ -34,52 +34,53 @@ class DonorFunctions
 			$donarData = array();
 			// Check Full Name
 			if (!empty($_POST['full_name'])) {
-				$donarData['full_name'] = sanitize_text_field(wp_unslash( $_POST['full_name'] ));
+				$donarData['full_name'] = sanitize_text_field(wp_unslash($_POST['full_name']));
 			}
 			// Check Gender
 			if (!empty($_POST['gender'])) {
-				$donarData['gender'] = sanitize_text_field(wp_unslash( $_POST['gender'] ));
+				$donarData['gender'] = sanitize_text_field(wp_unslash($_POST['gender']));
 			}
 			// Check Date Of Birth
 			if (!empty($_POST['date_birth'])) {
-				$donarData['date_birth'] = sanitize_text_field(wp_unslash( $_POST['date_birth'] ));
+				$donarData['date_birth'] = sanitize_text_field(wp_unslash($_POST['date_birth']));
 			}
 			// Check Blood Group
 			if (!empty($_POST['bloodgroup'])) {
-				$donarData['bloodgroup'] = sanitize_text_field(wp_unslash( $_POST['bloodgroup'] ));
+				$donarData['bloodgroup'] = sanitize_text_field(wp_unslash($_POST['bloodgroup']));
 			}
 			// Check Mobile Number
 			if (!empty($_POST['mobile'])) {
-				$donarData['mobile'] = sanitize_text_field(wp_unslash( $_POST['mobile'] ));
+				$donarData['mobile'] = sanitize_text_field(wp_unslash($_POST['mobile']));
 			}
 			// Check Land Line Number
 			if (!empty($_POST['landline'])) {
-				$donarData['landline'] = sanitize_text_field(wp_unslash( $_POST['landline'] ));
+				$donarData['landline'] = sanitize_text_field(wp_unslash($_POST['landline']));
 			} else {
 				$donarData['landline'] = '';
 			}
-
-			// Check country
-			if (!empty($_POST['country'])) {
-				$donarData['country'] = sanitize_text_field(wp_unslash( $_POST['country'] ));
-			}
-			// Check City
-			if (!empty($_POST['state'])) {
-				$donarData['state'] = sanitize_text_field(wp_unslash( $_POST['state'] ));
+			if (!empty($options['idonate_countryhide'])) {
+				// Check country
+				if (!empty($_POST['country'])) {
+					$donarData['country'] = sanitize_text_field(wp_unslash($_POST['country']));
+				}
+				// Check City
+				if (!empty($_POST['state'])) {
+					$donarData['state'] = sanitize_text_field(wp_unslash($_POST['state']));
+				}
 			}
 			// Check City
 			if (!empty($_POST['city'])) {
-				$donarData['city'] = sanitize_text_field(wp_unslash( $_POST['city'] ));
+				$donarData['city'] = sanitize_text_field(wp_unslash($_POST['city']));
 			}
 			// Check Address
 			if (!empty($_POST['address'])) {
-				$donarData['address'] = sanitize_text_field(wp_unslash( $_POST['address'] ));
+				$donarData['address'] = sanitize_text_field(wp_unslash($_POST['address']));
 			}
 			// Check E-Mail
 			if (!empty($_POST['email'])) {
 
 				$email = '';
-				$userEmail = sanitize_text_field(wp_unslash( $_POST['email'] ));
+				$userEmail = sanitize_text_field(wp_unslash($_POST['email']));
 				if (is_email($userEmail)) {
 					if (!email_exists($userEmail)) {
 						$email = $userEmail;
@@ -88,19 +89,19 @@ class DonorFunctions
 			}
 			// Check User Name
 			if (!empty($_POST['user_name'])) {
-				$userName = sanitize_text_field(wp_unslash( $_POST['user_name'] ));
+				$userName = sanitize_text_field(wp_unslash($_POST['user_name']));
 			}
 			// Check Password
 			if (!empty($_POST['password'])) {
-				$password = sanitize_text_field(wp_unslash( $_POST['password'] ));
+				$password = sanitize_text_field(wp_unslash($_POST['password']));
 			}
 			// Check Password
 			if (!empty($_POST['retypepassword'])) {
-				$retypepassword = sanitize_text_field(wp_unslash( $_POST['retypepassword'] ));
+				$retypepassword = sanitize_text_field(wp_unslash($_POST['retypepassword']));
 			}
 			// Check Availability
 			if (!empty($_POST['availability'])) {
-				$donarData['availability'] = sanitize_text_field(wp_unslash( $_POST['availability'] ));
+				$donarData['availability'] = sanitize_text_field(wp_unslash($_POST['availability']));
 			}
 
 			if (wp_verify_nonce($_POST['request_submit_nonce_check'], 'request_nonce_action')) {
@@ -171,76 +172,76 @@ class DonorFunctions
 
 			// Check Full Name
 			if (!empty($_POST['full_name'])) {
-				$donarData['full_name'] = sanitize_text_field(wp_unslash( $_POST['full_name'] ));
+				$donarData['full_name'] = sanitize_text_field(wp_unslash($_POST['full_name']));
 			} else {
 				$validation_error->add('field', esc_html__('Full Name field can\'t be empty.', 'idonate'));
 			}
 			// Check Gender
 			if (!empty($_POST['gender'])) {
-				$donarData['gender'] = sanitize_text_field(wp_unslash( $_POST['gender'] ));
+				$donarData['gender'] = sanitize_text_field(wp_unslash($_POST['gender']));
 			} else {
 				$validation_error->add('field', esc_html__('Gender field can\'t be empty.', 'idonate'));
 			}
 			// Check Date Of Birth
 			if (!empty($_POST['date_birth'])) {
-				$donarData['date_birth'] = sanitize_text_field(wp_unslash( $_POST['date_birth'] ));
+				$donarData['date_birth'] = sanitize_text_field(wp_unslash($_POST['date_birth']));
 			} else {
 				$validation_error->add('field', esc_html__('Date of birth field can\'t be empty.', 'idonate'));
 			}
 
 			// Check Blood Group
 			if (!empty($_POST['bloodgroup'])) {
-				$donarData['bloodgroup'] = sanitize_text_field(wp_unslash( $_POST['bloodgroup'] ));
+				$donarData['bloodgroup'] = sanitize_text_field(wp_unslash($_POST['bloodgroup']));
 			} else {
 				$validation_error->add('field', esc_html__('Blood group field can\'t be empty.', 'idonate'));
 			}
 			// Check Mobile Number
 			if (!empty($_POST['mobile'])) {
-				$donarData['mobile'] = sanitize_text_field(wp_unslash( $_POST['mobile'] ));
+				$donarData['mobile'] = sanitize_text_field(wp_unslash($_POST['mobile']));
 			} else {
 				$validation_error->add('field', esc_html__('Mobile Number field can\'t be empty.', 'idonate'));
 			}
 			// Check Land Line Number
 			if (!empty($_POST['landline'])) {
-				$donarData['landline'] = sanitize_text_field(wp_unslash( $_POST['landline'] ));
+				$donarData['landline'] = sanitize_text_field(wp_unslash($_POST['landline']));
 			} else {
 				$donarData['landline'] = '';
 			}
 			// Check City
 			if (!empty($_POST['city'])) {
-				$donarData['city'] = sanitize_text_field(wp_unslash( $_POST['city'] ));
+				$donarData['city'] = sanitize_text_field(wp_unslash($_POST['city']));
 			} else {
 				$validation_error->add('field', esc_html__('City field can\'t be empty.', 'idonate'));
 			}
 			// Check District
 			if (!empty($_POST['address'])) {
-				$donarData['address'] = sanitize_text_field(wp_unslash( $_POST['address'] ));
+				$donarData['address'] = sanitize_text_field(wp_unslash($_POST['address']));
 			} else {
 				$validation_error->add('field', esc_html__('Please write your address.', 'idonate'));
 			}
 			// Check Availability
 			if (!empty($_POST['availability'])) {
-				$donarData['availability'] = sanitize_text_field(wp_unslash( $_POST['availability'] ));
+				$donarData['availability'] = sanitize_text_field(wp_unslash($_POST['availability']));
 			} else {
 				$validation_error->add('field', esc_html__('Please select your availability to donate blood field', 'idonate'));
 			}
 			// Check Availability
 			if (!empty($_POST['lastdonate'])) {
-				$donarData['lastdonate'] = sanitize_text_field(wp_unslash( $_POST['lastdonate'] ));
+				$donarData['lastdonate'] = sanitize_text_field(wp_unslash($_POST['lastdonate']));
 			} else {
 				$donarData['lastdonate'] = __('Not yet', 'idonate');
 			}
 			// Check Availability
 			if (!empty($_POST['fburl'])) {
-				$donarData['fburl'] = sanitize_text_field(wp_unslash( $_POST['fburl'] ));
+				$donarData['fburl'] = sanitize_text_field(wp_unslash($_POST['fburl']));
 			}
 			// Check Availability
 			if (!empty($_POST['twitterurl'])) {
-				$donarData['twitterurl'] = sanitize_text_field(wp_unslash( $_POST['twitterurl'] ));
+				$donarData['twitterurl'] = sanitize_text_field(wp_unslash($_POST['twitterurl']));
 			}
 			// Check E-Mail
 			if (!empty($_POST['email'])) {
-				$userEmail = sanitize_text_field(wp_unslash( $_POST['email'] ));
+				$userEmail = sanitize_text_field(wp_unslash($_POST['email']));
 				if (is_email($userEmail)) {
 					$email = $userEmail;
 				} else {
@@ -253,8 +254,8 @@ class DonorFunctions
 			// New Password
 			if (!empty($_POST['newpassword']) && !empty($_POST['retypenewpassword'])) {
 
-				$getnewpass 			= sanitize_text_field(wp_unslash( $_POST['newpassword'] ));
-				$getretypenewpassword   = sanitize_text_field(wp_unslash( $_POST['retypenewpassword'] ));
+				$getnewpass 			= sanitize_text_field(wp_unslash($_POST['newpassword']));
+				$getretypenewpassword   = sanitize_text_field(wp_unslash($_POST['retypenewpassword']));
 
 				if ($getnewpass == $getretypenewpassword) {
 					$newpass = $getnewpass;
@@ -320,13 +321,13 @@ class DonorFunctions
 
 			// Check Full Name
 			if (!empty($_POST['full_name'])) {
-				$donarData['full_name'] = sanitize_text_field(wp_unslash( $_POST['full_name'] ));
+				$donarData['full_name'] = sanitize_text_field(wp_unslash($_POST['full_name']));
 			} else {
 				$validation_error->add('field', esc_html__('Full Name field can\'t be empty.', 'idonate'));
 			}
 			// Check E-Mail
 			if (!empty($_POST['email'])) {
-				$userEmail = sanitize_text_field(wp_unslash( $_POST['email'] ));
+				$userEmail = sanitize_text_field(wp_unslash($_POST['email']));
 				if (is_email($userEmail)) {
 					$email = $userEmail;
 				} else {
@@ -337,25 +338,25 @@ class DonorFunctions
 			}
 			// Check Blood Group
 			if (!empty($_POST['bloodgroup'])) {
-				$donarData['bloodgroup'] = sanitize_text_field(wp_unslash( $_POST['bloodgroup'] ));
+				$donarData['bloodgroup'] = sanitize_text_field(wp_unslash($_POST['bloodgroup']));
 			} else {
 				$validation_error->add('field', esc_html__('Blood group field can\'t be empty.', 'idonate'));
 			}
 			// Check Availability
 			if (!empty($_POST['availability'])) {
-				$donarData['availability'] = sanitize_text_field(wp_unslash( $_POST['availability'] ));
+				$donarData['availability'] = sanitize_text_field(wp_unslash($_POST['availability']));
 			} else {
 				$validation_error->add('field', esc_html__('Please select your availability to donate blood field', 'idonate'));
 			}
 			// Check Gender
 			if (!empty($_POST['gender'])) {
-				$donarData['gender'] = sanitize_text_field(wp_unslash( $_POST['gender'] ));
+				$donarData['gender'] = sanitize_text_field(wp_unslash($_POST['gender']));
 			} else {
 				$validation_error->add('field', esc_html__('Gender field can\'t be empty.', 'idonate'));
 			}
 			// Check Date Of Birth
 			if (!empty($_POST['date_birth'])) {
-				$donarData['date_birth'] = sanitize_text_field(wp_unslash( $_POST['date_birth'] ));
+				$donarData['date_birth'] = sanitize_text_field(wp_unslash($_POST['date_birth']));
 			} else {
 				$validation_error->add('field', esc_html__('Date of birth field can\'t be empty.', 'idonate'));
 			}
@@ -367,7 +368,7 @@ class DonorFunctions
 			$donarData['landline'] = $landline;
 			// Last Donate
 			if (!empty($_POST['lastdonate'])) {
-				$donarData['lastdonate'] = sanitize_text_field(wp_unslash( $_POST['lastdonate'] ));
+				$donarData['lastdonate'] = sanitize_text_field(wp_unslash($_POST['lastdonate']));
 			} else {
 				$donarData['lastdonate'] = __('Not yet', 'idonate');
 			}
@@ -415,8 +416,8 @@ class DonorFunctions
 
 			// New Password
 			if (!empty($_POST['password']) && !empty($_POST['retypepassword'])) {
-				$get_new_password = sanitize_text_field(wp_unslash( $_POST['password'] ));
-				$getretypepassword = sanitize_text_field(wp_unslash( $_POST['retypepassword'] ));
+				$get_new_password = sanitize_text_field(wp_unslash($_POST['password']));
+				$getretypepassword = sanitize_text_field(wp_unslash($_POST['retypepassword']));
 
 				if ($get_new_password === $getretypepassword) {
 					$new_pass = $get_new_password;
@@ -445,23 +446,23 @@ class DonorFunctions
 			$donarData = array();
 			$idonate_countryhide = isset($options['idonate_countryhide']) ? $options['idonate_countryhide'] : '';
 			if ($idonate_countryhide) {
-				$donarData['country'] = sanitize_text_field(wp_unslash( $_POST['country'] ));
+				$donarData['country'] = sanitize_text_field(wp_unslash($_POST['country']));
 				if (!empty($_POST['country'])) {
 				} else {
 					$validation_error->add('field', esc_html__('Please select your country.', 'idonate'));
 				}
 				if (!empty($_POST['state'])) {
-					$donarData['state'] = sanitize_text_field(wp_unslash( $_POST['state'] ));
+					$donarData['state'] = sanitize_text_field(wp_unslash($_POST['state']));
 				}
 			}
 
 			if (!empty($_POST['city'])) {
-				$donarData['city'] = sanitize_text_field(wp_unslash( $_POST['city'] ));
+				$donarData['city'] = sanitize_text_field(wp_unslash($_POST['city']));
 			} else {
 				$validation_error->add('field', esc_html__('City field can\'t be empty.', 'idonate'));
 			}
 			if (!empty($_POST['address'])) {
-				$donarData['address'] = sanitize_text_field(wp_unslash( $_POST['address'] ));
+				$donarData['address'] = sanitize_text_field(wp_unslash($_POST['address']));
 			} else {
 				$validation_error->add('field', esc_html__('Please write your address.', 'idonate'));
 			}
@@ -472,7 +473,7 @@ class DonorFunctions
 			) {
 				if (1 > count($validation_error->get_error_messages())) {
 					$userdata = array(
-						'ID'         => sanitize_text_field(wp_unslash( $_POST['donor_id'] )),
+						'ID'         => sanitize_text_field(wp_unslash($_POST['donor_id'])),
 					);
 
 					$user_id = wp_update_user($userdata);
@@ -506,13 +507,13 @@ class DonorFunctions
 			$facebook = isset($_POST['fburl']) ? sanitize_text_field(wp_unslash($_POST['fburl'])) : '';
 			$donarData['fburl'] = $facebook;
 			// Twitter account
-			$twitter = isset($_POST['twitterurl']) ? sanitize_text_field(wp_unslash( $_POST['twitterurl'] )) : '';
+			$twitter = isset($_POST['twitterurl']) ? sanitize_text_field(wp_unslash($_POST['twitterurl'])) : '';
 			$donarData['twitterurl'] = $twitter;
 			// Linkedin account
-			$linkedin = isset($_POST['linkedin']) ? sanitize_text_field(wp_unslash( $_POST['linkedin'] )) : '';
+			$linkedin = isset($_POST['linkedin']) ? sanitize_text_field(wp_unslash($_POST['linkedin'])) : '';
 			$donarData['linkedin'] = $linkedin;
 			// Website
-			$website = isset($_POST['website']) ? sanitize_text_field(wp_unslash( $_POST['website'] )) : '';
+			$website = isset($_POST['website']) ? sanitize_text_field(wp_unslash($_POST['website'])) : '';
 			$donarData['website'] = $website;
 
 			if (
