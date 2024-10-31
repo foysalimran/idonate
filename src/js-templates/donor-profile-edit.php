@@ -9,7 +9,6 @@ $idonate_countryhide = isset($setting_options['idonate_countryhide']) ? $setting
 <form action="#" id="form" method="post" name="form" enctype="multipart/form-data">
 	<h3><?php esc_html_e('Donor Edit', 'idonate'); ?></h3>
 	<hr>
-
 	<div class="idonate_row idonate_col">
 		<div class="idonate_col_item">
 			<label for="full_name"><?php esc_html_e('Full Name', 'idonate'); ?></label>
