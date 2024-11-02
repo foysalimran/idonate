@@ -51,12 +51,12 @@ if (!class_exists('IDONATE_Field_code_editor')) {
 			}
 
 			if (!wp_script_is('idonate-codemirror')) {
-				wp_enqueue_script('idonate-codemirror', IDONATE_DIR_URL . 'src/Admin/Framework/assets/js/codemirror.min.js', array('idonate'),  $this->version, true);
-				wp_enqueue_script('idonate-codemirror-loadmode', IDONATE_DIR_URL . 'src/Admin/Framework/assets/js/loadmode.min.js', array('idonate-codemirror'), $this->version, true);
+				wp_enqueue_script('idonate-codemirror', IDONATE_DIR_URL . 'src/Admin/Framework/assets/js/vendor/codemirror.min.js', array('idonate'),  $this->version, true);
+				wp_enqueue_script('idonate-codemirror-loadmode', IDONATE_DIR_URL . 'src/Admin/Framework/assets/js/vendor/loadmode.min.js', array('idonate-codemirror'), $this->version, true);
 			}
 
 			if (!wp_style_is('idonate-codemirror')) {
-				wp_enqueue_style('idonate-codemirror', IDONATE_DIR_URL . 'src/Admin/Framework/assets/css/codemirror.min.css', array(), $this->version);
+				wp_enqueue_style('idonate-codemirror', IDONATE_DIR_URL . 'src/Admin/Framework/assets/css/vendor/codemirror.min.css', array(), $this->version);
 			}
 		}
 	}
