@@ -444,7 +444,7 @@ if (!class_exists('IDONATE')) {
       }
 
       // Main scripts
-      wp_enqueue_script('idonate-plugins', self::include_plugin_url('assets/js/plugins' . $min . '.js'), array(), self::$version, true);
+      wp_enqueue_script('idonate-plugins', self::include_plugin_url('assets/js/vendor/plugins' . $min . '.js'), array(), self::$version, true);
       wp_enqueue_script('idonate', self::include_plugin_url('assets/js/main' . $min . '.js'), array('idonate-plugins'), self::$version, true);
       wp_enqueue_script('idonate-custom', self::include_plugin_url('assets/js/idonate-custom' . $min . '.js'), array('idonate-plugins'), self::$version, true);
 

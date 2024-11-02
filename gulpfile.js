@@ -19,7 +19,7 @@ const paths = {
     dest: "src/assets/css/",
   },
   admin_framework_css: {
-    src: "src/Admin/Framework/assets/css/**/*.css",
+    src: "src/Admin/Framework/assets/css/*.css",
     dest: "src/Admin/Framework/assets/css/",
   },
   js: {
@@ -27,7 +27,7 @@ const paths = {
     dest: "src/assets/js/",
   },
   admin_framework_js: {
-    src: "src/Admin/Framework/assets/js/**/*.js",
+    src: "src/Admin/Framework/assets/js/*.js",
     dest: "src/Admin/Framework/assets/js/",
   },
 };
