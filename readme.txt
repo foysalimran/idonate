@@ -161,7 +161,7 @@ Thank you!
 18. Dashboard Settings Advance Settings
 
 == Changelog ==
-= 2.1.5 - October 26, 2024 =
+= 2.1.5 - November 02, 2024 =
 * Added: Display error message on login page for incorrect login information.
 * Fixed: Issue with updating profile information.
 * Fixed: Compliance issues with WordPress Coding Standards (WPCS).
