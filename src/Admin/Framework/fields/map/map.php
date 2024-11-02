@@ -85,11 +85,11 @@ if ( ! class_exists( 'IDONATE_Field_map' ) ) {
 		public function enqueue() {
 
 			if ( ! wp_script_is( 'idonate-leaflet' ) ) {
-				wp_enqueue_script( 'leaflet', IDONATE_DIR_URL . 'src/Admin/Framework/assets/js/leaflet.js', array('idonate'), $this->version, true );
+				wp_enqueue_script( 'leaflet', IDONATE_DIR_URL . 'src/Admin/Framework/assets/js/vendor/leaflet.min.js', array('idonate'), $this->version, true );
 			}
 
 			if ( ! wp_style_is( 'idonate-leaflet' ) ) {
-				wp_enqueue_style( 'leaflet', IDONATE_DIR_URL . 'src/Admin/Framework/assets/css/leaflet.css', array(), $this->version );
+				wp_enqueue_style( 'leaflet', IDONATE_DIR_URL . 'src/Admin/Framework/assets/css/vendor/leaflet.min.css', array(), $this->version );
 			}
 
 			if ( ! wp_script_is( 'jquery-ui-autocomplete' ) ) {
